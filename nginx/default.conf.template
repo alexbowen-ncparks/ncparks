@@ -20,8 +20,8 @@ server {
         proxy_set_header X-Forwarded-Proto https;
     }
 
-    location /dbadmin {
-        proxy_pass http://phpmyadmin;
+    location /dbadmin/ {
+        proxy_pass http://phpmyadmin/;
         proxy_set_header X-Forwarded-Proto https;
     }
 
