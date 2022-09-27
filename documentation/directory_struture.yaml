@@ -1,0 +1,78 @@
+/:
+    top_level_files:
+        # Files in the root directory
+        - .gitignore
+        - .docker-compose
+        - README.md
+    db_persistence:
+        # This folder is mounted to the MariaDB container to
+        # provide a database persistence across deployments.
+    db_schema:
+        # Database schema descriptor files will be stored here
+        # in order to populate the database with empty schema
+        # objects should the need arise.
+    envs:
+        # Environment files that store environment variables
+        # used to configure the compose build.
+    secrets:
+        # Empty directory where secret files will be placed at
+        # run time to be passed to containers.
+    documentation:
+        # DPR-stack level documentation (such as this file)
+    dprcal:
+        # Assets specific to the dprcal application live here.
+        # The file structure within an application's folder is
+        # more variable due to the nature of the application,
+        # but this is a general example.
+        backend:
+            # Many applications in the DPR stack will have seperate
+            # frontend and backend containers.
+            documentation:
+                # Documentation files.
+            src:
+                # Source files.
+            test:
+                # Test files.
+            lib:
+                # Library files.
+            config:
+                # Configuration files including the Dockerfile.
+            secrets:
+                # Secret files.
+            envs:
+                # Environment variable files.
+        frontend:
+            # Frontend for the application.
+            documentation:
+                # Documentation files.
+            src:
+                # Source files.
+            test:
+                # Test files.
+            lib:
+                # Library files.
+            config:
+                # Configuration files including the Dockerfile.
+            secrets:
+                # Secret files.
+            envs:
+                # Environment variable files.
+    legacy_app:
+        # Assets specific to the legacy application stack live here.
+        # The file structure within an application's folder is
+        # more variable due to the nature of the application,
+        # but this is a general example.
+        documentation:
+            # Documentation files.
+        src:
+            # Source files.
+        test:
+            # Test files.
+        lib:
+            # Library files.
+        config:
+            # Configuration files including the Dockerfile.
+        secrets:
+            # Secret files.
+        envs:
+            # Environment variable files.
