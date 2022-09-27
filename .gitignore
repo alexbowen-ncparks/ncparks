@@ -5,7 +5,7 @@
 /logs/*
 !/logs/README.md
 .phpunit.result.cache
-db_persistence/
+db/data/*
 # secrets/
 # *.key
 # *.crt
