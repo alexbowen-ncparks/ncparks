@@ -1,0 +1,3 @@
+1. auto fill MOMO on Add photo page
+2. add photo with same info: make sure Park and CD transfers
+3. be able to edit an NRID entry

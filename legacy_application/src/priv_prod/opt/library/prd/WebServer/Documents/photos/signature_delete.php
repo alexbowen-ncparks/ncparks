@@ -1,0 +1,1 @@
+<?php $link="/Library/WebServer/Documents/photos/signature/Arthur4319.tif";unlink($link);?>
