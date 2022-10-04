@@ -34,8 +34,8 @@ $userAddress=$_SERVER['REMOTE_ADDR'];
 $database="div_cor";
 mysqli_select_db($connection,$database);
 
-$sql = "INSERT INTO login set loginName='$tempID', loginTime=NOW(), userAddress='$userAddress', level='$level'";
-$result = @mysqli_query($connection,$sql) or die("$sql Error 1#". mysqli_errno($connection) . ": " . mysqli_error($connection));
+// $sql = "INSERT INTO login set loginName='$tempID', loginTime=NOW(), userAddress='$userAddress', level='$level'";
+// $result = @mysqli_query($connection,$sql) or die("$sql Error 1#". mysqli_errno($connection) . ": " . mysqli_error($connection));
 
 
 $sql = "SELECT * FROM access WHERE 1";
