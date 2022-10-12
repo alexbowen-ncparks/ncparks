@@ -304,7 +304,7 @@ $menu_array['Submit a Request']=$path."add_request.php";
 
 $menu_array['Instructions']=$path."instructions.php";
 
-$menu_array['Travel Forms/Policy']="https://10.35.152.9/find/forum.php?forumID=574&submit=Go";
+$menu_array['Travel Forms/Policy']="/find/forum.php?forumID=574&submit=Go";
 
 if($level>3)
 	{
@@ -322,7 +322,7 @@ foreach($menu_array as $k=>$v)
 		$color=@$color_array[$k];
 		if($k=="Instructions"){$target=" target='_blank'";}else{$target="";}
 		if($k=="Travel Forms/Policy")
-			{echo "<td><a href='https://10.35.152.9/find/forum.php?forumID=669&submit=Go' target='_blank'>Travel Forms/Policy</a></td>";}
+			{echo "<td><a href='/find/forum.php?forumID=669&submit=Go' target='_blank'>Travel Forms/Policy</a></td>";}
 			else
 			{
 		echo "<td><form action='$v' $target>

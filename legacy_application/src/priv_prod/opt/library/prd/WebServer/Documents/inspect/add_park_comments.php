@@ -34,8 +34,8 @@ extract($row);
 
 echo "<html><table align='center'><tr><td align='center'><h2><font color='red'>Safety Activities</font> in the System</h2></td></tr>";
 
-echo "<tr><td align='center' colspan='2'>View all <font color='magenta'>[$id_inspect]</font> <a href='https://10.35.152.9/inspect/park.php?parkcode=$parkcode&subunit=$id_inspect'>$parkcode</a> entries.</td></tr>";
-echo "<tr><td align='center' colspan='2'>View all <font color='magenta'>[$id_inspect]</font> <a href='https://10.35.152.9/inspect/park.php?parkcode=$parkcode&subunit=$id_inspect'>$parkcode</a> entries.</td></tr>";
+echo "<tr><td align='center' colspan='2'>View all <font color='magenta'>[$id_inspect]</font> <a href='/inspect/park.php?parkcode=$parkcode&subunit=$id_inspect'>$parkcode</a> entries.</td></tr>";
+echo "<tr><td align='center' colspan='2'>View all <font color='magenta'>[$id_inspect]</font> <a href='/inspect/park.php?parkcode=$parkcode&subunit=$id_inspect'>$parkcode</a> entries.</td></tr>";
 
 echo "<form method='POST'><tr>";
 
@@ -45,14 +45,14 @@ echo "<tr><td align='center' colspan='2'>Enter any <font color='green'>PR-63 Cas
 
 if(!empty($pr_id))
 	{
-	echo "<td><a href='https://10.35.152.9/le/pr63_form.php?id=$pr_id' target='_blank'>PR-63 #$pr63</a></td>";
-	echo "<td><a href='https://10.35.152.9/le/pr63_form.php?id=$pr_id' target='_blank'>PR-63 #$pr63</a></td>";
+	echo "<td><a href='/le/pr63_form.php?id=$pr_id' target='_blank'>PR-63 #$pr63</a></td>";
+	echo "<td><a href='/le/pr63_form.php?id=$pr_id' target='_blank'>PR-63 #$pr63</a></td>";
 	}
 	else
 	{
 	if(!empty($pr63) AND empty($file_link))
-		{echo "<td><a href='https://10.35.152.9/le/find_pr63.php?ci_num=$pr63&submit=Go' target='_blank'>PR-63 #$pr63</a></td>";}
-		{echo "<td><a href='https://10.35.152.9/le/find_pr63.php?ci_num=$pr63&submit=Go' target='_blank'>PR-63 #$pr63</a></td>";}
+		{echo "<td><a href='/le/find_pr63.php?ci_num=$pr63&submit=Go' target='_blank'>PR-63 #$pr63</a></td>";}
+		{echo "<td><a href='/le/find_pr63.php?ci_num=$pr63&submit=Go' target='_blank'>PR-63 #$pr63</a></td>";}
 	}
 
 echo "</tr>";

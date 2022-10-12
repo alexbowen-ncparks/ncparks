@@ -101,7 +101,7 @@ if($year<2012){$var_p="Weekly";}else{$var_p="Daily";}
 $text="NC State Parks System - $var_p Visitation for month";
 	//	pdf_show_xy ($pdf,$text,250,$y);
 		pdf_show_xy ($pdf,$text,50,$y);
-$text="https://auth.dpr.ncparks.gov/attend/d/park_daily.php";
+$text="/attend/d/park_daily.php";
 		pdf_show_xy ($pdf,$text,530,$y);
 
 

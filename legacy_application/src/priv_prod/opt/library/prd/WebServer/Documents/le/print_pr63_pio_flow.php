@@ -312,8 +312,8 @@ if(!empty($image_array))
 	foreach($image_array as $index=>$array)
 		{
 		$var=$array['link'];
-		$link="https://10.35.152.9/le/".$var;
-		$link="https://10.35.152.9/le/".$var;
+		$link="/le/".$var;
+		$link="/le/".$var;
 	$starting_xpos = 80;
 	$mod_y=(count($image_array)+1)*12;
 	$starting_ypos = $texty-$mod_y-$xx;

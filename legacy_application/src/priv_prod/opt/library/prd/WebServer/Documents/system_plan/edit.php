@@ -10,8 +10,8 @@ if(empty($_SESSION))
 	}
 	
 if($level<1)
-	{echo "You must first login to the System Plan <a href='https://10.35.152.9/system_plan/'>database</a>.<br /><br />Select the System Acreage option in pull-down.";
-	{echo "You must first login to the System Plan <a href='https://10.35.152.9/system_plan/'>database</a>.<br /><br />Select the System Acreage option in pull-down.";
+	{echo "You must first login to the System Plan <a href='/system_plan/'>database</a>.<br /><br />Select the System Acreage option in pull-down.";
+	{echo "You must first login to the System Plan <a href='/system_plan/'>database</a>.<br /><br />Select the System Acreage option in pull-down.";
 	exit;
 	}
 

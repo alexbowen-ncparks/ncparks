@@ -120,8 +120,8 @@ $fieldNames=array_values(array_keys($ARRAY[0]));
 $fieldNames[]="Signature";
 $num=count($fieldNames);
 
-$page="https://10.35.152.9/IDcard/printPhotoID_retired.php";
-$page="https://10.35.152.9/IDcard/printPhotoID_retired.php";
+$page="/IDcard/printPhotoID_retired.php";
+$page="/IDcard/printPhotoID_retired.php";
 
 echo "<table border='1' cellpadding='2'><tr><td colspan='$num' align='center'><font color='red'>$num records</font></td></tr>";
 

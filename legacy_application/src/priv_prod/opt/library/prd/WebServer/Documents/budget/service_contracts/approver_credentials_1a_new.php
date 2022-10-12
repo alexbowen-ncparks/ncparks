@@ -2,7 +2,7 @@
 
 session_start();
 if(!$_SESSION["budget"]["tempID"]){echo "access denied";exit;
-//header("location: https://10.35.152.9/login_form.php?db=budget");
+//header("location: /login_form.php?db=budget");
 }
 
 $query1a="select count(id) as 'cashier_count' from cash_handling_roles where park='$concession_location' and role='cashier' and tempid='$tempid' ";

@@ -28,8 +28,8 @@ if(@$del=="y")
 	$result = @mysqli_query($connection,$sql) or die("No go for:<br>$sql");
 	}
 
-echo "<div align='center'><table border='1'><tr><td colspan='6' align='center'><a href='https://10.35.152.9/le/start_le.php'>NC DPR Incident / Action Reports Home Page</a></td></tr>";
-echo "<div align='center'><table border='1'><tr><td colspan='6' align='center'><a href='https://10.35.152.9/le/start_le.php'>NC DPR Incident / Action Reports Home Page</a></td></tr>";
+echo "<div align='center'><table border='1'><tr><td colspan='6' align='center'><a href='/le/start_le.php'>NC DPR Incident / Action Reports Home Page</a></td></tr>";
+echo "<div align='center'><table border='1'><tr><td colspan='6' align='center'><a href='/le/start_le.php'>NC DPR Incident / Action Reports Home Page</a></td></tr>";
 if(!@$modLevel and empty($tempID))
 	{
 	$sql="SELECT DISTINCT empinfo.Lname,empinfo.Mname,empinfo.Fname,empinfo.tempID, position.postitle,emplist.currPark,emplist.cite

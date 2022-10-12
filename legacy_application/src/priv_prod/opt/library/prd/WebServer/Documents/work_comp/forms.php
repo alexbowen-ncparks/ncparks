@@ -91,8 +91,8 @@ foreach($ARRAY_forms AS $index=>$array)
 		$display="<td>$value</td>";
 		if($fld=="link")
 			{
-			$value="https://10.35.152.9/find/".$value;
-			$value="https://10.35.152.9/find/".$value;
+			$value="/find/".$value;
+			$value="/find/".$value;
 			$display="<td><a href='$value' target='_blank'>Get form</a></td>";
 			}
 		echo "$display";

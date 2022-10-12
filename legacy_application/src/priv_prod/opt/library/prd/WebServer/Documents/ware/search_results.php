@@ -82,12 +82,12 @@ foreach($ARRAY AS $index=>$array)
 					foreach($exp1 as $k=>$v)
 						{
 						$exp2=explode("/",$v);
-						$tn="https://10.35.152.9/ware/photos/ztn_".$exp2[1];
-						$tn="https://10.35.152.9/ware/photos/ztn_".$exp2[1];
+						$tn="/ware/photos/ztn_".$exp2[1];
+						$tn="/ware/photos/ztn_".$exp2[1];
 						$exp3=explode("*",$exp2[0]);
 						$pid=$exp3[0];
-						$img="https://10.35.152.9/ware/photos/".$exp2[1];
-						$img="https://10.35.152.9/ware/photos/".$exp2[1];
+						$img="/ware/photos/".$exp2[1];
+						$img="/ware/photos/".$exp2[1];
 						
 						$temp.="<a href='$img' target='_blank'>
 						<img src='$tn' style=\"vertical-align: top;\"></a>";
@@ -154,8 +154,8 @@ foreach($ARRAY AS $index=>$array)
 					$var="";
 					foreach($exp as $k=>$v)
 						{
-						$var.="<a href='https://10.35.152.9/ware/view_item.php?product_number=$v' target='_blank'>$v</a><br /><br />";
-						$var.="<a href='https://10.35.152.9/ware/view_item.php?product_number=$v' target='_blank'>$v</a><br /><br />";
+						$var.="<a href='/ware/view_item.php?product_number=$v' target='_blank'>$v</a><br /><br />";
+						$var.="<a href='/ware/view_item.php?product_number=$v' target='_blank'>$v</a><br /><br />";
 						}
 					$value=$var;
 					}

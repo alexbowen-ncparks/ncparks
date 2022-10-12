@@ -339,8 +339,8 @@ foreach($fld_array as $index=>$fld)
 		{
 		$array_some['submitted_by']="submitted_by";
 		$all_email['submitted_by']=$submitter_email;
-		$e_content="Subject=$park_code-Project Review: $proj_name&Body=Click the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html";
-		$e_content="Subject=$park_code-Project Review: $proj_name&Body=Click the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html";
+		$e_content="Subject=$park_code-Project Review: $proj_name&Body=Click the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html";
+		$e_content="Subject=$park_code-Project Review: $proj_name&Body=Click the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html";
 		$e_content=htmlentities($e_content);
 		$var_e="</td><td><a href=\"mailto:$submitter_email?$e_content\">$submitter_email</a>";
 		$display_input.=" ".$var_e;
@@ -440,8 +440,8 @@ $date_picker_array=array("pasu_date"=>"datepicker1","disu_date"=>"datepicker2","
 				if($code!="pasu"){$pasu_name="";}
 				if($code=="pasu")
 					{
-					$e_content="Subject=Project Review: $proj_name&Body=Click the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html&cc=$submitter_email";
-					$e_content="Subject=Project Review: $proj_name&Body=Click the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html&cc=$submitter_email";
+					$e_content="Subject=Project Review: $proj_name&Body=Click the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html&cc=$submitter_email";
+					$e_content="Subject=Project Review: $proj_name&Body=Click the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html&cc=$submitter_email";
 				//	$exp_pasu_email=explode(",",$pasu_email);
 				
 					if($pass_os=="Mac")
@@ -541,13 +541,13 @@ $date_picker_array=array("pasu_date"=>"datepicker1","disu_date"=>"datepicker2","
 					$e1=rtrim($e1,", ");
 					if($dec=="approved")
 						{
-						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has received division approval. Please review all comments, appropriate guidelines, and policies before proceeding.%0D%0A%0D%0AClick the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html&cc=$submitter_email";
-						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has received division approval. Please review all comments, appropriate guidelines, and policies before proceeding.%0D%0A%0D%0AClick the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html&cc=$submitter_email";
+						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has received division approval. Please review all comments, appropriate guidelines, and policies before proceeding.%0D%0A%0D%0AClick the link to review this project - /dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html&cc=$submitter_email";
+						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has received division approval. Please review all comments, appropriate guidelines, and policies before proceeding.%0D%0A%0D%0AClick the link to review this project - /dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html&cc=$submitter_email";
 						}
 					if($dec=="not approved")
 						{
-						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has not received division approval. $dedi_comments.%0D%0A%0D%0AClick the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html&cc=$submitter_email";
-						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has not received division approval. $dedi_comments.%0D%0A%0D%0AClick the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html&cc=$submitter_email";
+						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has not received division approval. $dedi_comments.%0D%0A%0D%0AClick the link to review this project - /dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html&cc=$submitter_email";
+						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has not received division approval. $dedi_comments.%0D%0A%0D%0AClick the link to review this project - /dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html&cc=$submitter_email";
 						}
 				$e_content=htmlentities($e_content);
 				if(!empty($dec) and $level>6) // Deputy Director is level 7 and Director is level 8
@@ -580,13 +580,13 @@ $date_picker_array=array("pasu_date"=>"datepicker1","disu_date"=>"datepicker2","
 					$e1=rtrim($e1,", ");
 					if($dec=="approved")
 						{
-						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has received division approval. Please review all comments, appropriate guidelines, and policies before proceeding.%0D%0A%0D%0AClick the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html&cc=$submitter_email";
-						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has received division approval. Please review all comments, appropriate guidelines, and policies before proceeding.%0D%0A%0D%0AClick the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html&cc=$submitter_email";
+						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has received division approval. Please review all comments, appropriate guidelines, and policies before proceeding.%0D%0A%0D%0AClick the link to review this project - /dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html&cc=$submitter_email";
+						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has received division approval. Please review all comments, appropriate guidelines, and policies before proceeding.%0D%0A%0D%0AClick the link to review this project - /dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html&cc=$submitter_email";
 						}
 					if($dec=="not approved")
 						{
-						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has not received division approval. $dire_comments.%0D%0A%0D%0AClick the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html&cc=$submitter_email";
-						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has not received division approval. $dire_comments.%0D%0A%0D%0AClick the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html&cc=$submitter_email";
+						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has not received division approval. $dire_comments.%0D%0A%0D%0AClick the link to review this project - /dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html&cc=$submitter_email";
+						$e_content="Subject=$park_code-Project Review: $proj_name&Body=This project has not received division approval. $dire_comments.%0D%0A%0D%0AClick the link to review this project - /dpr_proj/project.php?id=$id%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html&cc=$submitter_email";
 						}
 				$e_content=htmlentities($e_content);
 				if(!empty($dec) and $level>7) // Deputy Director is level 7 and Director is level 8
@@ -620,8 +620,8 @@ $date_picker_array=array("pasu_date"=>"datepicker1","disu_date"=>"datepicker2","
 				$email=rtrim($email,", "); //echo "e=$email"; 
 				
 				$all_email[$var1]=$email;
-				$e_content="Subject=$park_code-Project Review: $proj_name&Body=Click the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html&cc=$submitter_email";
-				$e_content="Subject=$park_code-Project Review: $proj_name&Body=Click the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html&cc=$submitter_email";
+				$e_content="Subject=$park_code-Project Review: $proj_name&Body=Click the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html&cc=$submitter_email";
+				$e_content="Subject=$park_code-Project Review: $proj_name&Body=Click the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html&cc=$submitter_email";
 				$e_content=htmlentities($e_content);
 				if($var1=="disu"){$var1="resu";}
 				$var_display.="</td><td><a href=\"mailto:$email?$e_content\">$var1</a>";
@@ -684,8 +684,8 @@ echo "<tr>";
 	
 //	$c=count(array_unique($some_email));
 //	echo "<pre>"; print_r($some_email); echo "</pre>"; // exit;
-	$e_content="Subject=$park_code-Project Review: $proj_name&Body=Project Number: $proj_number. Click the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html";
-	$e_content="Subject=$park_code-Project Review: $proj_name&Body=Project Number: $proj_number. Click the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html";
+	$e_content="Subject=$park_code-Project Review: $proj_name&Body=Project Number: $proj_number. Click the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html";
+	$e_content="Subject=$park_code-Project Review: $proj_name&Body=Project Number: $proj_number. Click the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html";
 	
 	echo "<td colspan='2'><a href='mailto:$email?$e_content'>Email</a> the $kk who have previously submitted/reviewed. </td>";
 	}

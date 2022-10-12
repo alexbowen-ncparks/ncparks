@@ -54,8 +54,8 @@ echo "<table align='center' cellpadding='5' border='1'><tr><th colspan='3'>
 <input type='submit' name='submit' value='Go'>
 </form></td>
 
-<td><form action='https://10.35.152.9/cite/'>
-<td><form action='https://10.35.152.9/cite/'>
+<td><form action='/cite/'>
+<td><form action='/cite/'>
     CITE Database&raquo;
 <input type='submit' name='submit' value='Go'>
 </form></td>";

@@ -168,8 +168,8 @@ table.alternate tr:nth-child(even) td{
 				if(!empty($pasu_email_park[$pc]))
 					{			
 					$em=$pasu_email_park[$pc];
-					$em_link="<a href='mailto:$em?subject=DPR Project Tracking&body=$pc has one or more projects which were approved by the Director and have a status of ACTIVE. If this project has been competed or is no longer active, please login to the Project Trackiing app and update the status.%0A%0Ahttps://10.35.152.9/login_form.php?db=dpr_proj%0A%0AThanks'>$em</a>";
-					$em_link="<a href='mailto:$em?subject=DPR Project Tracking&body=$pc has one or more projects which were approved by the Director and have a status of ACTIVE. If this project has been competed or is no longer active, please login to the Project Trackiing app and update the status.%0A%0Ahttps://10.35.152.9/login_form.php?db=dpr_proj%0A%0AThanks'>$em</a>";
+					$em_link="<a href='mailto:$em?subject=DPR Project Tracking&body=$pc has one or more projects which were approved by the Director and have a status of ACTIVE. If this project has been competed or is no longer active, please login to the Project Trackiing app and update the status.%0A%0A/login_form.php?db=dpr_proj%0A%0AThanks'>$em</a>";
+					$em_link="<a href='mailto:$em?subject=DPR Project Tracking&body=$pc has one or more projects which were approved by the Director and have a status of ACTIVE. If this project has been competed or is no longer active, please login to the Project Trackiing app and update the status.%0A%0A/login_form.php?db=dpr_proj%0A%0AThanks'>$em</a>";
 					}
 				$value=$value."</td><td>$em_link";
 				}

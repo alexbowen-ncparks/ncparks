@@ -283,8 +283,8 @@ if(!empty($submit_label) and $submit_label!="Find")
 		foreach($housing_form_array as $k=>$v)
 			{
 			$var_1=$housing_form_array[$k]['filename'];
-			$var_2="https://10.35.152.9/find/".$housing_form_array[$k]['link'];
-			$var_2="https://10.35.152.9/find/".$housing_form_array[$k]['link'];
+			$var_2="/find/".$housing_form_array[$k]['link'];
+			$var_2="/find/".$housing_form_array[$k]['link'];
 			echo "$var_1<br /><a href='$var_2' target='_blank'>link</a>
 			<br />";
 	

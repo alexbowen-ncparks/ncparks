@@ -351,8 +351,8 @@ if(!empty($id))
 	}
 		
 		echo "</tr></table><hr /><table>";
-	$email_link=urlencode("https://10.35.152.9/pac/add_new.php?id=$id&park_code=$park_code");
-	$email_link=urlencode("https://10.35.152.9/pac/add_new.php?id=$id&park_code=$park_code");
+	$email_link=urlencode("/pac/add_new.php?id=$id&park_code=$park_code");
+	$email_link=urlencode("/pac/add_new.php?id=$id&park_code=$park_code");
 	@$dist_approve=$ARRAY[0]['dist_approve'];
 		if(empty($disu_email))
 			{

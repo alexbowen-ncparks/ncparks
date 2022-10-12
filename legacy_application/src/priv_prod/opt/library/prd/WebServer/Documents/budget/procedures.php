@@ -3,8 +3,8 @@
 session_start();
 
 if(!$_SESSION["budget"]["tempID"]){echo "access denied";exit;
-//header("location: https://10.35.152.9/login_form.php?db=budget");
-//header("location: https://10.35.152.9/login_form.php?db=budget");
+//header("location: /login_form.php?db=budget");
+//header("location: /login_form.php?db=budget");
 }
 
 //$file = "articles_menu.php";

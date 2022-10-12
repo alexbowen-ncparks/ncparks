@@ -268,8 +268,8 @@ echo "<tr><form><td align='right'>Before sending an email Recommendation to the 
 <input type='hidden' name='beacon_num' value='$beacon_num'>
 Click <input type='submit' name='panel' value='Submit'> to obtain the Email link.</td></form></tr></table>";exit;}
 	else{
-echo "<tr><td align='right'>Email Recommendation to <a href='mailto:$email?subject=$subject&body=https://10.35.152.9/divper/trackPosition.php?beacon_num=$beacon_num'>District Superintendent or Hiring Manager's Supervisor</a>:</td>
-echo "<tr><td align='right'>Email Recommendation to <a href='mailto:$email?subject=$subject&body=https://10.35.152.9/divper/trackPosition.php?beacon_num=$beacon_num'>District Superintendent or Hiring Manager's Supervisor</a>:</td>
+echo "<tr><td align='right'>Email Recommendation to <a href='mailto:$email?subject=$subject&body=/divper/trackPosition.php?beacon_num=$beacon_num'>District Superintendent or Hiring Manager's Supervisor</a>:</td>
+echo "<tr><td align='right'>Email Recommendation to <a href='mailto:$email?subject=$subject&body=/divper/trackPosition.php?beacon_num=$beacon_num'>District Superintendent or Hiring Manager's Supervisor</a>:</td>
 <td>$recToSup</td></tr>";}
 
 if($level<2){exit;}
@@ -278,8 +278,8 @@ if(!$supToSup){echo "<tr><form><td align='right'>Before sending an email Recomme
 <input type='hidden' name='beacon_num' value='$beacon_num'>
 Click <input type='submit' name='panel' value='Submit'> to obtain the Email link.</td></form></tr></table>";exit;}
 	else{
-echo "<tr><form><td align='right'>Email Recommendation to <a href='mailto:?subject=$subject&body=https://10.35.152.9/divper/trackPosition.php?beacon_num=$beacon_num'>CHOP or Section Chief</a>:</td>
-echo "<tr><form><td align='right'>Email Recommendation to <a href='mailto:?subject=$subject&body=https://10.35.152.9/divper/trackPosition.php?beacon_num=$beacon_num'>CHOP or Section Chief</a>:</td>
+echo "<tr><form><td align='right'>Email Recommendation to <a href='mailto:?subject=$subject&body=/divper/trackPosition.php?beacon_num=$beacon_num'>CHOP or Section Chief</a>:</td>
+echo "<tr><form><td align='right'>Email Recommendation to <a href='mailto:?subject=$subject&body=/divper/trackPosition.php?beacon_num=$beacon_num'>CHOP or Section Chief</a>:</td>
 <td>$supToSup</td></tr>";}
 
 if($level<3){exit;}
@@ -296,8 +296,8 @@ Click <input type='submit' name='panel' value='Submit'> to obtain the Email link
 	$keys=array_keys($dist_hr,$dist_rep_bn);
 	foreach($keys as $k=>$v){$dist_list.="[".$v."]  ";}
 //echo "<pre>$dist"; print_r($keys); echo "</pre>"; // exit;
-echo "<tr><form><td align='right'>Email Recommendation to District HR <a href='mailto:$dist_rep_email?subject=$subject&body=https://10.35.152.9/divper/trackPosition.php?beacon_num=$beacon_num'>($dist_rep_name-$dist_list)</a>:</td>
-echo "<tr><form><td align='right'>Email Recommendation to District HR <a href='mailto:$dist_rep_email?subject=$subject&body=https://10.35.152.9/divper/trackPosition.php?beacon_num=$beacon_num'>($dist_rep_name-$dist_list)</a>:</td>
+echo "<tr><form><td align='right'>Email Recommendation to District HR <a href='mailto:$dist_rep_email?subject=$subject&body=/divper/trackPosition.php?beacon_num=$beacon_num'>($dist_rep_name-$dist_list)</a>:</td>
+echo "<tr><form><td align='right'>Email Recommendation to District HR <a href='mailto:$dist_rep_email?subject=$subject&body=/divper/trackPosition.php?beacon_num=$beacon_num'>($dist_rep_name-$dist_list)</a>:</td>
 <td>$supToHR</td></tr>";}
 
 echo "</table>";

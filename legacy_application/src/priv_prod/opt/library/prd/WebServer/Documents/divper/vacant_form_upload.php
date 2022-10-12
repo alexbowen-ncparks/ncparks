@@ -135,8 +135,8 @@ $warning="<table align='center'><tr><td align='center'>If you use Microsoft Outl
 // 	$to="mailto:Rosilyn.McNair@ncdenr.gov".$separator."teresa.mccall@ncdenr.gov";
 // 	echo $warning;
 // 	echo "<tr><td align='center' colspan='2'><font color='green'>After all necessary forms have been uploaded, please send an email to HR.</font> 
-// 	Email <a href='$to?cc=mike.lambert@ncdenr.gov".$separator."denise.williams@ncdenr.gov&Subject=Permanent Position - $beacon_num - $posTitle @ $parkcode&body=All necessary forms have been uploaded to https://10.35.152.9/divper/vacant_form_upload.php?beacon_num=$beacon_num . You will need to be logged into the Personnel database to view the documents.'>HR</a></td>
-// 	Email <a href='$to?cc=mike.lambert@ncdenr.gov".$separator."denise.williams@ncdenr.gov&Subject=Permanent Position - $beacon_num - $posTitle @ $parkcode&body=All necessary forms have been uploaded to https://10.35.152.9/divper/vacant_form_upload.php?beacon_num=$beacon_num . You will need to be logged into the Personnel database to view the documents.'>HR</a></td>
+// 	Email <a href='$to?cc=mike.lambert@ncdenr.gov".$separator."denise.williams@ncdenr.gov&Subject=Permanent Position - $beacon_num - $posTitle @ $parkcode&body=All necessary forms have been uploaded to /divper/vacant_form_upload.php?beacon_num=$beacon_num . You will need to be logged into the Personnel database to view the documents.'>HR</a></td>
+// 	Email <a href='$to?cc=mike.lambert@ncdenr.gov".$separator."denise.williams@ncdenr.gov&Subject=Permanent Position - $beacon_num - $posTitle @ $parkcode&body=All necessary forms have been uploaded to /divper/vacant_form_upload.php?beacon_num=$beacon_num . You will need to be logged into the Personnel database to view the documents.'>HR</a></td>
 // 	</tr>";
 // 	}
 // echo "</table>";

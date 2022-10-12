@@ -76,7 +76,7 @@ if(@$update=="Submit")
 //echo "<pre>"; print_r($_POST); print_r($_FILES); echo "</pre>";  exit;
 // 	echo "<font color='blue'>Your update was successful.</font><br /><br />You can close this window.";
 // 	echo "
-// 	Return to the park's vehicle <a href='https://auth.dpr.ncparks.gov/fuel/menu.php?form_type=equipment'>equipment</a>.";
+// 	Return to the park's vehicle <a href='/fuel/menu.php?form_type=equipment'>equipment</a>.";
 	
 // 	exit;
 	$vi=$id;

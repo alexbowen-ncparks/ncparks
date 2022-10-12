@@ -21,7 +21,7 @@ include("/opt/library/prd/WebServer/include/iConnect.inc"); // connection parame
 mysqli_select_db($connection, $database); // database
 include("../../../include/activity.php");// database connection parameters
 //if(!$_SESSION["budget"]["tempID"]){
-//header("location: https://10.35.152.9/login_form.php?db=budget");
+//header("location: /login_form.php?db=budget");
 //}
 $bgcolor='blue';
 //echo "<pre>";print_r($_SESSION);echo "</pre>";//exit;

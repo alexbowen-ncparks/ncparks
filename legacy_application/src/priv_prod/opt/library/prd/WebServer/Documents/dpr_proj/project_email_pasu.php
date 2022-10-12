@@ -116,11 +116,11 @@ if($tempID=="Howard6319")
 	$e_content.="cc=database.support@ncparks.gov&";
 	}
 $e_content.="Body=Hi nnn,%0D%0A%0D%0A";
-// $e_content.=$text_0."%0D%0A%0D%0AClick the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html%0D%0A%0D%0A";
-// $e_content.=$text_0."%0D%0A%0D%0AClick the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html%0D%0A%0D%0A";
+// $e_content.=$text_0."%0D%0A%0D%0AClick the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html%0D%0A%0D%0A";
+// $e_content.=$text_0."%0D%0A%0D%0AClick the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html%0D%0A%0D%0A";
 
-$e_content.=$text_0."%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html%0D%0A%0D%0A";
-$e_content.=$text_0."%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html%0D%0A%0D%0A";
+$e_content.=$text_0."%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html%0D%0A%0D%0A";
+$e_content.=$text_0."%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html%0D%0A%0D%0A";
 $pasu_email_park[$v]=$row['email'];
 $e_content=str_replace("nnn", $pasu_name, $e_content);
 

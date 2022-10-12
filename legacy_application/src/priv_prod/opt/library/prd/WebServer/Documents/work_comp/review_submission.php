@@ -243,7 +243,7 @@ foreach($ARRAY AS $index=>$array)
 				}
 			$value=$new_value;
 			$cc=$safety_officer.";".$chief_ranger;
-			$value.="</td><td>Email DPR  <a href=\"mailto:$email?cc=$cc&subject=$park_code Worker Comp for $full_name&body=https://10.35.152.9/work_comp/review_submission.php?wc_id=$wc_id You will need to login to the Worker's Comp db application to view. 
+			$value.="</td><td>Email DPR  <a href=\"mailto:$email?cc=$cc&subject=$park_code Worker Comp for $full_name&body=/work_comp/review_submission.php?wc_id=$wc_id You will need to login to the Worker's Comp db application to view. 
 \">DPR-HR-Staff & Safety Officer</a>";
 			}
 		if($fld=="wc_approved")
@@ -256,7 +256,7 @@ foreach($ARRAY AS $index=>$array)
 				}
 			
 			$value=$new_value;
-			$body="https://10.35.152.9/work_comp/review_submission.php?wc_id=$wc_id  You will need to login to the Worker's Comp db application to view.";
+			$body="/work_comp/review_submission.php?wc_id=$wc_id  You will need to login to the Worker's Comp db application to view.";
 			$value.="</td><td>Email PASU <a href=\"mailto:$email_pasu?subject=$park_code Worker Comp for $to_pasu&body=$body\">$to_pasu</a>";
 			}
 			

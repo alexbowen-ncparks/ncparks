@@ -17,8 +17,8 @@ echo "
 echo "<tr><td><a href='home.php'>Welcome</a></td></tr>";
 echo "<tr><td><a href='/lo_fo/search_form.php'>Search</a></td></tr>";
 echo "<tr><td><a href='add_form.php'>Add Item</a></td></tr>";
-echo "<tr><td><a href='https://10.35.152.9/staffdir/graphics/SD16-02-Lost&FoundPolicy-5-2-16.pdf'>Policy Statement</a></td></tr>";
-echo "<tr><td><a href='https://10.35.152.9/staffdir/graphics/SD16-02-Lost&FoundPolicy-5-2-16.pdf'>Policy Statement</a></td></tr>";
+echo "<tr><td><a href='/staffdir/graphics/SD16-02-Lost&FoundPolicy-5-2-16.pdf'>Policy Statement</a></td></tr>";
+echo "<tr><td><a href='/staffdir/graphics/SD16-02-Lost&FoundPolicy-5-2-16.pdf'>Policy Statement</a></td></tr>";
 
 if($level>6) // 1
 	{

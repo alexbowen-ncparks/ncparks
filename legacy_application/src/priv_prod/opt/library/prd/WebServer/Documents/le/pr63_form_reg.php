@@ -119,8 +119,8 @@ session_start();
 @$level=$_SESSION['le']['level'];
 if($level<1)
 	{
-	echo "To view a PR-63 you must be logged into the PR-63 / DCI / CITE database - <a href='https://10.35.152.9/le/index.html'>login</a>.";
-	echo "To view a PR-63 you must be logged into the PR-63 / DCI / CITE database - <a href='https://10.35.152.9/le/index.html'>login</a>.";
+	echo "To view a PR-63 you must be logged into the PR-63 / DCI / CITE database - <a href='/le/index.html'>login</a>.";
+	echo "To view a PR-63 you must be logged into the PR-63 / DCI / CITE database - <a href='/le/index.html'>login</a>.";
 	exit;
 	}
 $tempID=$_SESSION['le']['tempID'];
@@ -615,8 +615,8 @@ $v4="";
 // if($level>4)
 // 	{
 if(empty($use_of_force)){$use_of_force="";}
-	$v4="Use of Force (By Commissioned Employee)<a href='https://10.35.152.9/find/graphics/2021/Use_of_Force_Report_macro.docm'>Use of Force Form</a><br />";
-	$v4="Use of Force (By Commissioned Employee)<a href='https://10.35.152.9/find/graphics/2021/Use_of_Force_Report_macro.docm'>Use of Force Form</a><br />";
+	$v4="Use of Force (By Commissioned Employee)<a href='/find/graphics/2021/Use_of_Force_Report_macro.docm'>Use of Force Form</a><br />";
+	$v4="Use of Force (By Commissioned Employee)<a href='/find/graphics/2021/Use_of_Force_Report_macro.docm'>Use of Force Form</a><br />";
 	$v4.="<select name='use_of_force'><option value=''></option>";
 		foreach($use_of_force_array as $x=>$y)
 			{
@@ -773,8 +773,8 @@ if($temp_level>3 or in_array($beacon_num,$test_array))
 	{
 	$passYear=date('Y');
 	if(!isset($id)){$id="";}
-	$v4="<input type=\"button\" value=\"Add to Safety Inspection database\" onclick=\"open_win('https://10.35.152.9/inspect/inspection_record.php?parkcode=$parkcode&passYear=$passYear&v_pr63=$ci_num&ti=$tempID&date_occur=$date_occur&pr_id=$id')\">";
-	$v4="<input type=\"button\" value=\"Add to Safety Inspection database\" onclick=\"open_win('https://10.35.152.9/inspect/inspection_record.php?parkcode=$parkcode&passYear=$passYear&v_pr63=$ci_num&ti=$tempID&date_occur=$date_occur&pr_id=$id')\">";
+	$v4="<input type=\"button\" value=\"Add to Safety Inspection database\" onclick=\"open_win('/inspect/inspection_record.php?parkcode=$parkcode&passYear=$passYear&v_pr63=$ci_num&ti=$tempID&date_occur=$date_occur&pr_id=$id')\">";
+	$v4="<input type=\"button\" value=\"Add to Safety Inspection database\" onclick=\"open_win('/inspect/inspection_record.php?parkcode=$parkcode&passYear=$passYear&v_pr63=$ci_num&ti=$tempID&date_occur=$date_occur&pr_id=$id')\">";
 	}
 echo "<tr><td>$v1</td><td>$v2</td><td>$v3</td><td valign='bottom'>$v4</td></tr>";
 

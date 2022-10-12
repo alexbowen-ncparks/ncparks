@@ -202,8 +202,8 @@ foreach($ARRAY as $index=>$row)
 		if(!isset($park)){$park="";}
 		
 		$park_code=str_replace(" ","_",$row['park_code']);
-		$link="https://10.35.152.9/donation/donation_find.php?park=$park_code&donation_type=$donation_type&submit_label=Find&source=graph";
-		$link="https://10.35.152.9/donation/donation_find.php?park=$park_code&donation_type=$donation_type&submit_label=Find&source=graph";
+		$link="/donation/donation_find.php?park=$park_code&donation_type=$donation_type&submit_label=Find&source=graph";
+		$link="/donation/donation_find.php?park=$park_code&donation_type=$donation_type&submit_label=Find&source=graph";
 			$starting_xpos = $xx;
 			$starting_ypos = $a+83;
 			if($row['amount']>0)

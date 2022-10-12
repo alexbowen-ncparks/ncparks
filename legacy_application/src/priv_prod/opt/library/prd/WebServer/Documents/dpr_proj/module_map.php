@@ -38,8 +38,8 @@ echo "
 				if(in_array($fld,$skip_map)){continue;}
 				if($fld=="link")
 					{
-					$share_docs[$array['file_name']]="https://10.35.152.9/dpr_proj/".$value;
-					$share_docs[$array['file_name']]="https://10.35.152.9/dpr_proj/".$value;
+					$share_docs[$array['file_name']]="/dpr_proj/".$value;
+					$share_docs[$array['file_name']]="/dpr_proj/".$value;
 					$value="<a href='$value' target='_blank'>download</a>";
 					if($level>3 OR $_SESSION['dpr_proj']['emid']==$submitted_by)
 						{

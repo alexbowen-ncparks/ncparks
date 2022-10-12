@@ -118,8 +118,8 @@ foreach($ARRAY_forms AS $index=>$array)
 			$display="<td></td>";
 			if($index==0)
 				{
-				$value="<a href='https://10.35.152.9/find/forum.php?forumID=$value&submit=Go' target='_blank'>$value</a>";
-				$value="<a href='https://10.35.152.9/find/forum.php?forumID=$value&submit=Go' target='_blank'>$value</a>";
+				$value="<a href='/find/forum.php?forumID=$value&submit=Go' target='_blank'>$value</a>";
+				$value="<a href='/find/forum.php?forumID=$value&submit=Go' target='_blank'>$value</a>";
 				$display="<td>$value</td>";
 				}
 			}
@@ -132,8 +132,8 @@ foreach($ARRAY_forms AS $index=>$array)
 			}
 		if($fld=="link")
 			{
-			$value="https://10.35.152.9/find/".$value;
-			$value="https://10.35.152.9/find/".$value;
+			$value="/find/".$value;
+			$value="/find/".$value;
 			$display="<td><a href='$value' target='_blank'>Get&nbsp;file</a></td>";
 			}
 		if($fld=="form_name")

@@ -37,10 +37,10 @@ if(!empty($_POST))
 // 		$query="INSERT nondpr SET $string"; //echo "$query";exit;
 // 		$result = mysqli_query($connection,$query) or die ("Couldn't execute query. $query".mysqli_error($connection));
 
-		$location="Location: https://10.35.152.9/divper/nondpr_users.php";
-		$location="Location: https://10.35.152.9/divper/nondpr_users.php";
-// 		$location="Location: https://10.35.152.9/divper/nondpr_users.php?string=$string,submit=Add";
-// 		$location="Location: https://10.35.152.9/divper/nondpr_users.php?string=$string,submit=Add";
+		$location="Location: /divper/nondpr_users.php";
+		$location="Location: /divper/nondpr_users.php";
+// 		$location="Location: /divper/nondpr_users.php?string=$string,submit=Add";
+// 		$location="Location: /divper/nondpr_users.php?string=$string,submit=Add";
 		header($location);
 		exit;
 		}
@@ -48,8 +48,8 @@ if(!empty($_POST))
 		{
 		$query="REPLACE nondpr SET $string"; //echo "$query";exit;
 		$result = mysqli_query($connection,$query) or die ("Couldn't execute query. $query");
-		$location="Location: https://10.35.152.9/divper/nondpr_users.php?string=$string,submit=Update";
-		$location="Location: https://10.35.152.9/divper/nondpr_users.php?string=$string,submit=Update";
+		$location="Location: /divper/nondpr_users.php?string=$string,submit=Update";
+		$location="Location: /divper/nondpr_users.php?string=$string,submit=Update";
 		header($location);
 		exit;
 		}	

@@ -63,8 +63,8 @@ if($upperID==$UtempID)
 			 
 			 // Login Correct
 
-		header("Location: https://10.35.152.9/irecall/irecall.php?name=$upperID&id=$id");exit;
-		header("Location: https://10.35.152.9/irecall/irecall.php?name=$upperID&id=$id");exit;
+		header("Location: /irecall/irecall.php?name=$upperID&id=$id");exit;
+		header("Location: /irecall/irecall.php?name=$upperID&id=$id");exit;
 	
 			 
 	}

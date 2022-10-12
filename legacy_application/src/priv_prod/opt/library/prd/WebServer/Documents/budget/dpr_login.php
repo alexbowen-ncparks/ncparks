@@ -28,7 +28,7 @@ session_start();
 $test_referer=explode("?",@$_SERVER['HTTP_REFERER']);
 $test_query=explode("=",$_SERVER['QUERY_STRING']);
 $test_uri=$_SERVER['REQUEST_URI'];
-if($test_referer[0] != "https://10.35.152.9/login_form.php" AND $test_query[0] != "ftempID" AND $test_uri != "/dpr_login.php")
+if($test_referer[0] != "/login_form.php" AND $test_query[0] != "ftempID" AND $test_uri != "/dpr_login.php")
 	{
 //	echo "<pre>"; print_r($_SERVER); echo "</pre>";
 //	echo "<pre>"; print_r($test_referer); echo "</pre>";
@@ -261,7 +261,7 @@ if($upperID==$UtempID)
 		{
 			////mysql_close($connection);
 		 $message_new = "165 The Username and/or Password you entered is/are not correct! Make sure of your spelling. If the problem persists, send an email to the contact person listed below.<br>";
-		 header("Location: https://10.35.152.9/login_form.php?db=$dbName");
+		 header("Location: /login_form.php?db=$dbName");
 		 }
 	  }// end else check for nonDPR
 
@@ -283,11 +283,11 @@ function caseDatabase($dbLevel,$dbName,$tempID,$currPark,$fpassword,$emid,$acces
 	if(!isset($supervise)){$supervise="";}
 	if(in_array($dbName,$secure))
 		{
-		$serverNum="https://10.35.152.9";
+		$serverNum="";
 		}
 	else
 		{
-		$serverNum="https://10.35.152.9";
+		$serverNum="";
 		}
 	
 	if($dbName=="dpr_proj")

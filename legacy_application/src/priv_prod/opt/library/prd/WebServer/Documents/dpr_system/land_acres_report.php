@@ -94,8 +94,8 @@ echo "<html><table border='1' cellpadding='2'>";
 
 echo "<tr><td colspan='5' align='center'><a href='land_acres.php' target='_blank'><font color='green'>Detailed Report</font></a></td>
 <td align='center'><a href='land_acres_report.php?rep=1'><font color='brown'>.cvs Export </font></a></td>
-<td align='center'><a href='https://10.35.152.9/system_plan/' target='_blank'><font color='brown'>SYS_PLAN </font></a></td>
-<td align='center'><a href='https://10.35.152.9/system_plan/' target='_blank'><font color='brown'>SYS_PLAN </font></a></td>
+<td align='center'><a href='/system_plan/' target='_blank'><font color='brown'>SYS_PLAN </font></a></td>
+<td align='center'><a href='/system_plan/' target='_blank'><font color='brown'>SYS_PLAN </font></a></td>
 </tr>";
 
 echo "<tr>";

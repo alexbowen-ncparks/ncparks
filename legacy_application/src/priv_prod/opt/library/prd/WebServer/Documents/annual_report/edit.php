@@ -235,7 +235,7 @@ echo "<table><tr><td><table cellpadding='5' border='1' bgcolor='aliceblue'>";
 	
 //	if($message==2)
 //		{
-		$page="https://auth.dpr.ncparks.gov/annual_report/print_report_multi.php";
+		$page="/annual_report/print_report_multi.php";
 		
 		if(!isset($edit)){$edit="";}
 		echo "</td></tr><tr bgcolor='white'><td align='center'><form method='POST' action='$page'>
@@ -435,7 +435,7 @@ if($level>1 OR in_array($park_code,$park_code_array) OR $park_code==$_SESSION['a
 	
 	if($action=="Update")
 		{
-		$page="https://auth.dpr.ncparks.gov/annual_report/print_report_multi.php";
+		$page="/annual_report/print_report_multi.php";
 		//if($level>3){$page="http://149.168.1.196/annual_report/print_report_uni.php";}
 		echo "</tr><tr><td colspan='4' align='right'><form method='POST' action='$page'>
 		<input type='hidden' name='id' value='$edit'>

@@ -56,7 +56,7 @@ foreach($ARRAY AS $index=>$array)
 		if($fld=="se_dpr")
 			{
 			$id=$array['id'];
-			$value="<a href='https://10.35.152.9/second_employ/edit.php?edit=$id&submit=edit'>$value</a>";}
+			$value="<a href='/second_employ/edit.php?edit=$id&submit=edit'>$value</a>";}
 			
 		echo "<td>$value</td>";
 		}

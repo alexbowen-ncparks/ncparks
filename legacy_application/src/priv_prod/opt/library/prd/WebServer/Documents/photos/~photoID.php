@@ -112,7 +112,7 @@ if(@$init_c)
 	}
 else
 	{
-	$page="https://auth.dpr.ncparks.gov/IDcard/printPhotoID.php";
+	$page="/IDcard/printPhotoID.php";
 	}
 
 echo "<form name='frm' method='POST' action='$page'>";
@@ -158,11 +158,11 @@ foreach($ARRAY as $k=>$v)
 		if(array_key_exists($tempID,$SIG_ARRAY))
 			{
 			$link=$SIG_ARRAY['tempID'];
-			$v2="[ <a href='https://auth.dpr.ncparks.gov/photos/$link' target='_blank'>add</a> ]";
+			$v2="[ <a href='/photos/$link' target='_blank'>add</a> ]";
 			}
 		else
 			{
-			$v2="[ <a href='https://auth.dpr.ncparks.gov/photos/addSig.php?tempID=$tempID&fullName=$fullName' target='_blank'>add</a> ]";
+			$v2="[ <a href='/photos/addSig.php?tempID=$tempID&fullName=$fullName' target='_blank'>add</a> ]";
 			}
 		
 		echo "<td align='center'>$v2</td>";

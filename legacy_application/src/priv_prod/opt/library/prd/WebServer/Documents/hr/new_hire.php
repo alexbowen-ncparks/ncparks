@@ -616,8 +616,8 @@ if(@$a){
 					{
 					$upload_form_file="upload_forms.php";
 					}
-				$value="<a href=\"https://10.35.152.9/hr194/$upload_form_file?parkcode=$parkcode&enteredBy=$enteredBy&tempID=$tempID&Lname=$Lname&beacon_num=$beacon_num&Fname=$Fname&position_title=$position_title&process_num=$process_num&date_approve=$date_approve\">$value</a><br />Click to upload forms.";
-				$value="<a href=\"https://10.35.152.9/hr194/$upload_form_file?parkcode=$parkcode&enteredBy=$enteredBy&tempID=$tempID&Lname=$Lname&beacon_num=$beacon_num&Fname=$Fname&position_title=$position_title&process_num=$process_num&date_approve=$date_approve\">$value</a><br />Click to upload forms.";
+				$value="<a href=\"/hr194/$upload_form_file?parkcode=$parkcode&enteredBy=$enteredBy&tempID=$tempID&Lname=$Lname&beacon_num=$beacon_num&Fname=$Fname&position_title=$position_title&process_num=$process_num&date_approve=$date_approve\">$value</a><br />Click to upload forms.";
+				$value="<a href=\"/hr194/$upload_form_file?parkcode=$parkcode&enteredBy=$enteredBy&tempID=$tempID&Lname=$Lname&beacon_num=$beacon_num&Fname=$Fname&position_title=$position_title&process_num=$process_num&date_approve=$date_approve\">$value</a><br />Click to upload forms.";
 				
 				}
 			

@@ -3,7 +3,7 @@
 session_start();
 
 if(!$_SESSION["conference"]["tempID"]){echo "access denied";exit;
-//header("location: https://auth.dpr.ncparks.gov/login_form.php?db=budget");
+//header("location: /login_form.php?db=budget");
 }
 
 //echo "<pre>";print_r($_SESSION);echo "</pre>"; //exit;

@@ -26,8 +26,8 @@ echo "<tr><td>The majority of errors we are experiencing from divisions are on t
 <tr><td><font color='red'>All requests should be submitted at least 15 days prior to the deadline.  BPA is receiving too many urgent requests.</font></td></tr>";
 
 echo "
-<tr><td>GO TO THE <b>FIND DATABASE #s <a href='https://10.35.152.9/find/forum.php?forumID=660&submit=Go' target='_blank'>660</a></b> for TRAVEL REIMBURSEMENT INSTRUCTIONS, EXAMPLES, FORM LINKS.</td>";
-<tr><td>GO TO THE <b>FIND DATABASE #s <a href='https://10.35.152.9/find/forum.php?forumID=660&submit=Go' target='_blank'>660</a></b> for TRAVEL REIMBURSEMENT INSTRUCTIONS, EXAMPLES, FORM LINKS.</td>";
+<tr><td>GO TO THE <b>FIND DATABASE #s <a href='/find/forum.php?forumID=660&submit=Go' target='_blank'>660</a></b> for TRAVEL REIMBURSEMENT INSTRUCTIONS, EXAMPLES, FORM LINKS.</td>";
+<tr><td>GO TO THE <b>FIND DATABASE #s <a href='/find/forum.php?forumID=660&submit=Go' target='_blank'>660</a></b> for TRAVEL REIMBURSEMENT INSTRUCTIONS, EXAMPLES, FORM LINKS.</td>";
 
 echo "</tr></table>";
 

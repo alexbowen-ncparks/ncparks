@@ -2,8 +2,8 @@
 ini_set('display_errors',1);
 session_start();
 if($_SESSION['dpr_system']['level']<1)
-	{echo "You must first login to the Division Personnel/Park Info <a href='https://10.35.152.9/divper/'>database</a>.<br /><br />Select the Land Acreage option under the \"Contact Info\" pull-down.";}
-	{echo "You must first login to the Division Personnel/Park Info <a href='https://10.35.152.9/divper/'>database</a>.<br /><br />Select the Land Acreage option under the \"Contact Info\" pull-down.";}
+	{echo "You must first login to the Division Personnel/Park Info <a href='/divper/'>database</a>.<br /><br />Select the Land Acreage option under the \"Contact Info\" pull-down.";}
+	{echo "You must first login to the Division Personnel/Park Info <a href='/divper/'>database</a>.<br /><br />Select the Land Acreage option under the \"Contact Info\" pull-down.";}
 
 include("../../include/get_parkcodes_dist.php");
 // echo "<pre>"; print_r($parkCode); echo "</pre>"; // exit;

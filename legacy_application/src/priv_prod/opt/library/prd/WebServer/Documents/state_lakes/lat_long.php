@@ -60,8 +60,8 @@ function setForm_add_new_form() {
     <script type="text/javascript">
     //<![CDATA[
 
-	var baseLink = "https://10.35.152.9/state_lakes/lat_long.php";
-	var baseLink = "https://10.35.152.9/state_lakes/lat_long.php";
+	var baseLink = "/state_lakes/lat_long.php";
+	var baseLink = "/state_lakes/lat_long.php";
 	var geocoder = new google.maps.Geocoder();
 	var markersArray = [];
 	var setLat = <?php echo "$lat";?> ;

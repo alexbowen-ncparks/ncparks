@@ -321,8 +321,8 @@ if(!empty($submit_label) and $submit_label!="Find")
 				{
 				$var_1=$housing_form_array[$k]['filename'];
 				if(strtolower(substr($var_1,-4))!=".pdf"){continue;}
-				$var_2="https://10.35.152.9/find/".$housing_form_array[$k]['link'];
-				$var_2="https://10.35.152.9/find/".$housing_form_array[$k]['link'];
+				$var_2="/find/".$housing_form_array[$k]['link'];
+				$var_2="/find/".$housing_form_array[$k]['link'];
 				echo "<tr><td>$var_1 <a href='$var_2' target='_blank'>link</a>
 				</td></tr>";
 				}

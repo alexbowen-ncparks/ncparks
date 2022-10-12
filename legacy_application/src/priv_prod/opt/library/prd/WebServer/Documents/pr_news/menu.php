@@ -63,8 +63,8 @@ echo "<td>View All <a href='display_item.php'> entries</a></td>
 //<td><font size='-2'>RSS <a href='feed://portal.ncdenr.org/group/opa/newsclips-rss'>feed</a></font></td>";
 
 if($level>3){echo "<td>Add an <a href='add_item.php'>item</a></td>";}
-else{echo "<td><a href='https://10.35.152.9/login_form.php?db=pr_news'>login</a></td>";}
-else{echo "<td><a href='https://10.35.152.9/login_form.php?db=pr_news'>login</a></td>";}
+else{echo "<td><a href='/login_form.php?db=pr_news'>login</a></td>";}
+else{echo "<td><a href='/login_form.php?db=pr_news'>login</a></td>";}
 echo "</tr></table></div>";
 
 

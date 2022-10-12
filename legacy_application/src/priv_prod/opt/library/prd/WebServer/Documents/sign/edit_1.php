@@ -184,8 +184,8 @@ $cat=$ARRAY[0]['category'];
 echo "<h2>Sign Request for <font color='blue'>Park Entrance Sign</font> for $park</h2> $change from $cat to something else.";
 
 echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<form method='POST' action='https://10.35.152.9/sign/print_report_single.php'>
-<form method='POST' action='https://10.35.152.9/sign/print_report_single.php'>
+<form method='POST' action='/sign/print_report_single.php'>
+<form method='POST' action='/sign/print_report_single.php'>
 		<input type='hidden' name='pass_category' value='1'>
 		<input type='hidden' name='id' value='$edit'>
 		<input type='submit' name='submit' value='Print'></form>";
@@ -284,8 +284,8 @@ $skip_1=array("id","SR","category","justification","register", "district", "resp
 				
 				if($fld=="PASU_approv")
 					{
-					$body="Link to sign request $pass_dpr: https://10.35.152.9/sign/edit_1.php?edit=$id&submit=edit You will need to login to the Sign Database if requested.";
-					$body="Link to sign request $pass_dpr: https://10.35.152.9/sign/edit_1.php?edit=$id&submit=edit You will need to login to the Sign Database if requested.";
+					$body="Link to sign request $pass_dpr: /sign/edit_1.php?edit=$id&submit=edit You will need to login to the Sign Database if requested.";
+					$body="Link to sign request $pass_dpr: /sign/edit_1.php?edit=$id&submit=edit You will need to login to the Sign Database if requested.";
 					$explain="I'm indicating that I have the  approval of the Park Superintendent. <font color='green'>Email from PASU to DISU</font> <a href='mailto:$disu_email?subject=Sign Request&body=$body'>email</a>";
 					}
 					
@@ -438,8 +438,8 @@ $pass_dist=$row['region'];
 					$fld_id="datepicker".$i;
 					
 					$subject="$pass_dist $pass_location Request for Sign Authorization $pass_dpr";
-					$body="Link to sign request $pass_dpr: https://10.35.152.9/sign/edit_1.php?edit=$id&submit=edit You will need to login to the Sign Database if requested.";
-					$body="Link to sign request $pass_dpr: https://10.35.152.9/sign/edit_1.php?edit=$id&submit=edit You will need to login to the Sign Database if requested.";
+					$body="Link to sign request $pass_dpr: /sign/edit_1.php?edit=$id&submit=edit You will need to login to the Sign Database if requested.";
+					$body="Link to sign request $pass_dpr: /sign/edit_1.php?edit=$id&submit=edit You will need to login to the Sign Database if requested.";
 					$mailto="";
 					$rename_from=explode("_",$fld);
 					$from=$rename_from[1];
@@ -506,8 +506,8 @@ $pass_dist=$row['region'];
 	$message";
 	echo "</table></td></tr></form>";
 	
-	$page="https://10.35.152.9/sign/print_report_single.php";
-	$page="https://10.35.152.9/sign/print_report_single.php";
+	$page="/sign/print_report_single.php";
+	$page="/sign/print_report_single.php";
 		
 		echo "<tr bgcolor='white'><td align='center'><form method='POST' action='$page'>
 		<input type='hidden' name='pass_category' value='1'>

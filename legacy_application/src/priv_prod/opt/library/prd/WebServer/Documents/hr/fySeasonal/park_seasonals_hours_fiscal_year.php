@@ -4,7 +4,7 @@ session_start();
 $level=$_SESSION['hr']['level'];
 $fiscal_year=$_SESSION['hr']['fiscal_year'];
 
-if($level<1){echo "You do not have access to this database. <a href='https://auth.dpr.ncparks.gov/hr/'>login</a>";exit;}
+if($level<1){echo "You do not have access to this database. <a href='/hr/'>login</a>";exit;}
 
 if(empty($fiscal_year)){echo "No Fiscal Year specified.";exit;}
 

@@ -458,8 +458,8 @@ foreach($ARRAY as $num=>$row)
 			
 			if(!isset($forward)){$forward="";}
 			if(!isset($edit)){$edit="";}
-				$body="If you are presently logged into the Secondary Employment Approval database then you can go directly to this link to view the request:%0dhttps://10.35.152.9/second_employ/edit.php?edit=$edit%26submit=edit%0d%0dIf not, then go to this link to log in:%0dhttps://10.35.152.9/second_employ/index.html%0d%0dContact Tom Howard if you are unable to access the database.";
-				$body="If you are presently logged into the Secondary Employment Approval database then you can go directly to this link to view the request:%0dhttps://10.35.152.9/second_employ/edit.php?edit=$edit%26submit=edit%0d%0dIf not, then go to this link to log in:%0dhttps://10.35.152.9/second_employ/index.html%0d%0dContact Tom Howard if you are unable to access the database.";
+				$body="If you are presently logged into the Secondary Employment Approval database then you can go directly to this link to view the request:%0d/second_employ/edit.php?edit=$edit%26submit=edit%0d%0dIf not, then go to this link to log in:%0d/second_employ/index.html%0d%0dContact Tom Howard if you are unable to access the database.";
+				$body="If you are presently logged into the Secondary Employment Approval database then you can go directly to this link to view the request:%0d/second_employ/edit.php?edit=$edit%26submit=edit%0d%0dIf not, then go to this link to log in:%0d/second_employ/index.html%0d%0dContact Tom Howard if you are unable to access the database.";
 			$email_to="&nbsp;&nbsp;&nbsp;<font color='green'>Email for $forward: </font><a href='mailto:$to_address?subject=$subject&body=$body'>email</a>";
 			if($fld=="DISU_approval")
 				{
@@ -488,8 +488,8 @@ foreach($ARRAY as $num=>$row)
 				$subject="Secondary Employment Request for $fn";
 				$to_address=$ARRAY[$num]['email'];
 				$cc=@$super_email;
-				$body="Your request is $status.%0d%0dIf you are presently logged into the Secondary Employment Approval database then you can go directly to this link to view the request:%0dhttps://10.35.152.9/second_employ/edit.php?edit=$edit%26submit=edit%0d%0dIf not, then go to this link to log in:%0dhttps://10.35.152.9/second_employ/index.html%0d%0dContact Tom Howard if you are unable to access the database.";
-				$body="Your request is $status.%0d%0dIf you are presently logged into the Secondary Employment Approval database then you can go directly to this link to view the request:%0dhttps://10.35.152.9/second_employ/edit.php?edit=$edit%26submit=edit%0d%0dIf not, then go to this link to log in:%0dhttps://10.35.152.9/second_employ/index.html%0d%0dContact Tom Howard if you are unable to access the database.";
+				$body="Your request is $status.%0d%0dIf you are presently logged into the Secondary Employment Approval database then you can go directly to this link to view the request:%0d/second_employ/edit.php?edit=$edit%26submit=edit%0d%0dIf not, then go to this link to log in:%0d/second_employ/index.html%0d%0dContact Tom Howard if you are unable to access the database.";
+				$body="Your request is $status.%0d%0dIf you are presently logged into the Secondary Employment Approval database then you can go directly to this link to view the request:%0d/second_employ/edit.php?edit=$edit%26submit=edit%0d%0dIf not, then go to this link to log in:%0d/second_employ/index.html%0d%0dContact Tom Howard if you are unable to access the database.";
 				$email_to=" <a href=\"mailto:$to_address?cc=$cc&subject=$subject&body=$body\">email</a>";
 				}
 				

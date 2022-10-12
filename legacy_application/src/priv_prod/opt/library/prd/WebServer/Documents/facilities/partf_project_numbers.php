@@ -98,8 +98,8 @@ if(!empty($statusPer))
 			
 			if($k1=="project_number")
 				{
-				$v1="<a href='https://10.35.152.9/budget/partf.php?new=1&projNum=$v1&Submit=Find' target='_blank'>$v1</a>";
-				$v1="<a href='https://10.35.152.9/budget/partf.php?new=1&projNum=$v1&Submit=Find' target='_blank'>$v1</a>";
+				$v1="<a href='/budget/partf.php?new=1&projNum=$v1&Submit=Find' target='_blank'>$v1</a>";
+				$v1="<a href='/budget/partf.php?new=1&projNum=$v1&Submit=Find' target='_blank'>$v1</a>";
 				}
 			
 			if($k1=="spo_number")

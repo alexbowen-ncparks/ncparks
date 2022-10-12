@@ -2,8 +2,8 @@
 //echo "<pre>"; print_r($_SERVER); echo "</pre>"; // exit;
 	$database="fire";
 	$check_cookie=strpos(@$_SERVER['HTTP_COOKIE'],"PHPSESSID=");
-if($_SERVER['HTTP_ORIGIN']=="https://10.35.152.9" or $_SERVER['HTTP_REFERER']=="http://www.dpr.ncparks.gov/$database/index.html" or $check_cookie>-1)
-if($_SERVER['HTTP_ORIGIN']=="https://10.35.152.9" or $_SERVER['HTTP_REFERER']=="http://www.dpr.ncparks.gov/$database/index.html" or $check_cookie>-1)
+if($_SERVER['HTTP_ORIGIN']=="" or $_SERVER['HTTP_REFERER']=="http://www.dpr.ncparks.gov/$database/index.html" or $check_cookie>-1)
+if($_SERVER['HTTP_ORIGIN']=="" or $_SERVER['HTTP_REFERER']=="http://www.dpr.ncparks.gov/$database/index.html" or $check_cookie>-1)
 	{
 	include("../../include/iConnect.inc");
 	mysqli_select_db($connection,'divper');

@@ -15,8 +15,8 @@ $path="/$database/";
 echo "
 <table bgcolor='#ABC578' cellpadding='3'>";
 $home=$path."home.php";
-$div_app_list = "https://10.35.152.9/databases.php";
-$div_app_list = "https://10.35.152.9/databases.php";
+$div_app_list = "/databases.php";
+$div_app_list = "/databases.php";
 //$search_form=$path."search_form.php";
 echo "<tr>
 		<td>

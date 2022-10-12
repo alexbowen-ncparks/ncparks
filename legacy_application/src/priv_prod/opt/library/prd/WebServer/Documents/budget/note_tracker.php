@@ -5,8 +5,8 @@ session_start();
 //echo "<pre>";print_r($_SESSION);"</pre>";exit;
 
 if(!$_SESSION["budget"]["tempID"]){
-header("location: https://10.35.152.9/login_form.php?db=budget");
-header("location: https://10.35.152.9/login_form.php?db=budget");
+header("location: /login_form.php?db=budget");
+header("location: /login_form.php?db=budget");
 }
 //echo "hello world";exit;
 if($concession_location== 'ADM'){$concession_location="admi";}

@@ -623,7 +623,7 @@ $pass_header="";
 // 							}
 // 							
 // 					$to=rtrim($to,",");
-// 					$body="body=We are requesting approval of $num0 seasonal positions at a cost of $$totAmount.%0A%0AIf you are already logged into the HR database, clicking this link will take you to the listing of requested positions:%0Ahttps://auth.dpr.ncparks.gov/hr/fySeasonal/park_seasonals_fiscal_year.php?center_code=$center_code";
+// 					$body="body=We are requesting approval of $num0 seasonal positions at a cost of $$totAmount.%0A%0AIf you are already logged into the HR database, clicking this link will take you to the listing of requested positions:%0A/hr/fySeasonal/park_seasonals_fiscal_year.php?center_code=$center_code";
 // 					
 // 					$body=htmlentities($body);
 // 					if($level==1){$subject="from $center_code [$new_request_date] for DISU Review";

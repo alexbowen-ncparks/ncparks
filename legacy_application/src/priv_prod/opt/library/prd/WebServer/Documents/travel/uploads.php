@@ -126,8 +126,8 @@ if(@$row['other_file_2']!="")
 	if(!isset($to)){$to="";}
 	if(!isset($cc)){$cc="";}
 	if(!isset($pur)){$pur="";}
-	$link="  https://10.35.152.9/travel/edit.php?edit=$edit&submit=edit'";
-	$link="  https://10.35.152.9/travel/edit.php?edit=$edit&submit=edit'";
+	$link="  /travel/edit.php?edit=$edit&submit=edit'";
+	$link="  /travel/edit.php?edit=$edit&submit=edit'";
 	$item.="<br /><font color='red'>Park will email the District: <a href='mailto:$to?subject=$subject&body=$pur$cc$link'>email</a><br />All other section staff will email tammy.dodd@ncparks.gov: </font><a href='mailto:tammy.dodd@ncparks.gov?subject=$subject&body=$pur$link'>email</a>
 		<br />";
 // 	}

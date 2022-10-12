@@ -108,14 +108,14 @@ foreach($ARRAY_forms AS $index=>$array)
 		
 		if($fld=="link")
 			{
-			$value="https://10.35.152.9/find/".$value;
-			$value="https://10.35.152.9/find/".$value;
+			$value="/find/".$value;
+			$value="/find/".$value;
 			$display="<td><a href='$value' target='_blank'>$link_name</a></td>";
 			}
 		if($fld=="link" and $array['form_name']=="Safety Policy")
 			{
-			$value="https://10.35.152.9/find/".$value;
-			$value="https://10.35.152.9/find/".$value;
+			$value="/find/".$value;
+			$value="/find/".$value;
 			$display="<td><a href='$value' target='_blank'>$link_name</a></td>";
 			}
 		echo "$display";

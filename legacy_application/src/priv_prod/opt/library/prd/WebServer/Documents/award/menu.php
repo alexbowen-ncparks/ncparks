@@ -319,9 +319,9 @@ $menu_array['Submit an Award Nomination']=$path."add_request.php";
 
 $menu_array['Awards Given']=$path."given.php";
 
-$menu_array['Award Forms/Guidelines/Appendix']="https://auth.dpr.ncparks.gov/find/forum.php?forumID=396&submit=Go";
+$menu_array['Award Forms/Guidelines/Appendix']="/find/forum.php?forumID=396&submit=Go";
 
-$menu_array['Instructions']="https://auth.dpr.ncparks.gov/find/forum.php?forumID=396&submit=Go";
+$menu_array['Instructions']="/find/forum.php?forumID=396&submit=Go";
 
 
 if($level>3)

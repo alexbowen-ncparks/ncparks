@@ -75,8 +75,8 @@ $text="NC State Parks System";
 	//	pdf_show_xy ($pdf,$text,250,$y);
 		pdf_show_xy ($pdf,$text,50,$y);
 $file=$_SERVER['PHP_SELF'];
-$text="https://10.35.152.9".$file;
-$text="https://10.35.152.9".$file;
+$text="".$file;
+$text="".$file;
 		pdf_show_xy ($pdf,$text,510,$y);
 
 //exit;

@@ -4,7 +4,7 @@
 
 session_start();
 if(!$_SESSION["budget"]["tempID"]){echo "access denied";exit;
-//header("location: https://auth.dpr.ncparks.gov/login_form.php?db=budget");
+//header("location: /login_form.php?db=budget");
 }
 $active_file=$_SERVER['SCRIPT_NAME'];
 

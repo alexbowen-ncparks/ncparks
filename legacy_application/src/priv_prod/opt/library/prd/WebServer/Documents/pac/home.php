@@ -16,8 +16,8 @@ echo "<table align='center' cellpadding='10'><tr><td colspan='2'><h2>Park Adviso
 
 $path="/pac/";
 
-$menu_array['Guidelines/Instructions']="https://10.35.152.9/find/forum.php?forumID=450&submit=Go";
-$menu_array['Guidelines/Instructions']="https://10.35.152.9/find/forum.php?forumID=450&submit=Go";
+$menu_array['Guidelines/Instructions']="/find/forum.php?forumID=450&submit=Go";
+$menu_array['Guidelines/Instructions']="/find/forum.php?forumID=450&submit=Go";
 $menu_array['Current PAC members']=$path."current_pac.php";
 
 $menu_array['All PAC Nominations']=$path."all_nomin.php";

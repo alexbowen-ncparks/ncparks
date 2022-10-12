@@ -45,8 +45,8 @@ while($row=mysqli_fetch_assoc($result))
 if(empty($ARRAY) and empty($id))
 	{
 	echo "There is presently no Project entered for $park_code. Would you like to create one?"; 
-	echo "<br /><br /><a href='https://10.35.152.9/fire/contracts_form.php?park_code=$park_code'>Yes</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href='https://10.35.152.9/fire/menu.php'>No</a>";
-	echo "<br /><br /><a href='https://10.35.152.9/fire/contracts_form.php?park_code=$park_code'>Yes</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href='https://10.35.152.9/fire/menu.php'>No</a>";
+	echo "<br /><br /><a href='/fire/contracts_form.php?park_code=$park_code'>Yes</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href='/fire/menu.php'>No</a>";
+	echo "<br /><br /><a href='/fire/contracts_form.php?park_code=$park_code'>Yes</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href='/fire/menu.php'>No</a>";
 	exit;
 	}
 

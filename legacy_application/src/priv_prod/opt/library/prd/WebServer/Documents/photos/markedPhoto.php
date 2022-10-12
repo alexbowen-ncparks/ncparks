@@ -43,7 +43,7 @@ while ($row = mysql_fetch_array($total_result))
 	 extract($row);
 	$la=explode("/",$link);
 //	print_r($la);exit;
-$domain="https://auth.dpr.ncparks.gov/photos";
+$domain="/photos";
 	foreach($la as $v=>$k)
 		{
 		if(strpos($k,".jpg")>0){$k="ztn.".$k;}

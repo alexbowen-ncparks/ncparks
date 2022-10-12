@@ -51,8 +51,8 @@ if(!empty($ARRAY))
 			{
 			if($fld=="file_link")
 				{
-				$loc="https://10.35.152.9/hr194/".$value;
-				$loc="https://10.35.152.9/hr194/".$value;
+				$loc="/hr194/".$value;
+				$loc="/hr194/".$value;
 				$value="<a href='$loc'>View</a>";
 				}
 		

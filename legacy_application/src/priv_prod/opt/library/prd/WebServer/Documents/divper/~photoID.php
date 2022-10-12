@@ -128,8 +128,8 @@ if(@$init_c)
 	}
 else
 	{
-	$page="https://10.35.152.9/IDcard/printPhotoID.php";
-	$page="https://10.35.152.9/IDcard/printPhotoID.php";
+	$page="/IDcard/printPhotoID.php";
+	$page="/IDcard/printPhotoID.php";
 	}
 
 echo "<form name='frm' method='POST' action='$page'>";
@@ -173,13 +173,13 @@ foreach($ARRAY as $k=>$v)
 		if(array_key_exists($tempID,$SIG_ARRAY))
 			{
 			@$link=$SIG_ARRAY[$tempID];
-			$v2="[ <a href='https://10.35.152.9/divper/$link' target='_blank'>VIEW</a> ] [<a href='https://10.35.152.9/divper/~photoID.php?init_c=$init_c&del_sig=y&tempID=$tempID'>Delete</a>]";
-			$v2="[ <a href='https://10.35.152.9/divper/$link' target='_blank'>VIEW</a> ] [<a href='https://10.35.152.9/divper/~photoID.php?init_c=$init_c&del_sig=y&tempID=$tempID'>Delete</a>]";
+			$v2="[ <a href='/divper/$link' target='_blank'>VIEW</a> ] [<a href='/divper/~photoID.php?init_c=$init_c&del_sig=y&tempID=$tempID'>Delete</a>]";
+			$v2="[ <a href='/divper/$link' target='_blank'>VIEW</a> ] [<a href='/divper/~photoID.php?init_c=$init_c&del_sig=y&tempID=$tempID'>Delete</a>]";
 			}
 		else
 			{
-			$v2="[ <a href='https://10.35.152.9/divper/addSig.php?tempID=$tempID&fullName=$fullName' target='_blank'>add</a> ]";
-			$v2="[ <a href='https://10.35.152.9/divper/addSig.php?tempID=$tempID&fullName=$fullName' target='_blank'>add</a> ]";
+			$v2="[ <a href='/divper/addSig.php?tempID=$tempID&fullName=$fullName' target='_blank'>add</a> ]";
+			$v2="[ <a href='/divper/addSig.php?tempID=$tempID&fullName=$fullName' target='_blank'>add</a> ]";
 			}
 		
 		echo "<td align='center'>$v2</td>";

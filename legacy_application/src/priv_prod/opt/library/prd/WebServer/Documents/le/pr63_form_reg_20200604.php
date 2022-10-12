@@ -119,8 +119,8 @@ session_start();
 @$level=$_SESSION['le']['level'];
 if($level<1)
 	{
-	echo "To view a PR-63 you must be logged into the PR-63 / DCI / CITE database - <a href='https://10.35.152.9/le/index.html'>login</a>.";
-	echo "To view a PR-63 you must be logged into the PR-63 / DCI / CITE database - <a href='https://10.35.152.9/le/index.html'>login</a>.";
+	echo "To view a PR-63 you must be logged into the PR-63 / DCI / CITE database - <a href='/le/index.html'>login</a>.";
+	echo "To view a PR-63 you must be logged into the PR-63 / DCI / CITE database - <a href='/le/index.html'>login</a>.";
 	exit;
 	}
 $tempID=$_SESSION['le']['tempID'];

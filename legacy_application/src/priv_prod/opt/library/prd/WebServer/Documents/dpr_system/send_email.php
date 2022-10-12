@@ -30,8 +30,8 @@ if(!empty($insert_id)) // comes from line 31 of time_track_action.php for Add or
 // $to      = 'tom.howard@ncparks.gov';
 	$subject = "Ticket # $ticket_id $location_code $date_create $activity";
 
-	$email_message = "$client $database_app $activity: https://10.35.152.9/dpr_system/track_time.php?pass_ticket_id=$ticket_id";
-	$email_message = "$client $database_app $activity: https://10.35.152.9/dpr_system/track_time.php?pass_ticket_id=$ticket_id";
+	$email_message = "$client $database_app $activity: /dpr_system/track_time.php?pass_ticket_id=$ticket_id";
+	$email_message = "$client $database_app $activity: /dpr_system/track_time.php?pass_ticket_id=$ticket_id";
 	$email_message .= "\n"."\n$notes";
 	
 	$headers = 'From: database.support@ncparks.gov'. "\r\n" .

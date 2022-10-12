@@ -165,7 +165,7 @@ if(@$no_date=="")
 $text="NC State Parks System - Daily Visitation by month";
 	//	pdf_show_xy ($pdf,$text,250,$y);
 		pdf_show_xy ($pdf,$text,50,$y);
-// $text="https://auth.dpr.ncparks.gov/attend/d/other_graphs.php";
+// $text="/attend/d/other_graphs.php";
 // 		pdf_show_xy ($pdf,$text,530,$y);
 
 

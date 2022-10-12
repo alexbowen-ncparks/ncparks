@@ -7,8 +7,8 @@ if(empty($_SESSION))
 	}
 	
 if($_SESSION['system_plan']['level']<1)
-	{echo "You must first login to the Division Personnel/Park Info <a href='https://10.35.152.9/divper/'>database</a>.<br /><br />Select the Land Acreage option under the \"Contact Info\" pull-down.";}
-	{echo "You must first login to the Division Personnel/Park Info <a href='https://10.35.152.9/divper/'>database</a>.<br /><br />Select the Land Acreage option under the \"Contact Info\" pull-down.";}
+	{echo "You must first login to the Division Personnel/Park Info <a href='/divper/'>database</a>.<br /><br />Select the Land Acreage option under the \"Contact Info\" pull-down.";}
+	{echo "You must first login to the Division Personnel/Park Info <a href='/divper/'>database</a>.<br /><br />Select the Land Acreage option under the \"Contact Info\" pull-down.";}
 
 $database="dpr_system";
 include("../../include/iConnect.inc"); // database connection parameters

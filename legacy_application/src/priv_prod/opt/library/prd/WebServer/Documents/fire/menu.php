@@ -49,8 +49,8 @@ if($calling_file=="/fire/contracts_form.php"){$calling_file=="/fire/contracts.ph
 $file_array=array("/fire/contracts.php","/fire/units.php","/fire/burn_history.php","/fire/fireline_prep.php","/fire/search.php","/fire/contracts.php","/fire/contracts_form.php");
 
 echo "<table>
-<tr><td align='center' colspan='2'><font color='gray' size='+1'>Welcome to the NC State Parks System <font color='red'>Fire Management</font> Database - <a href='https://10.35.152.9/efile/file_uploads/2020/2333_Fire-Management-Guidelines-7-10-2020.pdf' target='_blank'>FM Guidelines</a></td></font></tr>
-<tr><td align='center' colspan='2'><font color='gray' size='+1'>Welcome to the NC State Parks System <font color='red'>Fire Management</font> Database - <a href='https://10.35.152.9/efile/file_uploads/2020/2333_Fire-Management-Guidelines-7-10-2020.pdf' target='_blank'>FM Guidelines</a></td></font></tr>
+<tr><td align='center' colspan='2'><font color='gray' size='+1'>Welcome to the NC State Parks System <font color='red'>Fire Management</font> Database - <a href='/efile/file_uploads/2020/2333_Fire-Management-Guidelines-7-10-2020.pdf' target='_blank'>FM Guidelines</a></td></font></tr>
+<tr><td align='center' colspan='2'><font color='gray' size='+1'>Welcome to the NC State Parks System <font color='red'>Fire Management</font> Database - <a href='/efile/file_uploads/2020/2333_Fire-Management-Guidelines-7-10-2020.pdf' target='_blank'>FM Guidelines</a></td></font></tr>
 
 <tr><td><form><select name='file' onChange=\"MM_jumpMenu('parent',this,0)\"><option selected=''>Select a Function:</option>";
 foreach($menu_array as $item=>$file)

@@ -371,8 +371,8 @@ if(@$arrayTempID)
 		if($dateMod==""){$dateMod="<td></td><td></td>";}
 		
 		if(!isset($myWin)){$myWin="";}
-		echo "<tr><td>$dbm$arrayName[$i] $oh</td><td align='center'$tdSize>$a$b$c$d$e$f$g</td>$dateMod<td align='center'><a href=\"https://10.35.152.9/divper/contactInfo.php?posNum=$arrayPosNum[$i]&emid=$arrayEmid[$i]&beacon_num=$arrayBeaconNum[$i]\" onclick=\"window.open('https://10.35.152.9/divper/contactInfo.php?posNum=$arrayPosNum[$i]&emid=$arrayEmid[$i]&beacon_num=$arrayBeaconNum[$i]', '$myWin', 
-		echo "<tr><td>$dbm$arrayName[$i] $oh</td><td align='center'$tdSize>$a$b$c$d$e$f$g</td>$dateMod<td align='center'><a href=\"https://10.35.152.9/divper/contactInfo.php?posNum=$arrayPosNum[$i]&emid=$arrayEmid[$i]&beacon_num=$arrayBeaconNum[$i]\" onclick=\"window.open('https://10.35.152.9/divper/contactInfo.php?posNum=$arrayPosNum[$i]&emid=$arrayEmid[$i]&beacon_num=$arrayBeaconNum[$i]', '$myWin', 
+		echo "<tr><td>$dbm$arrayName[$i] $oh</td><td align='center'$tdSize>$a$b$c$d$e$f$g</td>$dateMod<td align='center'><a href=\"/divper/contactInfo.php?posNum=$arrayPosNum[$i]&emid=$arrayEmid[$i]&beacon_num=$arrayBeaconNum[$i]\" onclick=\"window.open('/divper/contactInfo.php?posNum=$arrayPosNum[$i]&emid=$arrayEmid[$i]&beacon_num=$arrayBeaconNum[$i]', '$myWin', 
+		echo "<tr><td>$dbm$arrayName[$i] $oh</td><td align='center'$tdSize>$a$b$c$d$e$f$g</td>$dateMod<td align='center'><a href=\"/divper/contactInfo.php?posNum=$arrayPosNum[$i]&emid=$arrayEmid[$i]&beacon_num=$arrayBeaconNum[$i]\" onclick=\"window.open('/divper/contactInfo.php?posNum=$arrayPosNum[$i]&emid=$arrayEmid[$i]&beacon_num=$arrayBeaconNum[$i]', '$myWin', 
 		 'status, scrollbars=yes, resizable=yes, width=640, height=780, screenX=100,screenY=75,left=100,top=75');
 		  return false\">Info</a></td></tr>";
 		

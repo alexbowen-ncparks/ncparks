@@ -2,7 +2,7 @@
 /*
 session_start();
 if(!$_SESSION["budget"]["tempID"]){
-header("location: https://auth.dpr.ncparks.gov/login_form.php?db=budget");
+header("location: /login_form.php?db=budget");
 }
 */
 session_start();

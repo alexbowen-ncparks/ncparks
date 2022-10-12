@@ -482,8 +482,8 @@ if($ARRAY==""){$sql = "SHOW COLUMNS FROM sign_list_1";// echo "$sql";
 					$fld_id="datepicker".$i;
 					
 					$subject="$pass_dist $pass_location Request for Sign Authorization $pass_dpr";
-					$body="Link to sign request $pass_dpr: https://10.35.152.9/sign/edit.php?edit=$edit&submit=edit You will need to login to the Sign Database if requested.";
-					$body="Link to sign request $pass_dpr: https://10.35.152.9/sign/edit.php?edit=$edit&submit=edit You will need to login to the Sign Database if requested.";
+					$body="Link to sign request $pass_dpr: /sign/edit.php?edit=$edit&submit=edit You will need to login to the Sign Database if requested.";
+					$body="Link to sign request $pass_dpr: /sign/edit.php?edit=$edit&submit=edit You will need to login to the Sign Database if requested.";
 					$mailto="";
 					if($fld=="staff_notify"){$mailto=$email;}
 					$email_to="&nbsp;&nbsp;&nbsp;<font color='green'>Email from $fld: </font><a href=\"mailto:$mailto?subject=$subject&body=$body\">email</a>";

@@ -190,8 +190,8 @@ if (is_writable($filename)) {
    fclose($handle);
    }
 
-$goto="https://10.35.152.9/facilities/google_earth/$googleFile";
-$goto="https://10.35.152.9/facilities/google_earth/$googleFile";
+$goto="/facilities/google_earth/$googleFile";
+$goto="/facilities/google_earth/$googleFile";
 
 header("Location: $goto");
 

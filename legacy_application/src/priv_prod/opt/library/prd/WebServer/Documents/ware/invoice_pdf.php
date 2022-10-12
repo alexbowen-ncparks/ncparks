@@ -438,7 +438,7 @@ echo "Invoice successfully created.<br /><br />Click here to view/print invoice:
 echo "<br /><br />Send an email to park notifying them their order has been processed.<br /><br />";
 $email=$park_email;
 $subject="Subject=Warehouse Order $invoice_number for $park_code";
-$body="Body=The warehouse has processed the order submitted on $park_ordered_on. You can download the invoice at this link: https://10.35.152.9/ware/$link.";
-$body="Body=The warehouse has processed the order submitted on $park_ordered_on. You can download the invoice at this link: https://10.35.152.9/ware/$link.";
+$body="Body=The warehouse has processed the order submitted on $park_ordered_on. You can download the invoice at this link: /ware/$link.";
+$body="Body=The warehouse has processed the order submitted on $park_ordered_on. You can download the invoice at this link: /ware/$link.";
 echo "Email $park_code: <a href='mailto:$email?$subject&$body'>$email</a>";
 ?>

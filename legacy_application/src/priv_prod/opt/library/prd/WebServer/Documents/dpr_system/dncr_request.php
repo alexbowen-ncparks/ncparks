@@ -283,8 +283,8 @@ echo "</font><br />";
 
 if($level>4)
 	{
-	if (!$pr) { echo "<a href='https://10.35.152.9/photos/search.php?parkC=$park_code&cat=Scenic&source=photos' target='_blank'>The ID</a>\n"; }
-	if (!$pr) { echo "<a href='https://10.35.152.9/photos/search.php?parkC=$park_code&cat=Scenic&source=photos' target='_blank'>The ID</a>\n"; }
+	if (!$pr) { echo "<a href='/photos/search.php?parkC=$park_code&cat=Scenic&source=photos' target='_blank'>The ID</a>\n"; }
+	if (!$pr) { echo "<a href='/photos/search.php?parkC=$park_code&cat=Scenic&source=photos' target='_blank'>The ID</a>\n"; }
 	}
 
 

@@ -31,28 +31,28 @@ while($row=mysqli_fetch_assoc($result)){extract($row);}
 echo "<html><body><table border='1' cellpadding='2'>";
 
 echo "<tr><td>Photo: $photo</td>
-<td><img src='https://10.35.152.9/photos/$photo' width='340'></td></tr>";
-<td><img src='https://10.35.152.9/photos/$photo' width='340'></td></tr>";
+<td><img src='/photos/$photo' width='340'></td></tr>";
+<td><img src='/photos/$photo' width='340'></td></tr>";
 
 if(@$sig)
 	{
 		$ext=explode(".",$sig);
 		if($ext[1]=="tif"){
-	$SIG="<a href='https://10.35.152.9/photos/sips_format.php?sig=$sig'>$sig</a>";}
-	$SIG="<a href='https://10.35.152.9/photos/sips_format.php?sig=$sig'>$sig</a>";}
+	$SIG="<a href='/photos/sips_format.php?sig=$sig'>$sig</a>";}
+	$SIG="<a href='/photos/sips_format.php?sig=$sig'>$sig</a>";}
 		else{$SIG=$sig;}
 	
 	echo "<tr><td>Signature: $SIG</td>";
-	if(file_exists("https://10.35.152.9/photos/$sig"))
-	if(file_exists("https://10.35.152.9/photos/$sig"))
+	if(file_exists("/photos/$sig"))
+	if(file_exists("/photos/$sig"))
 		{
-		echo "<td><img src='https://10.35.152.9/photos/$sig' width='340'></td></tr>";
-		echo "<td><img src='https://10.35.152.9/photos/$sig' width='340'></td></tr>";
+		echo "<td><img src='/photos/$sig' width='340'></td></tr>";
+		echo "<td><img src='/photos/$sig' width='340'></td></tr>";
 		}
 		else
 		{
-		echo "<td><img src='https://10.35.152.9/divper/$sig' width='340'></td></tr>";
-		echo "<td><img src='https://10.35.152.9/divper/$sig' width='340'></td></tr>";
+		echo "<td><img src='/divper/$sig' width='340'></td></tr>";
+		echo "<td><img src='/divper/$sig' width='340'></td></tr>";
 		}
 		
 	

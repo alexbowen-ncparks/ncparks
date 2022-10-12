@@ -34,7 +34,7 @@ function itemShow($row,$numrow)
 		for($l=0;$l<count($file);$l++)
 			{
 			$trimFile=trim($file[$l]);
-			@$linkFile.="<a href=\"https://auth.dpr.ncparks.gov/div_cor/".$trimFile."\" target='_blank'>$trimFile</a><br /><br />";
+			@$linkFile.="<a href=\"/div_cor/".$trimFile."\" target='_blank'>$trimFile</a><br /><br />";
 			}
 		}
 	
@@ -44,7 +44,7 @@ function itemShow($row,$numrow)
 		for($l=0;$l<count($file);$l++)
 			{
 			$trimFile=trim($file[$l]);
-			@$linkFile.="Related correspondence entry: <a href='https://auth.dpr.ncparks.gov/div_cor/search.php?submit=Search&id=$trimFile' target='_blank'>$trimFile</a><br /><br />";
+			@$linkFile.="Related correspondence entry: <a href='/div_cor/search.php?submit=Search&id=$trimFile' target='_blank'>$trimFile</a><br /><br />";
 			}
 		}
 	

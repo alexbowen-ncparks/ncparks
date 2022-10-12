@@ -15,8 +15,8 @@ IF(@$submit=="Update")
 		//	echo "$sql"; exit;
 			 $result = MYSQL_QUERY($sql,$connection);
 	
-	header("Location: https://10.35.152.9/phone_bill/add_alt_phone.php?park=$park");
-	header("Location: https://10.35.152.9/phone_bill/add_alt_phone.php?park=$park");
+	header("Location: /phone_bill/add_alt_phone.php?park=$park");
+	header("Location: /phone_bill/add_alt_phone.php?park=$park");
 	exit;
 	}
 

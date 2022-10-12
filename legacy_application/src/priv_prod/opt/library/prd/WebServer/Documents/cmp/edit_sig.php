@@ -207,7 +207,7 @@ if($level>0 OR in_array($park_code,$park_code_array) OR $park_code==$_SESSION['c
 		{$fld_active_date="Active Date:<input type='text' name='active_date' value=\"$active_date\">";}
 		else
 		{$fld_active_date="Active Date: ".$active_date;}
-	$page="https://auth.dpr.ncparks.gov/cmp/sig_form.php";
+	$page="/cmp/sig_form.php";
 	echo "</tr><tr><td colspan='4' align='right'><form method='POST' action='$page'>
 	$fld_active_date
 	<input type='hidden' name='park_code' value='$park_code'>

@@ -109,7 +109,7 @@ if (@$submit == "Add Signature")
 	if(@$file_source=="retired_id")
 		{
 		echo "Sig has been added.<br />";
-		echo "Return to <a href='https://auth.dpr.ncparks.gov/divper/~photoID_retired.php'>link</a>";
+		echo "Return to <a href='/divper/~photoID_retired.php'>link</a>";
 		exit;
 		}
 	echo "Sig has been added.";

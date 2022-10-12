@@ -600,7 +600,7 @@ if(@$submit=="Submit" and $parkS!="")
 					{
 					if($level>4 and $fld=="listid")
 						{
-						$value="<a href='https://10.35.152.9/divper/nondpr_users.php?edit=$value&submit=Submit'>$value</a>";
+						$value="<a href='/divper/nondpr_users.php?edit=$value&submit=Submit'>$value</a>";
 						}
 					echo "<td>$value</td>";
 					}

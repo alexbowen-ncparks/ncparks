@@ -366,8 +366,8 @@ if($level>2)
 							
 						if(!isset($forward)){$forward="";}
 						if(!isset($edit)){$edit="";}
-						$email_to="&nbsp;&nbsp;&nbsp;<font color='green'>Email for $forward: </font><a href='mailto:$to_address?subject=$subject&body=https://10.35.152.9/travel/edit.php?edit=$edit&submit=edit'>email</a>";
-						$email_to="&nbsp;&nbsp;&nbsp;<font color='green'>Email for $forward: </font><a href='mailto:$to_address?subject=$subject&body=https://10.35.152.9/travel/edit.php?edit=$edit&submit=edit'>email</a>";
+						$email_to="&nbsp;&nbsp;&nbsp;<font color='green'>Email for $forward: </font><a href='mailto:$to_address?subject=$subject&body=/travel/edit.php?edit=$edit&submit=edit'>email</a>";
+						$email_to="&nbsp;&nbsp;&nbsp;<font color='green'>Email for $forward: </font><a href='mailto:$to_address?subject=$subject&body=/travel/edit.php?edit=$edit&submit=edit'>email</a>";
 						if($fld=="date_from"||$fld=="date_to"||$fld=="approv_DIR")
 							{
 							$email_to="";

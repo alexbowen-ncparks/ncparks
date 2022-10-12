@@ -86,8 +86,8 @@ $today=date("Y-m-d");
 echo "<table align='center'><tr>
 <td colspan='$numFields' align='center'><h2><font color='purple'>Seasonal Separation Tracking</font></h2><br /><b>Today is <font color='green'>$today</font></b></td>
 </tr>
-<tr><td colspan='$numFields' align='center'>Return to Seasonal Employee <a href='https://10.35.152.9/hr/start.php'>Home</a> Page</td></tr>";
-<tr><td colspan='$numFields' align='center'>Return to Seasonal Employee <a href='https://10.35.152.9/hr/start.php'>Home</a> Page</td></tr>";
+<tr><td colspan='$numFields' align='center'>Return to Seasonal Employee <a href='/hr/start.php'>Home</a> Page</td></tr>";
+<tr><td colspan='$numFields' align='center'>Return to Seasonal Employee <a href='/hr/start.php'>Home</a> Page</td></tr>";
 
 
 		$skip=array("id","track","sort");

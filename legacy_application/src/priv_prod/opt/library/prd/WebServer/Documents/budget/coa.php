@@ -3,8 +3,8 @@
 session_start();
 
 if(!$_SESSION["budget"]["tempID"]){echo "access denied";exit;
-//header("location: https://10.35.152.9/login_form.php?db=budget");
-//header("location: https://10.35.152.9/login_form.php?db=budget");
+//header("location: /login_form.php?db=budget");
+//header("location: /login_form.php?db=budget");
 }
 
 //These are placed outside of the webserver directory for security
@@ -35,10 +35,10 @@ if($m=="" and $acct_group=="" and $ncasNum=="" and $budget_group=="")
 	$parkcode=$_SESSION[budget][select];
 	echo "$parkcode<table align='center'>";
 	
-	echo "<tr><td>a. View <a href='                                    https://10.35.152.9/budget/coa.php?m=1'>All</a> Accounts</td></tr>";
-	echo "<tr><td>a. View <a href='                                    https://10.35.152.9/budget/coa.php?m=1'>All</a> Accounts</td></tr>";
-	echo "<tr><td>b. View <a href='                                    https://10.35.152.9/budget/acs/partf.php?m=2&parkcode=$parkcode' target='_blank'>Project</a> Accounts</td></tr>";
-	echo "<tr><td>b. View <a href='                                    https://10.35.152.9/budget/acs/partf.php?m=2&parkcode=$parkcode' target='_blank'>Project</a> Accounts</td></tr>";
+	echo "<tr><td>a. View <a href='                                    /budget/coa.php?m=1'>All</a> Accounts</td></tr>";
+	echo "<tr><td>a. View <a href='                                    /budget/coa.php?m=1'>All</a> Accounts</td></tr>";
+	echo "<tr><td>b. View <a href='                                    /budget/acs/partf.php?m=2&parkcode=$parkcode' target='_blank'>Project</a> Accounts</td></tr>";
+	echo "<tr><td>b. View <a href='                                    /budget/acs/partf.php?m=2&parkcode=$parkcode' target='_blank'>Project</a> Accounts</td></tr>";
 	
 	echo "</table></body></html>";
 	exit;

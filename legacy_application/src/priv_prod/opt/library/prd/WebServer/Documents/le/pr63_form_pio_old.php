@@ -769,8 +769,8 @@ if($temp_level>3 or in_array($beacon_num,$test_array))
 	{
 	$passYear=date('Y');
 	if(!isset($id)){$id="";}
-	$v4="<input type=\"button\" value=\"Add to Safety Inspection database\" onclick=\"open_win('https://10.35.152.9/inspect/inspection_record.php?parkcode=$parkcode&passYear=$passYear&v_pr63=$ci_num&ti=$tempID&date_occur=$date_occur&pr_id=$id')\">";
-	$v4="<input type=\"button\" value=\"Add to Safety Inspection database\" onclick=\"open_win('https://10.35.152.9/inspect/inspection_record.php?parkcode=$parkcode&passYear=$passYear&v_pr63=$ci_num&ti=$tempID&date_occur=$date_occur&pr_id=$id')\">";
+	$v4="<input type=\"button\" value=\"Add to Safety Inspection database\" onclick=\"open_win('/inspect/inspection_record.php?parkcode=$parkcode&passYear=$passYear&v_pr63=$ci_num&ti=$tempID&date_occur=$date_occur&pr_id=$id')\">";
+	$v4="<input type=\"button\" value=\"Add to Safety Inspection database\" onclick=\"open_win('/inspect/inspection_record.php?parkcode=$parkcode&passYear=$passYear&v_pr63=$ci_num&ti=$tempID&date_occur=$date_occur&pr_id=$id')\">";
 	}
 echo "<tr><td>$v1</td><td>$v2</td><td>$v3</td><td valign='bottom'>$v4</td></tr>";
 

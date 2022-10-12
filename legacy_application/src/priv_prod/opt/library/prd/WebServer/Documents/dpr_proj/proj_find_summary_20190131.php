@@ -190,8 +190,8 @@ table.alternate tr:nth-child(even) td{
 				$var_email="";
 				$proj_name=$array['proj_name'];
 				$id=$array['id'];
-				$e_content="Subject=Project Review: $proj_name&Body=Click the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html";
-				$e_content="Subject=Project Review: $proj_name&Body=Click the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html";
+				$e_content="Subject=Project Review: $proj_name&Body=Click the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html";
+				$e_content="Subject=Project Review: $proj_name&Body=Click the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html";
 				$e_content=htmlentities($e_content);
 				$k=substr($k,0,4);
 				if($k=="pasu")

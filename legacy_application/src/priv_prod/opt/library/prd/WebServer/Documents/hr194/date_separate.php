@@ -28,8 +28,8 @@ IF(@$date_to_separate!="")
 			{
 			$m1="<font color='red'>No Go! Your separation date of $date_to_separate is older than two weeks ago. Only dates on or after ($two_weeks_ago) will be accepted.</font><br />Contact your HR rep for further instructions.";
 		//	$m1=htmlentities($m1);
-			header("Location: https://10.35.152.9/hr194/upload_separation.php?parkcode=$parkcode&tempID=$tempID&Lname=$Lname&beacon_num=$beacon_num&m1=$m1&date_to_separate=$date_to_separate");
-			header("Location: https://10.35.152.9/hr194/upload_separation.php?parkcode=$parkcode&tempID=$tempID&Lname=$Lname&beacon_num=$beacon_num&m1=$m1&date_to_separate=$date_to_separate");
+			header("Location: /hr194/upload_separation.php?parkcode=$parkcode&tempID=$tempID&Lname=$Lname&beacon_num=$beacon_num&m1=$m1&date_to_separate=$date_to_separate");
+			header("Location: /hr194/upload_separation.php?parkcode=$parkcode&tempID=$tempID&Lname=$Lname&beacon_num=$beacon_num&m1=$m1&date_to_separate=$date_to_separate");
 			exit;
 			}
 // 			
@@ -42,8 +42,8 @@ IF(@$date_to_separate!="")
 		$result = @mysqli_query($connection,$sql) or die("$sql Error 1#". mysqli_errno($connection) . ": " . mysqli_error($connection));
 
 			
-	header("Location: https://10.35.152.9/hr194/upload_separation.php?Lname=$Lname&date_to_separate=$date_to_separate&beacon_num=$beacon_num&tempID=$tempID&parkcode=$parkcode&reason=$reason&m=x");
-	header("Location: https://10.35.152.9/hr194/upload_separation.php?Lname=$Lname&date_to_separate=$date_to_separate&beacon_num=$beacon_num&tempID=$tempID&parkcode=$parkcode&reason=$reason&m=x");
+	header("Location: /hr194/upload_separation.php?Lname=$Lname&date_to_separate=$date_to_separate&beacon_num=$beacon_num&tempID=$tempID&parkcode=$parkcode&reason=$reason&m=x");
+	header("Location: /hr194/upload_separation.php?Lname=$Lname&date_to_separate=$date_to_separate&beacon_num=$beacon_num&tempID=$tempID&parkcode=$parkcode&reason=$reason&m=x");
 	}
     
 IF(@$confirm_separation=="x")

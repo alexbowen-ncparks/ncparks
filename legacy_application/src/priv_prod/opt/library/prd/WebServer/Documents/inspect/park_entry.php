@@ -186,8 +186,8 @@ foreach($ARRAY as $k=>$v)
 				if(!empty($v['pr63']) AND empty($v['file_link']))
 					{
 					$pr63=$v['pr63'];
-					$v1.="<a href='https://10.35.152.9/le/find_pr63_reg.php?ci_num=$pr63&submit=Go' target='_blank'>PR-63 #$pr63</a>";
-					$v1.="<a href='https://10.35.152.9/le/find_pr63_reg.php?ci_num=$pr63&submit=Go' target='_blank'>PR-63 #$pr63</a>";
+					$v1.="<a href='/le/find_pr63_reg.php?ci_num=$pr63&submit=Go' target='_blank'>PR-63 #$pr63</a>";
+					$v1.="<a href='/le/find_pr63_reg.php?ci_num=$pr63&submit=Go' target='_blank'>PR-63 #$pr63</a>";
 					echo "<td align='CENTER'>$v1</td>";
 					continue;
 					}

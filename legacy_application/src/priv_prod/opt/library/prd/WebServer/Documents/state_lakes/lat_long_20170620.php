@@ -51,8 +51,8 @@ function setForm() {
     <script type="text/javascript">
     //<![CDATA[
 
-	var baseLink = "https://10.35.152.9/state_lakes/lat_long.php";
-	var baseLink = "https://10.35.152.9/state_lakes/lat_long.php";
+	var baseLink = "/state_lakes/lat_long.php";
+	var baseLink = "/state_lakes/lat_long.php";
 //	var multimapBaseLink = "http://www.multimap.com/map/browse.cgi?scale=10000&icon=x";
 	var geocoder = new GClientGeocoder();
 	var setLat = <?php echo "$lat";?> ;

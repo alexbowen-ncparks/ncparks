@@ -74,8 +74,8 @@ function initialize() {
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
   var ctaLayer = new google.maps.KmlLayer({
-    url: <?php echo "'https://10.35.152.9".$feed_url_js."'"; ?>
-    url: <?php echo "'https://10.35.152.9".$feed_url_js."'"; ?>
+    url: <?php echo "'".$feed_url_js."'"; ?>
+    url: <?php echo "'".$feed_url_js."'"; ?>
   });
   ctaLayer.setMap(map);
 }

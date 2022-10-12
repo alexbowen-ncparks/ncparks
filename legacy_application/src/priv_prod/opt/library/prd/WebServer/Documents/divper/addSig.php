@@ -109,8 +109,8 @@ if (@$submit == "Add Signature")
 	if(@$file_source=="retired_id")
 		{
 		echo "Sig has been added.<br />";
-		echo "Return to <a href='https://10.35.152.9/divper/~photoID_retired.php'>link</a>";
-		echo "Return to <a href='https://10.35.152.9/divper/~photoID_retired.php'>link</a>";
+		echo "Return to <a href='/divper/~photoID_retired.php'>link</a>";
+		echo "Return to <a href='/divper/~photoID_retired.php'>link</a>";
 		exit;
 		}
 	echo "Sig has been added.";

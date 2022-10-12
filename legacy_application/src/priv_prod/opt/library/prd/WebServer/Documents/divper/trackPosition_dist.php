@@ -427,8 +427,8 @@ if($level>3 or in_array($_SESSION['beacon_num'],$view_chop_comments))
 	<input type='submit' name='submit' value='Enter'></td></tr></form></table>";
 	}
 
-echo "</div><table align='center' border='1' cellpadding='5'><tr><td align='center'>DPR Merit Based Hiring SOP <a href='https://10.35.152.9/find/forum.php?searchterm=Merit Based&submit=Search' target='_blank'>forms</a> required to complete a Merit Based Hiring Recommendation Package.</td><td>View/Upload <a href='vacant_form_upload.php?beacon_num=$beacon_num'>forms</a> necessary to start filling this position.</td></tr>";
-echo "</div><table align='center' border='1' cellpadding='5'><tr><td align='center'>DPR Merit Based Hiring SOP <a href='https://10.35.152.9/find/forum.php?searchterm=Merit Based&submit=Search' target='_blank'>forms</a> required to complete a Merit Based Hiring Recommendation Package.</td><td>View/Upload <a href='vacant_form_upload.php?beacon_num=$beacon_num'>forms</a> necessary to start filling this position.</td></tr>";
+echo "</div><table align='center' border='1' cellpadding='5'><tr><td align='center'>DPR Merit Based Hiring SOP <a href='/find/forum.php?searchterm=Merit Based&submit=Search' target='_blank'>forms</a> required to complete a Merit Based Hiring Recommendation Package.</td><td>View/Upload <a href='vacant_form_upload.php?beacon_num=$beacon_num'>forms</a> necessary to start filling this position.</td></tr>";
+echo "</div><table align='center' border='1' cellpadding='5'><tr><td align='center'>DPR Merit Based Hiring SOP <a href='/find/forum.php?searchterm=Merit Based&submit=Search' target='_blank'>forms</a> required to complete a Merit Based Hiring Recommendation Package.</td><td>View/Upload <a href='vacant_form_upload.php?beacon_num=$beacon_num'>forms</a> necessary to start filling this position.</td></tr>";
 
 if($level>1){echo "<tr><td>&nbsp;</td></tr><tr><td>View/Upload the HQ applicant <a href='pd107_upload.php?beacon_num=$beacon_num'>PD107s</a> for this position.</td>";}
 

@@ -287,8 +287,8 @@ if(!empty($pasu_name_park[$temp]))
 	{
 	$exp=explode(" ",$pasu_name_park[$temp]);
 	$pasu_first=$exp[0];
-	$e_content="Subject=Project Review: $proj_name&Body=Hi nnn,%0D%0A%0D%0AClick the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html";
-	$e_content="Subject=Project Review: $proj_name&Body=Hi nnn,%0D%0A%0D%0AClick the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html";
+	$e_content="Subject=Project Review: $proj_name&Body=Hi nnn,%0D%0A%0D%0AClick the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html";
+	$e_content="Subject=Project Review: $proj_name&Body=Hi nnn,%0D%0A%0D%0AClick the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html";
 	$e_content.="%0D%0A%0D%0A$proj_name has this project with an $ps status.  Please review and update the status if the project is no longer $ps.
 	%0D%0A%0D%0A
 	Thanks,%0D%0A
@@ -325,8 +325,8 @@ $e_content=str_replace("nnn", $pasu_first, $e_content);
 				$var_email="";
 				$proj_name=$array['proj_name'];
 				$id=$array['id'];
-				$e_content="Subject=Project Review: $proj_name&Body=Click the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html";
-				$e_content="Subject=Project Review: $proj_name&Body=Click the link to review this project - https://10.35.152.9/dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: https://10.35.152.9/dpr_proj/index.html";
+				$e_content="Subject=Project Review: $proj_name&Body=Click the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html";
+				$e_content="Subject=Project Review: $proj_name&Body=Click the link to review this project - /dpr_proj/project.php?id=$id%0D%0A%0D%0AYou will need to be logged in to Project Tracking-DPR: /dpr_proj/index.html";
 				$e_content=htmlentities($e_content);
 				$k=substr($k,0,4);
 				if($k=="pasu")

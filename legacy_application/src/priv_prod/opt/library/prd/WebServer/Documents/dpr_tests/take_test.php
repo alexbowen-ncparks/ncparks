@@ -67,8 +67,8 @@ if(!empty($submit_answer))
 			}
 			else
 			{
-			echo "You can <a href='https://10.35.152.9/dpr_tests/test.php?com=1&test_id=$test_id&page=test'>review your answers</a> and make any changes.";
-			echo "You can <a href='https://10.35.152.9/dpr_tests/test.php?com=1&test_id=$test_id&page=test'>review your answers</a> and make any changes.";
+			echo "You can <a href='/dpr_tests/test.php?com=1&test_id=$test_id&page=test'>review your answers</a> and make any changes.";
+			echo "You can <a href='/dpr_tests/test.php?com=1&test_id=$test_id&page=test'>review your answers</a> and make any changes.";
 			}
 			exit;
 		}

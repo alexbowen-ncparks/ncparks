@@ -22,8 +22,8 @@ while ($row=mysql_fetch_array($result))
 		$subject="Transmittal of Applications for Position # $beacon_num, $posTitle, $parkcode";
 		
 
-$here="https://10.35.152.9/divper/pd107_upload.php?beacon_num=$beacon_num";
-$here="https://10.35.152.9/divper/pd107_upload.php?beacon_num=$beacon_num";
+$here="/divper/pd107_upload.php?beacon_num=$beacon_num";
+$here="/divper/pd107_upload.php?beacon_num=$beacon_num";
 
 $text.="The applicants in the alphabetical list below have been evaluated as Qualified based on the T and E Competencies (KSAs and behaviors) as advertised. The PD-107s are available for download at:%0A$here%0A%0AAll other applications and data have been sent to the Division of Human Resources Manager.%0A%0A";
 

@@ -63,8 +63,8 @@ echo "
             <li><a href='/budget/coa.php' target='_blank'>Chart of Accounts</a></li>
             <li><a href='/budget/concessions/vendor_fees_menu.php' target='_blank'>Concessionaire Receipts</a></li>           
             <li><a href='/budget/concessions/documents_personal_search.php' target='_blank'>Concessionaire Documents</a></li>
-            <li><a href='https://10.35.152.9/databases.php' target='_blank'>DPR Databases</a></li> 
-            <li><a href='https://10.35.152.9/databases.php' target='_blank'>DPR Databases</a></li> 
+            <li><a href='/databases.php' target='_blank'>DPR Databases</a></li> 
+            <li><a href='/databases.php' target='_blank'>DPR Databases</a></li> 
             
             <li><a href='/budget/acs/fixed_assets1.php' target='_blank'>Fixed Assets</a></li>
             <li><a href='/budget/acs/acsFind.php?m=invoices' target='_blank'>Invoices-Find</a></li>

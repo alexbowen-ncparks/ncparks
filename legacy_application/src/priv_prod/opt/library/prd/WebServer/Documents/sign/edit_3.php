@@ -147,8 +147,8 @@ $category=$ARRAY[0]['category'];
 echo "<h2>Sign Request for Standard Sign: <font color='blue'>$category</font></h2> $change";
 
 echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<form method='POST' action='https://10.35.152.9/sign/print_report_single.php'>
-<form method='POST' action='https://10.35.152.9/sign/print_report_single.php'>
+<form method='POST' action='/sign/print_report_single.php'>
+<form method='POST' action='/sign/print_report_single.php'>
 		<input type='hidden' name='pass_category' value='3'>
 		<input type='hidden' name='id' value='$edit'>
 		<input type='submit' name='submit' value='Print'></form>";
@@ -386,8 +386,8 @@ $skip_1=array("id","SR","category", "district", "justification","register","resp
 					$fld_id="datepicker".$i;
 					
 					$subject="$pass_dist $pass_location Request for Sign Authorization $pass_dpr";
-					$body="Link to sign request $pass_dpr: https://10.35.152.9/sign/edit_3.php?edit=$edit&submit=edit You will need to login to the Sign Database if requested.";
-					$body="Link to sign request $pass_dpr: https://10.35.152.9/sign/edit_3.php?edit=$edit&submit=edit You will need to login to the Sign Database if requested.";
+					$body="Link to sign request $pass_dpr: /sign/edit_3.php?edit=$edit&submit=edit You will need to login to the Sign Database if requested.";
+					$body="Link to sign request $pass_dpr: /sign/edit_3.php?edit=$edit&submit=edit You will need to login to the Sign Database if requested.";
 					$mailto="";
 					if($fld=="staff_notify"){$mailto=$email;}
 					$email_to="&nbsp;&nbsp;&nbsp;<font color='green'>Email from $fld: </font><a href=\"mailto:$mailto?subject=$subject&body=$body\">email</a>";
@@ -437,8 +437,8 @@ $skip_1=array("id","SR","category", "district", "justification","register","resp
 	$message";
 	echo "</table></td></tr></form>";
 	
-	$page="https://10.35.152.9/sign/print_report_single.php";
-	$page="https://10.35.152.9/sign/print_report_single.php";
+	$page="/sign/print_report_single.php";
+	$page="/sign/print_report_single.php";
 		
 		echo "<tr bgcolor='white'><td align='center'><form method='POST' action='$page'>
 		<input type='hidden' name='pass_category' value='3'>

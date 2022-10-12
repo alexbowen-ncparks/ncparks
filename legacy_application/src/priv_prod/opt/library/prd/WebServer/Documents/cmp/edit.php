@@ -352,7 +352,7 @@ if($level>0 OR in_array($park_code,$park_code_array) OR $park_code==$_SESSION['c
 	{echo "</form>";}
 	
 	
-	$page="https://auth.dpr.ncparks.gov/cmp/print_pdf.php";
+	$page="/cmp/print_pdf.php";
 	echo "</tr><tr><td colspan='4' align='center'><form method='POST' action='$page'>
 	<input type='hidden' name='park_code' value='$park_code'>
 	<input type='hidden' name='id' value='$edit'>

@@ -45,8 +45,8 @@ echo "<div id='pr63_prev' style='display: none'>";
 			if($fld=="ci_num")
 				{
 				$value=$ARRAY_prev[$index]['id'];
-				echo "<td><a href='https://10.35.152.9/le/pr63_form.php?id=$value' target='_blank'>$value</a></td>";
-				echo "<td><a href='https://10.35.152.9/le/pr63_form.php?id=$value' target='_blank'>$value</a></td>";
+				echo "<td><a href='/le/pr63_form.php?id=$value' target='_blank'>$value</a></td>";
+				echo "<td><a href='/le/pr63_form.php?id=$value' target='_blank'>$value</a></td>";
 				continue;
 				}
 			if($fld=="incident"){$value="<b>$value</b>";}

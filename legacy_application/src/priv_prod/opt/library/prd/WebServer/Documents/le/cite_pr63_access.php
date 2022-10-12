@@ -3,13 +3,13 @@
 include("menu.php");
 
 echo "<table>
-<tr><td><form action='https://10.35.152.9/cite/users.php'>
-<tr><td><form action='https://10.35.152.9/cite/users.php'>
+<tr><td><form action='/cite/users.php'>
+<tr><td><form action='/cite/users.php'>
     CITE Database&raquo;
 <input type='submit' name='submit' value='Go'>
 </form></td></tr>
-<tr><td><form action='https://10.35.152.9/le/pr63_users.php'>
-<tr><td><form action='https://10.35.152.9/le/pr63_users.php'>
+<tr><td><form action='/le/pr63_users.php'>
+<tr><td><form action='/le/pr63_users.php'>
     PR-63 Database&raquo;
 <input type='submit' name='submit' value='Go'>
 </form></td></tr>

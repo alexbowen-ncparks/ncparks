@@ -63,8 +63,8 @@ foreach($un as $an_k=>$an_v)
 	{
 	if(!array_key_exists($an_v,$unique_active))
 		{
-		echo "<tr><td><a href='https://10.35.152.9/phone_bill/phone_center?open_file=$open_file&phone_number=$an_v' target='_blank'>$an_v</a></td></tr>";
-		echo "<tr><td><a href='https://10.35.152.9/phone_bill/phone_center?open_file=$open_file&phone_number=$an_v' target='_blank'>$an_v</a></td></tr>";
+		echo "<tr><td><a href='/phone_bill/phone_center?open_file=$open_file&phone_number=$an_v' target='_blank'>$an_v</a></td></tr>";
+		echo "<tr><td><a href='/phone_bill/phone_center?open_file=$open_file&phone_number=$an_v' target='_blank'>$an_v</a></td></tr>";
 		}
 	}
 echo "</table>";

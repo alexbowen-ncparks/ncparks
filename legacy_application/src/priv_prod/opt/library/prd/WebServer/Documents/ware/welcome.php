@@ -41,8 +41,8 @@ ol {
     font-size: 14px;
 }
 </style>";
-echo "<table><tr><td><img src='https://10.35.152.9/photos/photos/WARE_2015/08/640.35698.jpg' width='150px'>&nbsp;&nbsp;</td><td><h2>Welcome to the DPR Warehouse database!</h2></td><td><img src='2013-DPR-logo-small-web.png'></td></tr></table>";
-// echo "<table><tr><td><img src='https://10.35.152.9/photos/photos/WARE_2015/08/640.35698.jpg' width='150px'>&nbsp;&nbsp;</td><td><h2>Welcome to the DPR Warehouse database!</h2></td><td><img src='2013-DPR-logo-small-web.png'></td></tr></table>";
+echo "<table><tr><td><img src='/photos/photos/WARE_2015/08/640.35698.jpg' width='150px'>&nbsp;&nbsp;</td><td><h2>Welcome to the DPR Warehouse database!</h2></td><td><img src='2013-DPR-logo-small-web.png'></td></tr></table>";
+// echo "<table><tr><td><img src='/photos/photos/WARE_2015/08/640.35698.jpg' width='150px'>&nbsp;&nbsp;</td><td><h2>Welcome to the DPR Warehouse database!</h2></td><td><img src='2013-DPR-logo-small-web.png'></td></tr></table>";
 
 if(!empty($notice))
 	{
