@@ -1,0 +1,1 @@
+<?php$sql = "UPDATE pcard_unreconciledset postdate_new=concat(mid(post_date,7,4),mid(post_date,1,2),mid(post_date,4,2))where 1";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query. step 7 $sql");$step=7;?>

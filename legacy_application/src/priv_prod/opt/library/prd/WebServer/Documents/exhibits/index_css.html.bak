@@ -1,0 +1,537 @@
+<!doctype html>
+<html>
+<!-- H E A D -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+
+<link type="text/css" href="jquery-ui-1.8.23.custom.css" rel="Stylesheet" />    
+<script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.8.23.custom.min.js"></script>
+
+<script>
+    $(function() {
+        $( "#datepicker1" ).datepicker({ dateFormat: 'yy-mm-dd' });
+        $( "#datepicker2" ).datepicker({ dateFormat: 'yy-mm-dd' });
+        $( "#datepicker3" ).datepicker({ dateFormat: 'yy-mm-dd' });
+    });
+</script>
+<style>
+.ui-datepicker {
+  font-size: 80%;
+}
+</style>
+
+<script type="text/javascript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+function JumpTo(theMenu){
+                var theDestination = theMenu.options[theMenu.selectedIndex].value;
+                var temp=document.location.href;
+                if (temp.indexOf(theDestination) == -1) {
+                        href = window.open(theDestination);
+                        }
+        }
+        
+function toggleDisplay(objectID) {
+	var object = document.getElementById(objectID);
+	state = object.style.display;
+	if (state == 'none')
+		object.style.display = 'block';
+	else if (state != 'none')
+		object.style.display = 'none'; 
+}
+
+function popitup(url)
+{   newwindow=window.open(url,"name","resizable=1,scrollbars=1,height=1024,width=1024,menubar=1,toolbar=1");
+        if (window.focus) {newwindow.focus()}
+        return false;
+}        
+function confirmLink()
+{
+ bConfirm=confirm('Are you sure you want to delete this record?')
+ return (bConfirm);
+}
+      
+function confirmFile()
+{
+ bConfirm=confirm('Are you sure you want to delete this file?')
+ return (bConfirm);
+}
+function confirmImg()
+{
+ bConfirm=confirm('Are you sure you want to delete this image?')
+ return (bConfirm);
+}
+function scrollWindow()
+  {
+  window.scrollTo(0,3000)
+  }
+
+function validateDateAssign()
+	{
+	var x1=document.forms["autoSelectForm"]["date_assigned"].value;
+	if (x1==null || x1=="")
+		  {
+		  alert("DATE ASSIGNED must be filled out.");
+		  return false;
+		  }
+	}
+
+function validateForm()
+	{
+	var x1=document.forms["autoSelectForm"]["proj_name"].value;
+	if (x1==null || x1=="")
+		  {
+		  alert("PROJECT NAME must be filled out.");
+		  return false;
+		  }
+	var x2=document.forms["autoSelectForm"]["proj_description"].value;
+	if (x2==null || x2=="")
+		  {
+		  alert("PROJECT DESCRIPTION must be filled out.");
+		  return false;
+		  }
+
+		var radios = document.getElementsByName('category')
+		for (var i = 0; i < radios.length; i++)
+			{
+				if (radios[i].checked)
+				{
+				return true; // checked
+				}
+			};
+		
+		// not checked, show error
+		document.getElementById('ValidationError').innerHTML = '<h2><font color=red>You must select a Category!</font></h2>';
+		return false;
+
+	}
+
+
+// -->
+</script>
+<style>
+div.floating-menu {position:fixed;width:130px;z-index:100;}
+div.floating-menu a {display:block;margin:0 0.3em;}
+</style>
+
+<script type="text/javascript">
+
+var building = new Array("MB*","MB1","MB2","MB3","MB4","MB5","MBA","MBB","ML*","NR*","NR1","NR2","NR3","NR4","OS*");var models = new Array();models["MB*"] = new Array("Main Building Event","Main Building Event Lighting","Main Building Misc","Main Building Standard Lighting");models["MB1"] = new Array("Art Gallery","Box Office","Coastal NC","Continental Shelf","Dune Grassland","Garden and Mall","Gift Shop","Hard Bottom","Info Desk","Intertidal Zone","Loading Dock","Main Building Grounds","Maritime Forest","Natural Treasures of NC","Open Ocean","Salt Marsh","Sounds","WRAL 3D Theater");models["MB2"] = new Array("Bottomland","Coastal NC Overlook","Discovery Room","Mountains to Sea Intro","Nature's Explorers","Piedmont","Savanna","Second Floor Bridge","Special Exhibits Gallery","Underground NC","Waterfall");models["MB3"] = new Array("Acro/Terror of the South","Cretaceous","Curiosity Classrooms","Eocene","Holocene","Mountain Cove","Mountains to Sea Overlook","Pleistocene","Pliocene","Prehistoric Intro","Snakes","Sprice Fir Forest","Third Floor Bridge","Triassic","Tropical Connections","Windows on the World Theater");models["MB4"] = new Array("Acro Café","Acro/Terror of the South Overlook","Art Gallery","Arthropod Zoo","Living Conservatory","Volunteer Office");models["MB5"] = new Array("Boardroom","Fifth Floor (specify in comments)");models["MBA"] = new Array("A Level (specify in comments)","A Level Conference Room");models["MBB"] = new Array("B Level (specify in comments)");models["ML*"] = new Array("Multi-Location Event","Multi-Location Event Lighting","Multi-Location Misc","Multi-Location Standard Lighting");models["NR*"] = new Array("NRC Event","NRC Event Lighting","NRC Misc","NRC Standard Lighting");models["NR1"] = new Array("Atrium","Building a Greener Future","Citizen Science","Daily Planet","Daily Planet Café","Daily Planet Plaza","Engineering: Cars of the Future","Engineering: LED Technology","Engineering: Nanotech Fights Cancer","Engineering: NC Biofuels","Engineering: Robo-bats","Exploring the Deep Sea","Gift Shop","Health: Hearts and Minds","Health: Organ Growth","Health: Tracking Global Disease","Info Desk","Investigating Right Whales","Local-Global Connections","Modeling: Facing Sea Level Rise","Modeling: NASA News","Modeling: Seeing Cells","Modeling: Watching a Forest Breathe","NC's Green Gems","NRC Grounds","Our Changing Ocean","Our Environment, Our Future","Protecting Fresh Water","Ribbon","Science News, Your Views");models["NR2"] = new Array("Daily Planet","Diversity of Life: Frontiers","Diversity of Life: How Many Species?","Diversity of Life: Importance","Diversity of Life: Relationships","Diversity of Life: Things Change","Earth Observation Lab","Natural World Investigate Lab","Naturalist Center","Naturalist Center Magic Tables","One Planet, One Health","Our Changing Climate","Researching Weather","Ribbon","Science Panorama","Windows on Research");models["NR3"] = new Array("Daily Planet","Early Life Explosion","Exploring Beyond our Planet","Genetics and Microbiology Lab","Ice Age Giants","Micro World Investigate Lab","Paleontology and Geology Lab","Planet Micro","Postcards from Space","Ribbon","Space Observation Lab","Special Instrumentation Lab","T-rex, Another Look","Triassic Revolution","Unraveling DNA","Visual World Investigate Lab","Windows on Research");models["NR4"] = new Array("Conference Center","Green Roof","Meet Up Area");models["OS*"] = new Array("Off-site (specify in comments)");
+function resetForm(theForm) {
+  /* reset building */
+  theForm.building.options[0] = new Option("Select Building/Floor", "");
+  for (var i=0; i<building.length; i++) {
+    theForm.building.options[i+1] = new Option(building[i], building[i]);
+  }
+  theForm.building.options[0].selected = true;
+  /* reset models */
+  theForm.models.options[0] = new Option("Select Location", "");
+  theForm.models.options[0].selected = true;
+}
+
+function updateModels(theForm)
+	{
+	  var make = theForm.building.options[theForm.building.options.selectedIndex].value;
+	  var newModels = models[make];
+	  theForm.models.options.length = 0;
+	  theForm.models.options[0] = new Option("Select Location", "");
+	  for (var i=0; i<newModels.length; i++) {
+		theForm.models.options[i+1] = new Option(newModels[i], newModels[i]);
+	  }
+	  theForm.models.options[0].selected = true;
+	}
+
+</script>	
+    
+    
+    
+    
+    <title>Exhibit &amp; Digital Media Work Order Database</title>
+<style type="text/css">
+</style>
+
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+
+<!--Google Web FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:100, 100italic,300,300italic,700,700italic|Roboto+Condensed:300italic,700italic,700,300' rel='stylesheet' type='text/css'>
+
+<!-- Mobile -->
+<link href="mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:800px)">
+<!-- Mobile 480 -->
+<link href="480.css" rel="stylesheet" type="text/css" media="only screen and (max-width:570px)">
+</head>
+
+
+<!--B O D Y -->
+<body>
+
+<!--User ID login out bar-->
+<ul class="userbar">
+  <div id="userdiv"><li id="userbar_li">
+  	<div id="usericon">
+    <img src="images/UserBar_UserIcon.png"/>
+    </div>
+  <a id="userbar_a" href="#" title="Visit your profile" style="font-weight:300; padding-left:36px;">Sutton_J0930</a>
+  </li>
+  <li id="userbar_li"><a id="userbar_a" href="#" title="Logout"><font style="text-align:center;">Logout</font></a></li></div>
+  </ul>
+
+
+
+
+<!--E&DM Graphic Title Header-->
+<header id="header_title">
+<img src="images/EDM_WorkOrderDatabase_DATABASE.png" width="100%" height="auto">
+</header>
+
+
+
+
+  <!--NAVIGATION BUTTON-->
+<ul class="navigation">
+  <li id="submit_li">
+  <a id="navigation_a" href="#" title="Submit a Request" ><strong><font style="letter-spacing:2px; font-size:16px;">Submit  </font></strong><font style="font-weight:200; letter-spacing:1px; font-size:15px;">Requests  </font></a>
+  </li>
+  <li id="search_li"><a id="navigation_a" href="#" title="Search Requests"><strong><font style="letter-spacing:2px; font-size:16px;">Search  </font></strong><font style="font-weight:200; letter-spacing:1px;font-size:15px;">  Requests</font></a></li>
+  </ul>
+
+
+
+
+<!--HEADER Text - Sumbission Details-->
+<div id="introtext">
+<h2>Please submit requests 3-4 weeks prior to date needed.</h2>
+<h3>All graphic and multimedia intended for public display must be reviewed by the exhibits staff!</h3>
+<h4><a id="email" href="mailto:christina.cucurullo@naturalscieces.org">Email</a> Christina.Cucurullo@naturalsciences.org with any questions</h4>
+</div>
+
+
+
+
+
+
+<!--FORM BEGINS HERE ! ! -->
+<div id="formbox">
+<form name="autoSelectForm"  action='work_order_action.php' method='POST' enctype='multipart/form-data' onsubmit="return validateForm()">
+
+
+  <!-- USER INFO -->
+<div class="username_info"><br>
+	<div class="form-field" id="clear_form"><br>
+		<strong><p style="font-size:14px; margin-top:-16px; margin-bottom:0px;;">Javan Sutton</p></strong><strong>Phone:</strong> 919-707-9863<br /><strong>Section:</strong> Exhibits<br /><strong>Email:</strong> <a class="email" href="mailto:javan.sutton@naturalsciences.org?Subject=Exhibits %26 Emerging Media Work Order">javan.sutton@naturalsciences.org</a><p class="aside">*We will notify you when order has been completed.</p>
+	</div>
+</div>
+
+
+<!--Employee ID -->
+  <div class="parent-div">
+  <div class="center_form" id="clear_form"><label id="main-label" for="emp_id">Employee ID</label>
+  <select name="emp_id" id="emp_id">
+  	<option value='work_order_form.php?emp_id=Ahmann_K0316'>Ahmann_K0316</option>
+	<option value='work_order_form.php?emp_id=Alderink_B0331'>Alderink_B0331</option>
+	<option value='work_order_form.php?emp_id=Alul_K1109'>Alul_K1109</option>
+	<option value='work_order_form.php?emp_id=Anderson_S0729'>Anderson_S0729</option>
+	<option value='work_order_form.php?emp_id=Arrington_R1225'>Arrington_R1225</option>
+	<option value='work_order_form.php?emp_id=Bailey_D1109'>Bailey_D1109</option>
+	<option value='work_order_form.php?emp_id=Baird_L0119'>Baird_L0119</option>
+	<option value='work_order_form.php?emp_id=Bayer_M0919'>Bayer_M0919</option>
+	<option value='work_order_form.php?emp_id=Beaman_B0606'>Beaman_B0606</option>
+	<option value='work_order_form.php?emp_id=Beane_J0820'>Beane_J0820</option>
+	<option value='work_order_form.php?emp_id=Belk_L0331'>Belk_L0331</option>
+	<option value='work_order_form.php?emp_id=Bennett_B1010'>Bennett_B1010</option>
+	<option value='work_order_form.php?emp_id=Bethune_K0000'>Bethune_K0000</option>
+	<option value='work_order_form.php?emp_id=Billeaud_R0922'>Billeaud_R0922</option>
+	<option value='work_order_form.php?emp_id=Blanton_B0828'>Blanton_B0828</option>
+	<option value='work_order_form.php?emp_id=Bogan_A0826'>Bogan_A0826</option>
+	<option value='work_order_form.php?emp_id=Bogan_C0417'>Bogan_C0417</option>
+	<option value='work_order_form.php?emp_id=Bradley_P0626'>Bradley_P0626</option>
+	<option value='work_order_form.php?emp_id=Brammer_C0205'>Brammer_C0205</option>
+	<option value='work_order_form.php?emp_id=Braswell_A0214'>Braswell_A0214</option>
+	<option value='work_order_form.php?emp_id=Brinkman_P0411'>Brinkman_P0411</option>	
+	<option value='work_order_form.php?emp_id=Britt_R0507'>Britt_R0507</option>
+	<option value='work_order_form.php?emp_id=Buckheit_K1005'>Buckheit_K1005</option>
+	<option value='work_order_form.php?emp_id=Bundy_R0622'>Bundy_R0622</option>
+	<option value='work_order_form.php?emp_id=Burch_M0325'>Burch_M0325</option>
+	<option value='work_order_form.php?emp_id=Burke_D1007'>Burke_D1007</option>
+	<option value='work_order_form.php?emp_id=Campbell_R0402'>Campbell_R0402</option>
+	<option value='work_order_form.php?emp_id=Capps_S1118'>Capps_S1118</option>
+	<option value='work_order_form.php?emp_id=Chang_J0503'>Chang_J0503</option>
+	<option value='work_order_form.php?emp_id=Chappell_H0905'>Chappell_H0905</option>
+	<option value='work_order_form.php?emp_id=Chesser_M0403'>Chesser_M0403</option>
+	<option value='work_order_form.php?emp_id=Christian_S0828'>Christian_S0828</option>
+	<option value='work_order_form.php?emp_id=Conner_L1209'>Conner_L1209</option>
+	<option value='work_order_form.php?emp_id=Cooper_J1117'>Cooper_J1117</option>
+	<option value='work_order_form.php?emp_id=Coppage_C0118'>Coppage_C0118</option>
+	<option value='work_order_form.php?emp_id=Cotrufo_M0112'>Cotrufo_M0112</option>
+	<option value='work_order_form.php?emp_id=Cowans_E0806'>Cowans_E0806</option>
+	<option value='work_order_form.php?emp_id=Cranford_B0108'>Cranford_B0108</option>
+	<option value='work_order_form.php?emp_id=Crawford_E0104'>Crawford_E0104</option>
+	<option value='work_order_form.php?emp_id=Creech_D0805'>Creech_D0805</option>
+	<option value='work_order_form.php?emp_id=Cross_L0313'>Cross_L0313</option>
+	<option value='work_order_form.php?emp_id=Cryan_J0402'>Cryan_J0402</option>
+	<option value='work_order_form.php?emp_id=Cucurullo_C0122'>Cucurullo_C0122</option>
+	<option value='work_order_form.php?emp_id=Davis_A1116'>Davis_A1116</option>
+	<option value='work_order_form.php?emp_id=Diggs_A0206'>Diggs_A0206</option>
+	<option value='work_order_form.php?emp_id=Dombrowski_D0822'>Dombrowski_D0822</option>
+	<option value='work_order_form.php?emp_id=Dowland_M1006'>Dowland_M1006</option>
+	<option value='work_order_form.php?emp_id=Dunn_M0929'>Dunn_M0929</option>
+	<option value='work_order_form.php?emp_id=Eamick_B1231'>Eamick_B1231</option>
+	<option value='work_order_form.php?emp_id=Eckenrode_J1020'>Eckenrode_J1020</option>
+	<option value='work_order_form.php?emp_id=Edgerton_J0904'>Edgerton_J0904</option>
+	<option value='work_order_form.php?emp_id=Ervin_A0000'>Ervin_A0000</option>
+	<option value='work_order_form.php?emp_id=Etheridge_N0703'>Etheridge_N0703</option>
+	<option value='work_order_form.php?emp_id=Faerber_M0514'>Faerber_M0514</option>
+	<option value='work_order_form.php?emp_id=Fisk_M0629'>Fisk_M0629</option>
+	<option value='work_order_form.php?emp_id=Flanagan_M0103'>Flanagan_M0103</option>
+	<option value='work_order_form.php?emp_id=Flint_C0914'>Flint_C0914</option>
+	<option value='work_order_form.php?emp_id=Flook_B0904'>Flook_B0904</option>
+	<option value='work_order_form.php?emp_id=Fore_M1121'>Fore_M1121</option>
+	<option value='work_order_form.php?emp_id=Fromson_K0310'>Fromson_K0310</option>
+	<option value='work_order_form.php?emp_id=Gardner_D1208'>Gardner_D1208</option>
+	<option value='work_order_form.php?emp_id=Garr_M0221'>Garr_M0221</option>
+	<option value='work_order_form.php?emp_id=Gatens_L0914'>Gatens_L0914</option>
+	<option value='work_order_form.php?emp_id=Gatens_M0530'>Gatens_M0530</option>
+	<option value='work_order_form.php?emp_id=Gerwin_J0421'>Gerwin_J0421</option>
+	<option value='work_order_form.php?emp_id=Goforth_C1211'>Goforth_C1211</option>
+	<option value='work_order_form.php?emp_id=Guevara_M0322'>Guevara_M0322</option>
+	<option value='work_order_form.php?emp_id=Gurley_W0508'>Gurley_W0508</option>
+	<option value='work_order_form.php?emp_id=Hahn_B0104'>Hahn_B0104</option>
+	<option value='work_order_form.php?emp_id=Hale_P1104'>Hale_P1104</option>
+	<option value='work_order_form.php?emp_id=Hanneman_E1028'>Hanneman_E1028</option>
+	<option value='work_order_form.php?emp_id=Head_E0831'>Head_E0831</option>
+	<option value='work_order_form.php?emp_id=Heath_H0000'>Heath_H0000</option>
+	<option value='work_order_form.php?emp_id=Heinz_E0000'>Heinz_E0000</option>
+	<option value='work_order_form.php?emp_id=Hess_B0422'>Hess_B0422</option>
+	<option value='work_order_form.php?emp_id=Hinson_H0211'>Hinson_H0211</option>
+	<option value='work_order_form.php?emp_id=Hinton_A0608'>Hinton_A0608</option>
+	<option value='work_order_form.php?emp_id=Hogue_G0228'>Hogue_G0228</option>
+	<option value='work_order_form.php?emp_id=Hopkins_P0526'>Hopkins_P0526</option>
+	<option value='work_order_form.php?emp_id=Horvath_J0817'>Horvath_J0817</option>
+	<option value='work_order_form.php?emp_id=Hur_K0101'>Hur_K0101</option>
+	<option value='work_order_form.php?emp_id=Huston_D0303'>Huston_D0303</option>
+	<option value='work_order_form.php?emp_id=Hyman_P0523'>Hyman_P0523</option>
+	<option value='work_order_form.php?emp_id=Johnson_M0818'>Johnson_M0818</option>
+	<option value='work_order_form.php?emp_id=Johnson_T0103'>Johnson_T0103</option>
+	<option value='work_order_form.php?emp_id=Jones_J1207'>Jones_J1207</option>
+	<option value='work_order_form.php?emp_id=Jones_M0818'>Jones_M0818</option>
+	<option value='work_order_form.php?emp_id=Jones_S0311'>Jones_S0311</option>
+	<option value='work_order_form.php?emp_id=Judd_A0214'>Judd_A0214</option>
+	<option value='work_order_form.php?emp_id=Kandros_K0225'>Kandros_K0225</option>
+	<option value='work_order_form.php?emp_id=Kauffman_A0311'>Kauffman_A0311</option>
+	<option value='work_order_form.php?emp_id=Kays_R0516'>Kays_R0516</option>
+	<option value='work_order_form.php?emp_id=Knisley_E0902'>Knisley_E0902</option>
+	<option value='work_order_form.php?emp_id=Kroll_D0405'>Kroll_D0405</option>
+	<option value='work_order_form.php?emp_id=Laton_N0205'>Laton_N0205</option>
+	<option value='work_order_form.php?emp_id=Lewis_K1014'>Lewis_K1014</option>
+	<option value='work_order_form.php?emp_id=Lewis_L0509'>Lewis_L0509</option>
+	<option value='work_order_form.php?emp_id=Lincoln_C0909'>Lincoln_C0909</option>
+	<option value='work_order_form.php?emp_id=Lovelady_W1019'>Lovelady_W1019</option>
+	<option value='work_order_form.php?emp_id=Lowder_S0502'>Lowder_S0502</option>
+	<option value='work_order_form.php?emp_id=Lowman_M1223'>Lowman_M1223</option>
+	<option value='work_order_form.php?emp_id=Malow_B0106'>Malow_B0106</option>
+	<option value='work_order_form.php?emp_id=Martin_D0113'>Martin_D0113</option>
+	<option value='work_order_form.php?emp_id=Martin_D0113'>Martin_D0113</option>
+	<option value='work_order_form.php?emp_id=McCraven_B0924'>McCraven_B0924</option>
+	<option value='work_order_form.php?emp_id=Mette_J1020'>Mette_J1020</option>
+	<option value='work_order_form.php?emp_id=Meyer_C0530'>Meyer_C0530</option>
+	<option value='work_order_form.php?emp_id=Meyers_D0617'>Meyers_D0617</option>
+	<option value='work_order_form.php?emp_id=Noel_P1228'>Noel_P1228</option>
+	<option value='work_order_form.php?emp_id=Nordstrom_B0905'>Nordstrom_B0905</option>
+	<option value='work_order_form.php?emp_id=O%27Shea_B0718'>O'Shea_B0718</option>
+	<option value='work_order_form.php?emp_id=Oakley_L0917'>Oakley_L0917</option>
+	<option value='work_order_form.php?emp_id=Osbeck_R0616'>Osbeck_R0616</option>
+	<option value='work_order_form.php?emp_id=Pendergraft_L0712'>Pendergraft_L0712</option>
+	<option value='work_order_form.php?emp_id=Pietrzak_D1110'>Pietrzak_D1110</option>
+	<option value='work_order_form.php?emp_id=Pishney_J0522'>Pishney_J0522</option>
+	<option value='work_order_form.php?emp_id=Poles_T0112'>Poles_T0112</option>
+	<option value='work_order_form.php?emp_id=Popson_S0811'>Popson_S0811</option>
+	<option value='work_order_form.php?emp_id=Profet_J1212'>Profet_J1212</option>
+	<option value='work_order_form.php?emp_id=Raine_J0629'>Raine_J0629</option>
+	<option value='work_order_form.php?emp_id=Reynolds_B1005'>Reynolds_B1005</option>
+	<option value='work_order_form.php?emp_id=Reynolds_J1116'>Reynolds_J1116</option>
+	<option value='work_order_form.php?emp_id=Russell_B0924'>Russell_B0924</option>
+	<option value='work_order_form.php?emp_id=Santomartino_J0427'>Santomartino_J0427</option>
+	<option value='work_order_form.php?emp_id=Schneider_V0713'>Schneider_V0713</option>
+	<option value='work_order_form.php?emp_id=Self_T0202'>Self_T0202</option>
+	<option value='work_order_form.php?emp_id=Shelley_R0919'>Shelley_R0919</option>
+	<option value='work_order_form.php?emp_id=Sherrill_B1210'>Sherrill_B1210</option>
+	<option value='work_order_form.php?emp_id=Silver_G1205'>Silver_G1205</option>
+	<option value='work_order_form.php?emp_id=Smart_K0720'>Smart_K0720</option>
+	<option value='work_order_form.php?emp_id=Smith_J0101'>Smith_J0101</option>
+	<option value='work_order_form.php?emp_id=Smith_K0317'>Smith_K0317</option>
+	<option value='work_order_form.php?emp_id=Smith_R0610'>Smith_R0610</option>
+	<option value='work_order_form.php?emp_id=Snyder_G0629'>Snyder_G0629</option>
+	<option value='work_order_form.php?emp_id=Starnes_W1013'>Starnes_W1013</option>
+	<option value='work_order_form.php?emp_id=Stebben_J0119'>Stebben_J0119</option>
+	<option value='work_order_form.php?emp_id=Stephenson_D1124'>Stephenson_D1124</option>
+	<option value='work_order_form.php?emp_id=Stuart_B0301'>Stuart_B0301</option>
+	<option selected='work_order_form.php?emp_id=Sutton_J0930'>Sutton_J0930</option>
+	<option value='work_order_form.php?emp_id=Swain_K0915'>Swain_K0915</option>
+	<option value='work_order_form.php?emp_id=Tacker_C0602'>Tacker_C0602</option>
+	<option value='work_order_form.php?emp_id=Thornton_W0706'>Thornton_W0706</option>
+	<option value='work_order_form.php?emp_id=Trautwein_M0220'>Trautwein_M0220</option>
+	<option value='work_order_form.php?emp_id=Treuthardt_P1207'>Treuthardt_P1207</option>
+	<option value='work_order_form.php?emp_id=Urban_J0311'>Urban_J0311</option>
+	<option value='work_order_form.php?emp_id=Vacant_V0618'>Vacant_V0618</option>
+	<option value='work_order_form.php?emp_id=Warren_H0214'>Warren_H0214</option>
+	<option value='work_order_form.php?emp_id=Weaver_T1217'>Weaver_T1217</option>
+	<option value='work_order_form.php?emp_id=Weems_J0526'>Weems_J0526</option>
+	<option value='work_order_form.php?emp_id=Whitaker_C0613'>Whitaker_C0613</option>
+	<option value='work_order_form.php?emp_id=Whitman_J0127'>Whitman_J0127</option>
+	<option value='work_order_form.php?emp_id=Williams_C1120'>Williams_C1120</option>
+	<option value='work_order_form.php?emp_id=Williams_J0405'>Williams_J0405</option>
+	<option value='work_order_form.php?emp_id=Williford_J0812'>Williford_J0812</option>
+	<option value='work_order_form.php?emp_id=Wood_M0000'>Wood_M0000</option>
+	<option value='work_order_form.php?emp_id=Wouk_K0913'>Wouk_K0913</option>
+	<option value='work_order_form.php?emp_id=Wynne_B1205'>Wynne_B1205</option>
+	<option value='work_order_form.php?emp_id=Yelton_C0617'>Yelton_C0617</option>
+	<option value='work_order_form.php?emp_id=Yirka_A0321'>Yirka_A0321</option>
+	<option value='work_order_form.php?emp_id=Yirka_L1119'>Yirka_L1119</option>
+	<option value='work_order_form.php?emp_id=Yow_L0311'>Yow_L0311</option>
+	<option value='work_order_form.php?emp_id=Zanno_L1017'>Zanno_L1017</option>
+	<option value='work_order_form.php?emp_id=Zeher_M0918'>Zeher_M0918</option>
+	<option value='work_order_form.php?emp_id=Zuk_S0000'>Zuk_S0000</option>
+</select></div>
+	  
+      
+      
+<!--Date Submitted -->
+  <div class="center_form" id="center_form_right" >
+  <label id="main-label" for="date_submitted">Request Date</label>
+  <input type="text" name="date_submitted" id="date_submitted" value="2013-04-10" READONLY></div>
+ 
+  
+  
+ 
+  
+  <!--DATE DUE -->
+  <div class="center_form" id="clear_form">
+  <label id="main-label" for="date_due">Date Due</label>
+  <input type="date" name="date_due" id="date_due" pattern="[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01]" placeholder="2013-01-01" required></div>
+  
+  
+  
+  <!--Date Completed -->
+  <div class="center_form" id="center_form_right"><label id="main-label" for="date_completed"><font color="#AAAAAA">Date Completed</label>
+  <input type="test" name="date_completed" id="date_completed" placeholder="2013-01-01" disabled></div>
+  
+  
+  
+  
+  <script>$(function()
+		{
+		$( "#routed_to_1" ).autocomplete({
+		source: [ "Campbell_R0402","Conner_L1209","Crawford_E0104","Cucurullo_C0122","Eckenrode_J1020","Garr_M0221","Jones_M0818","Knisley_E0902","Lovelady_W1019","McCraven_B0924","Meyer_C0530","Osbeck_R0616","Profet_J1212","Snyder_G0629","Stebben_J0119","Wynne_B1205","Zeher_M0918" ]
+		});
+		});$(function()
+		{
+		$( "#routed_to_2" ).autocomplete({
+		source: [ "Campbell_R0402","Conner_L1209","Crawford_E0104","Cucurullo_C0122","Eckenrode_J1020","Garr_M0221","Jones_M0818","Knisley_E0902","Lovelady_W1019","McCraven_B0924","Meyer_C0530","Osbeck_R0616","Profet_J1212","Snyder_G0629","Stebben_J0119","Wynne_B1205","Zeher_M0918" ]
+		});
+		});</script>
+        
+        
+        
+  
+  <!-- CATEGORY-->
+  <div id="clear_form" class="center_form">
+   <label id="main-label" for="category">Category</label>
+    <div id="category">
+    <div class="button-holder" id="cat1"><input type='radio' name='category' value="Graphic/2-D" id="category-graphic" class="regular-radio"><label for="category-graphic" >Graphic/2-D</label></div>
+  
+  <div class="button-holder"id="cat2"><input type='radio' name='category' value="Exhibit" id="category-exhibit" class="regular-radio"><label for="category-exhibit">Exhibit</label></div>
+  
+  <div class="button-holder"id="cat3"><input type='radio' name='category' value="Model/Fabrication" id="category-model" class="regular-radio"><label for="category-model">Model/Fabrication</label></div>
+  
+  <div class="button-holder"id="cat4"><input type='radio' name='category' value="Lighting" id="category-lighting" class="regular-radio"><label for="category-lighting">Lighting</label></div>
+  
+  <div class="button-holder"id="cat5"><input type='radio' name='category' value="Electronic/ A/V" id="category-electronic" class="regular-radio" ><label for="category-electronic">Electronic/ A/V</label></div>
+  
+  <div class="button-holder"id="cat6"><input type='radio' name='category' value="Digital Exhibit Media" id="category-digital" class="regular-radio"><label for="category-digital">Digital Exhibit Media</label></div>
+  
+  <div class="button-holder"id="cat7"><input type='radio' name='category' value="Other" id="category-other" class="regular-radio"><label for-"category-other">Other</label></div>
+  
+  <p class="aside" id="clear_form" id="category_aside">*If "Other", please describe in the "Project Description" field.</p>
+    </div>
+    </div>
+  
+
+  <!-- BUILDING & FLOOR -->  
+<div class="center_form" id="clear_form">
+	<label id="main-label" for="pass_building">Building and Floor</label>
+    <input type='hidden' name='pass_building' value=""><select size='1' name='building' onchange="updateModels(this.form)">
+</select>
+
+
+  <!-- LOCATION  -->
+	<label id="main-label" for="models">Location</label>
+    <select size='1' name='models'>
+</select>
+</div>
+
+  <!-- LOCATION COMMENTS -->
+<div class="center_form" id="center_form_right">
+	<label id="main-label" for="location_comment">Location Comments</label>
+    <textarea name='location_comment' placeholder="Additional location comments" maxlength="900" min="1"></textarea>
+</div>
+
+
+
+  <!-- PROJECT NAME -->  
+  <div id="clear_form">
+  <label id="main-label" for="proj_name">Project Name</label>
+  <input type="text" name="proj_name" placeholder="Project Name" required>
+  <span class="form_hint">Please keep the name simple</span></div>
+  
+  
+    <!-- PROJECT COMMENTS -->
+  <div id="clear_form" >
+	<label id="main-label" for="proj_description">Project Description</label>
+    <textarea name='proj_description' placeholder="Enter Project Description" maxlength="1000" min="1" required></textarea>
+</div>
+
+  
+      <!-- UPLOAD FORMS -->
+<div id="clear_form" id="FileUpload" >
+	<label id="main-label" for="file_upload[]">Supporting Files</label>
+    
+   <input type='file' name='file_upload[]' id="clear_form">
+    <input type='file' name='file_upload[]' id="clear_form">
+     <input type='file' name='file_upload[]' id="clear_form">
+</div>
+<div id="clear_form">
+<input type='hidden' name='section' value='Exhibits'><input type='hidden' name='tempID' value='Sutton_J0930'>
+	<input type='hidden' name='work_order_number' value=''>
+</div>
+      
+      
+      
+      
+  
+ <fieldset>
+    <input type="submit" name="submit" id="submit" value="Submit">
+  </fieldset>
+  
+  
+  
+  </div> <!--Closing .parent-div-->
+</form>
+
+
+
+
+</div>
+
+
+<script type="text/javascript">
+	  resetForm(document.autoSelectForm);
+	</script>
+</body>
+</html>

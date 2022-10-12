@@ -1,0 +1,1 @@
+<?phpecho "<table><img src='Page1/PAGEmiddle.jpg' width='640' border='0' usemap='#Map2'></table><map name='Map2'>  <area shape='rect' coords='360,200,650,429' href='#' onClick=\"window.open('Bearpage/bear-page.jpg','The Bear','height=275,width=550');\"></map>";?>

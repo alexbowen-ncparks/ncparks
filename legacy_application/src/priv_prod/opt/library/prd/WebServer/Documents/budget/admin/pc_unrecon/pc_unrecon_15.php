@@ -1,0 +1,1 @@
+<?php$sql = "UPDATE pcard_unreconciled,pcard_unreconciled_xtndset pcard_unreconciled.reconciled='n'where pcard_unreconciled.trans_id=pcard_unreconciled_xtnd.trans_id";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query. step 15 $sql");$step=15;?>

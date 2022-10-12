@@ -199,7 +199,7 @@ if(!empty($park_code))
 			echo "<td><font color='red'>Only needed if NOT a See Insights counter.</font> <strong>Time needed to read daily:</strong><br />
 			<font size='-2'>in half-hour increment, e.g., 0.5 or 1 or 1.5</font>
 			<input type='text' name='time_to_check[$i]' value=\"$time_to_check\" size='5' ><br />
-			<strong>Distance from Visitor Center(VC) in Miles:</strong>
+			<strong>Distance from VC in Miles:</strong>
 			<input type='text' name='distance_from_VC[$i]' value=\"$distance_from_VC\" size='5' >
 			</td>";
 			

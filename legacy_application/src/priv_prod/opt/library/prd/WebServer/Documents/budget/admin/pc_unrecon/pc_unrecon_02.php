@@ -1,0 +1,1 @@
+<?php$sql = "Truncate table pcard_unreconciled_xtnd";//echo "$sql";//$result = mysqli_query($connection, $sql) or die ("Couldn't execute query. step 2 $sql");$step=2;?>

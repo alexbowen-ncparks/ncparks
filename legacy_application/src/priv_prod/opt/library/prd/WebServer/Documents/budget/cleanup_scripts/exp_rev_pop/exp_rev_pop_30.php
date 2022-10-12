@@ -1,0 +1,1 @@
+<?php$sql = "update pcard_extractset record_complete='y'where pcard_num != ''and pcard_user != ''and pcard_vendor != ''and pcard_trans_id != ''and pcard_trans_date != ''and acctdate >= '$start_date'and acctdate <= '$end_date'";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query 30. $sql");$step=30;?>

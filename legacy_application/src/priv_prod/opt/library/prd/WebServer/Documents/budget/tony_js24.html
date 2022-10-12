@@ -1,0 +1,32 @@
+<html>
+<body>
+<table>
+<tr><td id="answer"></td></tr>
+<tr><td><input type="text" id="num1" value="0.00" onChange=calculate()></td></tr>
+<tr><td><input type="text" id="num2" value="0.00" onChange=calculate()></td></tr>
+<tr><td><input type="text" id="num3" value="0.00" onChange=calculate()></td></tr>
+</table>
+
+
+<script>
+function calculate()
+{
+	var field1=document.getElementById("num1").value;
+	var field2=document.getElementById("num2").value;
+	var field3=document.getElementById("num3").value;
+	
+	var result=parseFloat(field1)+parseFloat(field2)+parseFloat(field3);
+	
+	if(!isNaN(result))
+	{
+	     document.getElementById("answer").innerHTML="Total: "+result;
+	}
+	
+	
+}
+
+
+</script>
+
+</body>
+<html>

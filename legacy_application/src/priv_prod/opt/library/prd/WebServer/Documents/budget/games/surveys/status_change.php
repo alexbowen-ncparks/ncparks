@@ -1,0 +1,142 @@
+<?php
+session_start();
+
+$active_file=$_SERVER['SCRIPT_NAME'];
+
+$level=$_SESSION['budget']['level'];
+$posTitle=$_SESSION['budget']['position'];
+$tempID=$_SESSION['budget']['tempID'];
+$beacnum=$_SESSION['budget']['beacon_num'];
+$concession_location=$_SESSION['budget']['select'];
+$concession_center=$_SESSION['budget']['centerSess'];
+$player=$_SESSION['budget']['tempID'];
+
+
+extract($_REQUEST);
+
+//echo "$report_date<br />";exit;
+
+
+//echo $concession_location;
+/*
+if($level=='5' and $tempID !='Dodd3454')
+{
+//echo "<pre>";print_r($_SERVER);"</pre>";//exit;
+echo "<pre>";print_r($_SESSION);"</pre>";//exit;
+//echo "<pre>";print_r($_REQUEST);"</pre>";exit;
+}
+*/
+//echo "<pre>";print_r($_REQUEST);"</pre>";//exit;
+//echo "<pre>";print_r($_SESSION);"</pre>";exit;
+if($status=='show'){$status_change='hide';}
+if($status=='hide'){$status_change='show';}
+//echo "status_change=$status_change";//exit;
+//echo "<br />";
+$database="budget";
+$db="budget";
+include("/opt/library/prd/WebServer/include/iConnect.inc"); // connection parameters
+mysqli_select_db($connection, $database); // database
+include("../../../../include/activity.php");// database connection parameters
+
+
+//Insert Survey Questions into TABLE=survey_scores for all Centers in
+//Centers TABLE where fund='1280'andactcenteryn='y'  (Centers82 x # of survey questions3=246)
+//get inserted into table
+
+//Query to get all the QID Values (unique questions) for the GID (unique survey)
+//from TABLE=survey_questions
+//echo "level=$level<br />";exit;
+if($level=='5')
+{
+
+$query1="
+select 
+gid,qid,question,example_answer
+from survey_questions
+where
+gid='$gid'
+order by qid;
+";
+//echo "query1=$query1";  exit;
+
+	 
+$result1 = mysqli_query($connection, $query1) or die ("Couldn't execute query 1.  $query1");
+$num1=mysqli_num_rows($result1);
+
+
+echo "<br />";
+
+
+while ($row=mysqli_fetch_assoc($result1))
+	{
+	$header_array[$row['qid']]="";
+	}
+//echo "<pre>"; print_r($header_array); echo "</pre>";  exit;		
+
+foreach($header_array AS $index=>$header)
+	{
+	
+	//echo "<tr><th>$index</th></tr>";
+	$query2="insert into survey_scores(gid,qid,playstation)
+	         select '$gid',$index,parkcode
+			 from center where fund='1280'
+			 and actcenteryn='y'; ";
+	 
+     $result2 = mysqli_query($connection, $query2) or die ("Couldn't execute query 2.  $query2");
+	}
+
+
+	
+$query2a="update survey_scores,survey_questions
+          set survey_scores.question=survey_questions.question,
+          survey_scores.example_answer=survey_questions.example_answer
+          where survey_scores.gid='$gid'
+          and survey_questions.gid='$gid'
+          and survey_scores.qid=survey_questions.qid; ";
+//echo "query2a=$query2a";exit;
+
+
+$result2a = mysqli_query($connection, $query2a) or die ("Couldn't execute query2a. $query2a");
+
+
+$query2a1="insert into survey_scores_summary(gid,playstation)
+           select '$gid',parkcode
+		   from center where fund='1280'
+		   and actcenteryn='y'; ";
+		
+//echo "query2a1=$query2a1";exit;
+
+
+$result2a1 = mysqli_query($connection, $query2a1) or die ("Couldn't execute query2a1. $query2a1");
+
+
+$query2a2="update survey_scores_summary,survey_games
+           set survey_scores_summary.game_name=survey_games.game_name
+		   where survey_scores_summary.gid='$gid'
+		   and survey_games.gid='$gid'; ";
+		
+//echo "query2a2=$query2a2";exit;
+
+
+$result2a2 = mysqli_query($connection, $query2a2) or die ("Couldn't execute query2a2. $query2a2");
+
+
+}	
+	
+	
+	
+if($level=='5')
+{
+
+$query3a="update survey_games set status='$status_change' where gid='$gid' ; ";
+//echo "query3a=$query3a";exit;
+}
+
+$result3a = mysqli_query($connection, $query3a) or die ("Couldn't execute query3a. $query3a");
+
+header("location: games.php");
+
+//exit;
+
+
+?>

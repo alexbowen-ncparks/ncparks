@@ -1,0 +1,1 @@
+<?php// Make f_yearif($f_year==""){$testMonth=date(n);if($testMonth >0 and $testMonth<8){$year2=date(Y)-1;}if($testMonth >7){$year2=date(Y);}$yearNext=$year2+1;$yx=substr($year2,2,2);$year3=$yearNext;$yy=substr($year3,2,2);$f_year=$yx.$yy;}?>

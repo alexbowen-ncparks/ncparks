@@ -1,0 +1,1 @@
+<?php$sql = "UPDATE pcard_unreconciledset report_date='$reconcilement_date'where xtnd_rundate_new >= '$xtnd_rundate_start'and xtnd_rundate_new <= '$xtnd_rundate_end'and report_date=''";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query. step 12 $sql");$step=12;?>

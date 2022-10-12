@@ -8,7 +8,8 @@ if(!isset($_SESSION))
 	$level=$_SESSION['facilities']['level'];
 	if($level<1){
 	echo "Either you are not logged in or you do not have access to this database.";
-	echo "<a href='/login_form.php?db=facilities'>login</a>";
+	echo "<a href='https://10.35.152.9/login_form.php?db=facilities'>login</a>";
+	echo "<a href='https://10.35.152.9/login_form.php?db=facilities'>login</a>";
 	
 	exit;
 	}

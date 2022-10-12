@@ -1,0 +1,43 @@
+.content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 300;
+	color: #333333;
+}
+.header1 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #766E25;
+}
+.header2 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #333333;
+}
+.photo_border {
+	margin: 1px;
+	padding: 1px;
+	border: thin dashed #9B572A;
+}
+
+
+.hrules {
+	color: #DEC757;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.photo_links {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: small-caps;
+	color: #426F9B;
+	text-decoration: underline;
+	padding-top: 15px;
+}

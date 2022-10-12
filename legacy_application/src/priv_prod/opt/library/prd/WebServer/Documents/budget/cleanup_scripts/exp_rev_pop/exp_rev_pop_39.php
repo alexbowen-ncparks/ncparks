@@ -1,0 +1,1 @@
+<?php$sql = "update exp_rev_wsset vendor_description=concat('PCARD','-',pcard_user,'-',pcard_vendor,'-',pcard_trans_date)where 1and f_year='$fy'and pcardyn='y'";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query 39. $sql");$step=39;?>

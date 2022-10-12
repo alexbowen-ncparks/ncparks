@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin:0px;
+	background-color:darkseagreen;
+	border-style:solid;
+	border-color:darkseagreen;	
+	font-family:arial, verdana, sans-serif;
+	font-weight:bold;
+	text-align:left;}
+a { text-decoration:none }	
+
+.cartRow{
+	background-color: gold;
+	
+	}
+
+
+.normal {background-color:lightcyan;}
+.highlight {background-color:#ff0000;}
+
+table
+    {
+	
+	
+	background-color: lightcyan; color: blue; font-size: 10px;
+	
+	
+ 
+    
+ 
+    border: 1px solid brown;
+ 
+    text-align: left;
+     
+    
+    }
+     
+    th
+    {
+    font-family:Arial; font-size:15pt;
+ 
+    color:red; font-weight: bold; font-style:italic;
+ 
+    text-align: left; background-color:#FFE4E1
+    }
+	
+TH{font-family: Arial; font-size: 15pt;}
+
+TD{font-family: Arial; font-size: 15pt; color: #5C4033; text-align: left; }
+
+.column1of3{
+	float:left;
+	width:30%;
+	background-color:darkseagreen;
+	border-style:solid;
+	border-color:darkseagreen;
+	padding:0%;
+	margin-right:1%;
+	margin-bottom:1%;
+	margin-left:1%;
+	}
+	
+.column2of3{
+	float:left;
+	width:30%;
+	background-color:darkseagreen;
+	border-style:solid;
+	border-color:darkseagreen;
+	padding:0%;
+	margin-right:1%;
+	margin-bottom:1%;
+	margin-left:1%;
+	}	
+	
+.column3of3{
+	float:left;
+	width:30%;
+	background-color:lightgrey;
+	border-style:solid;
+	border: 1px solid brown;
+	border-color:darkseagreen;
+	padding:0%;
+	margin-right:1%;
+	margin-bottom:1%;
+	margin-left:1%;
+	}	
+	
+
+
+.column1of3, .column2of3, .column3of3 {margin-left:1%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

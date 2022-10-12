@@ -1,0 +1,1 @@
+<?php$sql = "update exp_rev_ws,contract_vendor_numbersset exp_rev_ws.vendor_description=contract_vendor_numbers.namewhere exp_rev_ws.description=contract_vendor_numbers.numberand exp_rev_ws.f_year='$fy'";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query 45. $sql");$step=45;?>

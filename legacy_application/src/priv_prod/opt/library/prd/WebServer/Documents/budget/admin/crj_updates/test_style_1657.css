@@ -1,0 +1,45 @@
+	
+/* 3 columns */
+.row1_col_1, .row1_col_2{
+	float:left;
+	width:40%;
+	border-style:solid;
+	border-color:darkseagreen;
+	padding:0%;
+	margin-right:1%;
+	margin-bottom:1%;
+	margin-left:1%;
+	}
+	
+
+.row1_col_1, .row1_col_2 {margin-left:1%;}
+
+
+.row2_col_1{
+	float:left;
+	width:40%;
+	border-style:solid;
+	border-color:darkseagreen;
+	padding:0%;
+	margin-right:1%;
+	margin-bottom:1%;
+	margin-left:1%;
+	}
+	
+
+.row2_col_1 {margin-left:1%;}
+
+
+
+
+
+/*
+.columns1and2of3, .columns2and3of3 {
+	float:left;
+	width:600px;
+	background-color:#cccccc;
+	padding:10px;
+	margin-top:20px;}
+
+*/
+

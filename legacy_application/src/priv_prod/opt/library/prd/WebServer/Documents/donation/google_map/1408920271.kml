@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+ <Document>
+ <Style id="restaurantStyle">
+ <IconStyle id="restuarantIcon">
+ <Icon>
+ <href>http://maps.google.com/mapfiles/kml/pal4/icon57.png</href>
+ </Icon>
+ </IconStyle>
+ </Style>
+ <Style id="barStyle">
+ <IconStyle id="barIcon">
+ <Icon>
+ <href>http://maps.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png</href>
+ </Icon>
+ </IconStyle>
+ </Style>
+ <Placemark id="placemarkCHRO">
+ <name>Chimney Rock State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-08-24&amp;park=CHRO' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-82.250260,35.432799</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkCLNE">
+ <name>Cliffs of the Neuse State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-08-24&amp;park=CLNE' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-77.8932,35.2354</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkELKN">
+ <name>Elk Knob State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-08-24&amp;park=ELKN' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-81.69064,36.332586</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkENRI">
+ <name>Eno River State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-08-24&amp;park=ENRI' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-79.0050,36.0783</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkFALA">
+ <name>Falls Lake State Recreation Area</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-08-24&amp;park=FALA' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-78.6888,36.0117</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkGOCR">
+ <name>Goose Creek State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-08-24&amp;park=GOCR' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-76.901414,35.481853</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkGORG">
+ <name>Gorges State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-08-24&amp;park=GORG' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-82.9522,35.097</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkHARI">
+ <name>Haw River State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-08-24&amp;park=HARI' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-79.756364,36.250646</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkJONE">
+ <name>Jones Lake State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-08-24&amp;park=JONE' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-78.595423,34.682743</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkLAWA">
+ <name>Lake Waccamaw State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-08-24&amp;park=LAWA' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-78.465485,34.278985</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkLURI">
+ <name>Lumber River State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-08-24&amp;park=LURI' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-79.002225,34.390023</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkMEMO">
+ <name>Medoc Mountain State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-08-24&amp;park=MEMO' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-77.8883,36.2639</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkPIMO">
+ <name>Pilot Mountain State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-08-24&amp;park=PIMO' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-80.462938,36.341276</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkSOMO">
+ <name>South Mountains State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-08-24&amp;park=SOMO' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-81.6000,35.5963</coordinates>
+ </Point>
+ </Placemark>
+ </Document>
+</kml>

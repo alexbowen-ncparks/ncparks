@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+ <Document>
+ <Style id="restaurantStyle">
+ <IconStyle id="restuarantIcon">
+ <Icon>
+ <href>http://maps.google.com/mapfiles/kml/pal4/icon57.png</href>
+ </Icon>
+ </IconStyle>
+ </Style>
+ <Style id="barStyle">
+ <IconStyle id="barIcon">
+ <Icon>
+ <href>http://maps.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png</href>
+ </Icon>
+ </IconStyle>
+ </Style>
+ <Placemark id="placemarkFOMA">
+ <name>Fort Macon State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-07-25&amp;park=FOMA' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-76.67834,34.697952</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkHABE">
+ <name>Hammocks Beach State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-07-25&amp;park=HABE' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-77.1429,34.6710</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkHARO">
+ <name>Hanging Rock State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-07-25&amp;park=HARO' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-80.254122,36.411906</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkJORI">
+ <name>Jockey's Ridge State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-07-25&amp;park=JORI' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-75.6330,35.9642</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkMOMI">
+ <name>Mount Mitchell State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-07-25&amp;park=MOMI' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-82.2737,35.7528</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkSOMO">
+ <name>South Mountains State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-07-25&amp;park=SOMO' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-81.6000,35.5963</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkWIUM">
+ <name>William B. Umstead State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-07-25&amp;park=WIUM' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-78.7502,35.8905</coordinates>
+ </Point>
+ </Placemark>
+ </Document>
+</kml>

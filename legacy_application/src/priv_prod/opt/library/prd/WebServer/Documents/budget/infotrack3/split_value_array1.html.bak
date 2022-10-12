@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script type='text/javascript'>
+      function sum(){ 
+        var val = document.getElementById('userInput').value;
+        var temp = val.split(",");
+        var total = 0;
+        var v;
+        for(var i = 0; i < temp.length; i++) {
+          v = parseFloat(temp[i]);
+          if (!isNaN(v)) total += v; 
+        } 
+        document.getElementById('resultSumValue').value = total; 
+      } 
+    </script>
+  </head>
+  <body>
+    <form id="input">
+      <textarea id="userInput" rows=20 cols=20></textarea> 
+      <input id="Run" type=Button value="run" onClick="sum()" />
+    </form>
+
+    <form id="resultSum">
+      <input id="resultSumValue" type="text" />
+    </form>
+  </body>
+</html>

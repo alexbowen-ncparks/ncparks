@@ -1,0 +1,1 @@
+<?php$sql = "Delete from exp_rev_wswhere f_year='$fy'and description like '%procurementcard%'and acct != '535675'";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query 35. $sql");$step=35;?>

@@ -1,0 +1,84 @@
+<html>
+<head>
+
+<style>
+
+body {
+    background-color: darkseagreen;
+}
+
+
+a:link {
+    text-decoration: none;
+	
+}
+
+#header {
+    background-color:pink;
+    color:white;
+    text-align:center;
+    padding:0px;
+}
+#column1 {
+    line-height:50px;
+    font-size: 125%;
+    background-color: pink;
+    height:380px;
+    width:15%;
+    float:left;
+    padding:5px;
+
+    
+	      
+}
+#column2 {
+    width:80%;
+    float:left;
+    padding:10px;
+    text-align:center;
+	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	font-size: 125%;
+	
+}
+
+li {
+    display: inline;
+	
+}
+
+
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script type="text/javascript" src="slideshow.js"></script>
+<link rel="stylesheet" href="slideshow.css" />
+
+</head>
+
+<body>
+<p id="slideshow">
+<div id="container">
+<ul>
+<li><img height='320' width='620' src="images/caroline1.jpg" /><a class="next red" href="#slideshow">next</a></li>
+<li><img height='320' width='620' src="images/caroline2.jpg" /><a class="next blue" href="#slideshow">next</a><a class="previous blue" href="#slideshow">prev</a></li>
+<li><img height='320' width='620' src="images/caroline3.jpg" /><a class="next blue" href="#slideshow">next</a><a class="previous blue" href="#slideshow">prev</a></li>
+<li><img height='320' width='620' src="images/caroline8.jpg" /><a class="next blue" href="#slideshow">next</a><a class="previous blue" href="#slideshow">prev</a></li>
+<li><img height='320' width='620'src="images/caroline4.jpg" /><a class="previous blue" href="#slideshow">prev</a><a class="startover" href="#slideshow">startover</a></li>
+</ul>
+</div>
+</p>
+</body>
+</html>

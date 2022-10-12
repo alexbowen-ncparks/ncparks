@@ -1,0 +1,37 @@
+It's important to do this as close to the actual change over date as possible.
+
+1. Get start and end dates from Budget Office, e.g., 2021-06-16 and 2022-06-15 and enter into Start and End fields on form.
+
+2. Copy table seasonal_payroll_next to seasonal_payroll_next_xxxx  where xxxx represents start date for cycle, e.g., seasonal_payroll_next_2021-06-16
+
+3. In table seasonal_payroll_next set these fields to blank: start_date. Do not blank out hrs or weeks.
+
+4. Leave "locked" on step 2 until ready to unlock.
+
+
+HR Seasonal - Prepare for hiring in next fiscal year
+
+Using browser go to HR Seasonal
+1. Click on Current cycle of ...
+
+2. Click the Lock button to prevent access at the park level
+
+3. Set the new start and end dates for next fy
+
+
+Using phpMyAdmin
+
+1. Update seasonal_payroll_next by setting field fiscal_year to the next fy, e.g., 1920 becomes 2021
+
+2. Update seasonal_payroll_next by setting field start_date to 0
+update hr.seasonal_payroll_next set start_date =0
+	
+Leave hours, weeks, 11 month, and ACA as is. Parks use these as guide for planning next fy.
+
+Using a text editor:
+
+1. Open /hr/start.php
+
+2. Around line 112 change FY to the next FY, e.g., 2021 to 2022. While preparing the app for next FY leave $level>4. Once ready for park use change this line to $level>0
+
+4. change $current_fy to new FY around line 114 of /hr/start.php

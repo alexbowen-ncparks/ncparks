@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+ <Document>
+ <Style id="restaurantStyle">
+ <IconStyle id="restuarantIcon">
+ <Icon>
+ <href>http://maps.google.com/mapfiles/kml/pal4/icon57.png</href>
+ </Icon>
+ </IconStyle>
+ </Style>
+ <Style id="barStyle">
+ <IconStyle id="barIcon">
+ <Icon>
+ <href>http://maps.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png</href>
+ </Icon>
+ </IconStyle>
+ </Style>
+ <Placemark id="placemarkCABE">
+ <name>Carolina Beach State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-04-05&amp;park=CABE' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-77.9072,34.0471</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkCLNE">
+ <name>Cliffs of the Neuse State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-04-05&amp;park=CLNE' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-77.8932,35.2354</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkELKN">
+ <name>Elk Knob State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-04-05&amp;park=ELKN' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-81.69064,36.332586</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkENRI">
+ <name>Eno River State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-04-05&amp;park=ENRI' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-79.0050,36.0783</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkFOMA">
+ <name>Fort Macon State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-04-05&amp;park=FOMA' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-76.67834,34.697952</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkHABE">
+ <name>Hammocks Beach State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-04-05&amp;park=HABE' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-77.1429,34.6710</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkJORD">
+ <name>Jordan Lake State Recreation Area</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-04-05&amp;park=JORD' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-79.0169,35.7369</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkJORI">
+ <name>Jockey's Ridge State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-04-05&amp;park=JORI' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-75.6330,35.9642</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkLAJA">
+ <name>Lake James State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-04-05&amp;park=LAJA' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-81.901123,35.728710</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkLURI">
+ <name>Lumber River State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-04-05&amp;park=LURI' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-79.002225,34.390023</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkMARI">
+ <name>Mayo River State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-04-05&amp;park=MARI' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-79.938171,36.438800</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkMEMO">
+ <name>Medoc Mountain State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-04-05&amp;park=MEMO' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-77.8883,36.2639</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkMOMI">
+ <name>Mount Mitchell State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-04-05&amp;park=MOMI' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-82.2737,35.7528</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkSOMO">
+ <name>South Mountains State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-04-05&amp;park=SOMO' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-81.6000,35.5963</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkWEWO">
+ <name>Weymouth Woods-Sandhills Nature Preserve</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-04-05&amp;park=WEWO' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-79.3690,35.1469</coordinates>
+ </Point>
+ </Placemark>
+ </Document>
+</kml>

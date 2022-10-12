@@ -1,0 +1,1 @@
+<?php$sql = "update pcard_extract_worksheet2,pcard_manual_transidset pcard_extract_worksheet2.pcard_trans_id=pcard_manual_transid.pcard_transidwhere pcard_extract_worksheet2.id=pcard_manual_transid.pcews2_id";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query 24. $sql");$step=24;?>

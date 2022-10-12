@@ -1,0 +1,40 @@
+body {
+	margin:0px;
+	background-color:darkseagreen;
+	border-style:solid;
+	border-color:darkseagreen;	
+	font-family:arial, verdana, sans-serif;
+	font-size:1.2em;
+	text-align:left;}
+	
+#header {
+	text-align:left;
+	}	
+	
+	
+	
+/* 3 columns */
+.column1of4, .column2of4, .column3of4{
+	float:left;
+	width:30%;
+	background-color:cornsilk;
+	border-style:solid;
+	border-color:darkseagreen;
+	padding:0%;
+	margin-right:1%;
+	margin-bottom:1%;
+	margin-left:1%;
+	}
+	
+
+.column1of4, .column2of4, .column3of4 {margin-left:1%;}
+/*
+.columns1and2of3, .columns2and3of3 {
+	float:left;
+	width:600px;
+	background-color:#cccccc;
+	padding:10px;
+	margin-top:20px;}
+
+*/
+

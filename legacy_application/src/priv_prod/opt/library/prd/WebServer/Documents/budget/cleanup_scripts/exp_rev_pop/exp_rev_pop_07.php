@@ -1,0 +1,1 @@
+<?php$sql = "update pcard_extractset calendar_acctdate=concat(mid(acctdate,5,2),'/',mid(acctdate,7,2),'/',mid(acctdate,1,4))where f_year='$fiscal_year'and acctdate >=  '$start_date'and acctdate <='$end_date'and calendar_acctdate=''";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query 7. $sql");$step=7;?>

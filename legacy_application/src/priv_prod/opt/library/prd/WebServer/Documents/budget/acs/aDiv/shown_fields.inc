@@ -1,0 +1,1 @@
+<?php $show="request_id,f_year,center_code,posnum,postitle,beacon_title,beacon_job,beacon_posnum,ncas_account,budget_rate,budget_hrs,budget_weeks,request_amount,division_change,approved_amount,dis_app,div_app,active,count_yn,comments,posted_payments,posted_balance"; ?>

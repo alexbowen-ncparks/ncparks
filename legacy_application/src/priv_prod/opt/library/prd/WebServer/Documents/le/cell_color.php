@@ -1,0 +1,1 @@
+<?phpecho "<tr><th colspan='11' align='right'></th>";echo "<th bgcolor='#98FB98'>Approved</th>";// PaleGreenecho "<th bgcolor='#FF6A6A'>DIES</th>";// IndianRed1echo "<th bgcolor='#00FFFF'>LIES</th>";// Cyan1echo "<th bgcolor='#ADD8E6'>PIO</th>";// LightBlueecho "<th bgcolor='#DDA0DD'>EXCO</th>";// Plumecho "</tr>";?>

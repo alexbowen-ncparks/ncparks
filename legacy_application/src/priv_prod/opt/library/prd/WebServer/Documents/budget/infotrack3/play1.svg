@@ -1,0 +1,11 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet">
+	
+	<g id="main">
+				
+		<ellipse cx="100" cy="50" rx="40" ry="30" stroke="#0cc" stroke-width="5" fill="black" />
+		
+		<text x="430" y="55" font-family="sans-serif" font-size="20" fill="white">Play</text>
+		
+	</g>
+</svg>

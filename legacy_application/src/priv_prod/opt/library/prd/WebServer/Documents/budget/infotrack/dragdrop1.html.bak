@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div1,#div2 {width:350px;height:70px;padding:10px;border:1px solid #aaaaaa;}
+</style>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<p>Drag the Images into the Correct Box:</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">Red Player</div>
+<img id="drag1" src="icon_photos/runner2.png" draggable="true" ondragstart="drag(event)" width="336" height="50">
+<br>
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">Blue Player</div>
+<img id="drag2" src="icon_photos/runner1.png" draggable="true" ondragstart="drag(event)" width="336" height="50">
+
+
+</body>
+</html>

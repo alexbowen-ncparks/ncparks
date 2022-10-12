@@ -1,0 +1,1 @@
+<?phpecho "<form>    <div align='left'>      <input type='button' value='Back' onClick='history.back()' name='button'>    </div>  </form>\n";?>

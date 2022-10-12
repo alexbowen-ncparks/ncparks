@@ -1,0 +1,1 @@
+<?php>$user="root";  $host="localhost";  $password="arch2york";  $database = "war";  $connection = mysql_connect($host,$user,$password)       or die ("couldn't connect to server");  $db = mysql_select_db($database,$connection)       or die ("Couldn't select database");?>

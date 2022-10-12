@@ -1,0 +1,1 @@
+<?phpecho "<table border='1' cellpadding='3'><tr><th>Center</th><th>Acct. #</th><th>Budget</th><th>Debit</th><th>Credit</th><th>Balance</th></tr>";?>

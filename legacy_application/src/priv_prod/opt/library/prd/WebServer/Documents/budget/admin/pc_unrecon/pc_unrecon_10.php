@@ -1,0 +1,1 @@
+<?php$sql = "UPDATE pcard_unreconciledset transid_new=LPAD( trim(replace(trans_id,',','')),9,'0') WHERE 1";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query. step 10 $sql");$step=10;?>

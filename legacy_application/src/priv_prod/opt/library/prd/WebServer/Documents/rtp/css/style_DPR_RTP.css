@@ -1,0 +1,126 @@
+/* CSS Document */
+div.fixed {
+    position: fixed;
+    left: 935px;
+    top: 240px;
+    max-width:500px;
+}
+/* Header Buttons */
+ input[type=submit] {
+  color:#08233e;
+  font:2.1em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+  font-size:100%;
+  padding:2px;
+ 
+  background-color:rgba(255,204,0,1);
+  border:1px solid #ffcc00;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border-bottom:1px solid #9f9f9f;
+  -moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+  -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+  cursor:pointer;
+ }
+ input[type=submit]:hover {
+  background-color:rgba(255,204,0,0.8);
+ }
+ 
+ 
+/*PAGE LAYOUT*/
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#toppage{
+	width:1144px;
+}
+
+
+#header{
+	width:1144px;
+}
+#content{
+	width:1144px;
+}
+#contenttext{
+	float:left; width:80%; 
+	background-color:white;
+	min-height:360px;
+}
+#pagetitle{
+	position:relative; float:left; width:608px; height:110px; background-color:#F7F7F7; border-right:solid 1px #999999;
+}
+#title{
+	position:absolute; right:10px; bottom:0px; width:600px;
+}
+#menu{
+	float:left; width:147px; margin:0px;
+}
+
+#menu_select{
+	float:left; width:142px; margin:0px;
+}
+#footer{
+	width:590px; padding-right:10px; padding-left:200px;
+}
+
+/*TABLE*/
+tr.d0 td {
+  background-color: #ddddbb;
+  color: black;
+}
+
+.table {
+
+    border: 1px solid #8e8e6e; 
+	margin: 5px 5px 5px 5px;
+	background-color:#eeeedd;
+	border-collapse:collapse;
+  color: black;
+}
+
+/*TEXT STYLES*/
+.bodytext {
+	font: 0.9em Tahoma, sans-serif;
+	color: #666666;
+}
+.smalltext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 11px;
+	color: #666666;
+}
+.titletext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size:36px;
+	font-weight:bold;
+	color: #CCCCCC;
+}
+.logotext {
+	font: 0.7em Tahoma, sans-serif;
+	font-size:36px;
+	font-weight:bold;
+	color: #999999;
+}
+
+#linksmenu a{
+	float:left; 
+	width:140px; 
+	height:20px; 
+	background-color:#ABC578;
+	border-left:solid 1px #FFFFFF;
+	border-bottom:solid 1px #FFFFFF;
+	font: 0.7em Tahoma, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+	color: #FFFFFF;
+	text-decoration:none;
+	padding-top:5px;
+	padding-left:3px;
+}
+#linksmenu a:hover{
+	background-color:#006699;
+}

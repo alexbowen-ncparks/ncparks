@@ -1,0 +1,93 @@
+<?php
+
+$query_style="SELECT body_bgcolor as 'bgcolor' from infotrack_customformat
+         where user_id='$tempid' ";
+		 
+//echo "query1=$query1<br />";		 
+
+$result = mysqli_query($connection, $query_style) or die ("Couldn't execute query style.  $query_style");
+
+$row1=mysqli_fetch_array($result1);
+if(!empty($row1))
+	{
+	extract($row1);
+	}
+if(empty($bgcolor)){$bgcolor='darkseagreen';}
+//echo "bgcolor=$bgcolor";
+//$bgcolor="coral";
+?>
+<style type='text/css'>
+
+body {
+	margin:0px;
+	background-color:<?php echo $bgcolor;?>;
+	border-style:solid;
+	border-color:darkseagreen;	
+	font-family:arial, verdana, sans-serif;
+	text-align:center;}
+	
+
+
+
+a:link {text-decoration:none;}
+a:hover {
+    text-decoration: none;
+}
+h1 {text-align:left}
+h1 {color:brown;}
+h2 {text-align:center}
+h3 {text-align:center} 
+	
+	
+	
+	
+table
+    {
+	
+	
+    font-family:Arial; 
+	
+	background-color: lightcyan; color: blue; font-size: 10;
+	
+	
+ 
+    font-weight: normal;
+ 
+    border: 0px solid brown;
+ 
+    text-align: center;
+     
+    border-collapse: collapse;
+	
+	border-spacing: 0px;
+	
+	
+	
+	
+    }
+     
+    th
+    {
+    font-family:Arial; font-size:15pt;
+ 
+    color:brown; font-weight: bold; font-style:italic;
+ 
+    text-align: center; background-color:cornsilk
+    }
+	
+TH{font-family: Arial; font-size: 15pt;}
+
+TD{font-family: Arial; font-size: 15pt; color: #5C4033;}
+
+.cartRow{
+
+      background-color: gold;
+
+   } 
+
+
+
+
+</style>	
+   
+

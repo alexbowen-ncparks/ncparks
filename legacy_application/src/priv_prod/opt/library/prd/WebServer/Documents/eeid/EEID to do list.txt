@@ -1,0 +1,1 @@
+1. Automate the date validation process of verify.js  Allow for entry of previous fiscal year entries at least for a month after end of that FY.2.

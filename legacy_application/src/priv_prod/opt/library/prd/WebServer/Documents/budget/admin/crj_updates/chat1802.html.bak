@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+
+function send(){
+   //Send an XMLHttpRequest to the 'send.php' file with all the required informations
+   var sendto = 'send.php?message=' + document.getElementById('message').value + '&name=' + document.getElementById('name').value;
+   if(window.XMLHttpRequest){
+      xmlhttp = new XMLHttpRequest();
+      xmlhttp.open("GET",sendto,false);
+      xmlhttp.send(null);
+   }
+   else{
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      xmlhttp.open("GET",sendto,false);
+      xmlhttp.send();
+   }
+   }
+</script>
+</head>
+
+<body>
+
+<div id="write" style="text-align:center;"><textarea id="message" cols="50" rows="5"></textarea><br/>Name:<input type="text" id="name"/><input type="button" value="Send" onClick="send();"/></div>
+</div>
+ 
+
+</body>
+</html>

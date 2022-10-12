@@ -1,0 +1,1 @@
+<?php$sql = "update pcard_extractset pcard_num=mid(pcard_num_full,13,4)where 1and pcard_extract.acctdate >= '$start_date'and pcard_extract.acctdate <= '$end_date'and pcard_num=''";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query 29. $sql");$step=29;?>

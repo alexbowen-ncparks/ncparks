@@ -1,0 +1,1 @@
+<?phpswitch ($dist)	{	case "NODI":		$dist = "NORTH DISTRICT";		break;	case "SODI":		$dist = "SOUTH DISTRICT";		break;	case "WEDI":		$dist = "WEST DISTRICT";		break;	case "EADI":		$dist = "EAST DISTRICT";		break;	}?>

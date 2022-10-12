@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>2224</title>
+
+<link rel="stylesheet" type="text/css" href="2224.css"/>
+
+
+
+<div id="centeredmenu">
+   <ul>
+      <li><a href="#">Tab one</a>
+         <ul>
+            <li><a href="http://www.mamajo.net">Link one</a></li>
+            <li><a href="#">Link two</a></li>
+            <li><a href="#">Link three</a></li>
+            <li><a href="#">Link four</a></li>
+            <li><a href="#">Link five</a></li>
+         </ul>
+      </li>
+      <li class="active"><a href="#" class="active">Tab two</a>
+         <ul>
+            <li><a href="#">Link one</a></li>
+            <li><a href="#">Link two</a></li>
+            <li><a href="#">Link three</a></li>
+            <li><a href="#">Link four</a></li>
+            <li><a href="#">Link five is a long link that wraps</a></li>
+         </ul>
+      </li>
+      <li><a href="#">Long tab three</a>
+         <ul>
+            <li><a href="#">Link one</a></li>
+            <li><a href="#">Link two</a></li>
+            <li><a href="#">Link three</a></li>
+            <li><a href="#">Link four</a></li>
+            <li><a href="#">Link five</a></li>
+         </ul>
+      </li>
+      <li><a href="#">Tab four</a>
+         <ul class="last">
+            <li><a href="#">Link one</a></li>
+            <li><a href="#">Link two</a></li>
+            <li><a href="#">Link three</a></li>
+            <li><a href="#">Link four</a></li>
+            <li><a href="#">Link five</a></li>
+         </ul>
+      </li>
+   </ul>
+</div>

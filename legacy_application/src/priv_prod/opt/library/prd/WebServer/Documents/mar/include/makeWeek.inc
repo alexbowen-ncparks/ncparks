@@ -1,0 +1,1 @@
+<?phpfunction getWeekDate(){global $weekOne;$weekOne  = date ("W", mktime (0,0,0,1,1,date("Y"));$newYear = date ("Y", mktime(0,0,0,$month,$day,$year));//$weekOne = date ("W", mktime(0,0,0,$month,$day,$year));$weekDate = array(1=>"1",return $weekNumber;}echo "$weekOne";?>

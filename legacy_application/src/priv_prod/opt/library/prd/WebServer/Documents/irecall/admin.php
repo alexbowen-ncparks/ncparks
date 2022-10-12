@@ -1,0 +1,1 @@
+<?phpextract($_REQUEST);session_start();if ($_SESSION[irecall]['admin'] != "ADMIN"){header("Location: login_form.php");exit();}  ?>

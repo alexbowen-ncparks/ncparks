@@ -1,0 +1,1 @@
+<?php$sql = "update pcard_unreconciledset reconciled=''where reconciled='n'";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query. step 3 $sql");$step=3;?>

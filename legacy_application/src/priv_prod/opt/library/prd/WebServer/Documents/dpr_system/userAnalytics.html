@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript">
+    const level = '<%=Session["[dpr_system"]%>';
+    console.log(level);
+</script>
+<style>
+    table, th, td, caption {
+        border-collapse: collapse;
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    thead, caption {
+        font-weight: bold;
+    }
+
+    tbody {
+        text-align: center;
+    }
+
+    button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    h2, h4 {
+        text-align: center;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>User Analytics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body>
+    <h1>Application Use Analytics</h1>
+    <h3 id="totalStats"></h2>
+    <button id="myButton" class="float-left submit-button">Back</button>
+    <br></br>
+    <h2>Application Visits</h1>
+    <canvas id="appVisits" width="400" height="200"></canvas>
+    <br></br>
+    <h2>Application User Count</h1>
+    <h4>Click bar to see user data</h4>
+    <canvas id="appUsers" width="400" height="250"></canvas>
+    <div id="tableDiv"></div>
+
+    <script>
+        window.addEventListener('load', setup);
+        document.getElementById("myButton").onclick = function () {
+            location.href = "/dpr_system";
+        };
+
+        /**
+         * creates the charts using data from getAppTotals() and sets the site totals using setSiteTotals()
+         */
+        async function setup() {
+            setSiteTotals();
+            const chartAppVisits = document.getElementById('appVisits').getContext('2d');
+            const chartAppUsers = document.getElementById('appUsers').getContext('2d');
+            const appTotals = await getAppTotals();
+
+            const appVisits = new Chart(chartAppVisits, {
+                type: 'doughnut',
+                data: {
+                    labels: appTotals.appNames,
+                    datasets: [
+                        {
+                            borderWidth: 1,
+                            data: appTotals.appVisits,
+                            backgroundColor: appTotals.backgroundColor,
+                        }
+                    ]
+                }
+            });
+            const appUsers = new Chart(chartAppUsers, {
+                type: 'bar',
+                data: {
+                    labels: appTotals.appNames,
+                    datasets: [
+                        {
+                            label: 'Total Users',
+                            data: appTotals.appUsers,
+                            backgroundColor: appTotals.backgroundColor,
+                        }
+                    ]
+                }
+            });
+
+            //make the users table link to the user data by app page
+            document.getElementById('appUsers').onclick = function (e) {
+                var slice = appUsers.getElementAtEvent(e);
+                if (!slice.length) return; // return if not clicked on slice
+                var label = slice[0]._model.label;
+                createUserTable(label);
+            }
+
+        }
+
+        /**
+         * Sets the site totals at the top of the page
+         */
+        async function setSiteTotals() {
+            const requestOptions = {
+                method: "GET",
+                credentials: "same-origin",
+            }
+            const response = await fetch("/dpr_system/log_API.php?type=siteTotals", requestOptions);
+            const data = await response.json();
+            const statsString = "Total Visits: " + data[0].visits + "\nTotal Users: " + data[0].visitors;
+            const totalStats = document.getElementById('totalStats');
+            totalStats.innerText = statsString; 
+        }
+
+        /**
+         * creates the user table and appends it to the bottom of the page
+         */
+        async function createUserTable(label) {
+            const data = await getAppData(label);
+            tableDiv = document.getElementById('tableDiv');
+            const table = document.createElement('table');
+            const thead = table.createTHead();
+            const caption = table.createCaption();
+            caption.innerText = label;
+            thead.insertRow(0);
+            Object.keys(data[0]).forEach(key => {
+                thead.rows[0].insertCell().innerText = key;
+            });
+
+            const tbody = table.createTBody();
+
+            i = 0;
+            data.forEach(element => {
+                tbody.insertRow(i);
+                Object.values(element).forEach(value => {
+                    tbody.rows[i].insertCell().innerText = value;
+                });
+                i++;
+            });
+
+
+            tableDiv.appendChild(table);
+        }
+
+        /**
+         * Gets the user data for a specific app
+         */
+        async function getAppData(appName) {
+            const requestOptions = {
+                method: "GET",
+                credentials: "same-origin",
+            }
+            const response = await fetch("/dpr_system/log_API.php?type=appData&app=" + appName, requestOptions);
+            const data = await response.json();
+
+            return data;
+        }
+
+        /**
+         * Gets the app totals data 
+        */
+        async function getAppTotals() {
+            const requestOptions = {
+                method: "GET",
+                credentials: "same-origin",
+            }
+            const response = await fetch("/dpr_system/log_API.php?type=appTotals", requestOptions);
+            const data = await response.json();
+            const appNames = [];
+            const appVisits = [];
+            const appUsers = [];
+            const backgroundColor = [];
+            data.forEach(row => {
+                appNames.push(row.dbName);
+                appVisits.push(row.totalVisits);
+                appUsers.push(row.totalUsers);
+                backgroundColor.push(stringToColor(row.dbName));
+            });
+
+            return { appNames, appVisits, appUsers, backgroundColor };
+        }
+
+        /**
+        * returns the same color based on the string input: 
+        * https://stackoverflow.com/questions/3426404/create-a-hexadecimal-colour-based-on-a-string-with-javascript
+        */
+        var stringToColor = function (str) {
+            var hash = 0;
+            for (var i = 0; i < str.length; i++) {
+                hash = str.charCodeAt(i) + ((hash << 5) - hash);
+            }
+            var color = '#';
+            for (var i = 0; i < 3; i++) {
+                var value = (hash >> (i * 8)) & 0xFF;
+                color += ('00' + value.toString(16)).substr(-2);
+            }
+            return color;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<?php
+
+
+echo "<table border='5' cellspacing='5'>";
+
+echo "<tr>";
+
+
+if($filegroup=='documents')
+
+{echo "<td><font size='4' class='cartRow'><b><a href='documents_personal_search.php' >Concessionaire Documents</a></b></font></td>";}
+
+
+
+if($filegroup!='documents') 
+
+{echo "<td><font size='4' ><b><a href='documents_personal_search.php' >Concessionaire Documents</a></b></font></td>";}
+
+
+
+/*
+
+{echo "<td><font size='4' ><b><a href='/budget/menu.php?forum=blank'> Budget-Home </a></b></font></td>";}
+
+*/
+
+
+
+
+
+
+/*
+
+
+
+if($filegroup=='photos')
+
+{echo "<td><font size=4 class=cartRow><b><A href='photos_menu.php' >Photos</A></b></font></td>";}
+
+
+
+if($filegroup!='photos') 
+
+{echo "<td><font size=4 ><b><A href='photos_menu.php' >Photos</A></b></font></td>";}
+
+
+
+
+
+
+
+if($filegroup=='customize')
+
+{echo "<td><font size=4 class=cartRow><b><A href='home_page_custom.php' >Customize</A></b></font></td>";}
+
+
+
+if($filegroup!='customize') 
+
+{echo "<td><font size=4 ><b><A href='home_page_custom.php' >Customize</A></b></font></td>";}
+
+*/
+
+echo "</tr>";
+
+echo "</table>";
+
+
+
+
+
+
+
+?>
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+<?php$sql = "truncate table pcard_manual_transid";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query 22. $sql");$step=22;?>

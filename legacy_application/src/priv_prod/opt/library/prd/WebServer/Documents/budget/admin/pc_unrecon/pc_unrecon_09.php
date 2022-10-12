@@ -1,0 +1,1 @@
+<?php$sql = "UPDATE pcard_unreconciled,pcard_usersset pcard_unreconciled.cardholder=pcard_users.last_namewhere pcard_unreconciled.pcard_num=pcard_users.card_number";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query. step 9 $sql");$step=9;?>

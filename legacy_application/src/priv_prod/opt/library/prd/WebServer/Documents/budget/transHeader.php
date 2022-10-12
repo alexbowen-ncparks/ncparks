@@ -1,0 +1,1 @@
+<?phpecho "<table border='1' cellpadding='3'><tr><th>RCC</th><th>Expense Type</th><th>NCAS Acct. #</th><th>Effective Date</th><th>Charges</th><th>Credits</th><th>Trans Type</th><th>Invoice Number</th><th>Vendor</th></tr>";// <th>Park Name</th>?>

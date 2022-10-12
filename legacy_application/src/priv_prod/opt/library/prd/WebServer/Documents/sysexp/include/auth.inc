@@ -1,0 +1,1 @@
+<?phpextract($_REQUEST);extract($_FILES);session_start();//print_r($_SESSION);//print_r($_FILES);//print_r($_REQUEST);if ($_SESSION['admin'] != 'ADMIN' AND $_SESSION['Reviewer'] != 'REVIEWER' AND $_SESSION['loginS'] != 'OKed'){ include("login_form.php");exit;}?>

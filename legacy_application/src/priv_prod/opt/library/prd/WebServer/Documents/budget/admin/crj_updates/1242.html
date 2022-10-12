@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>MoneyTracker</title>
+
+<style type="text/css">
+ 
+ html, body {
+ margin: 0px;
+ padding: 0px;
+ border: 0px;
+ background-color: darkseagreen;
+
+ }
+ 
+ 
+
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+}
+
+ 
+ #container #col2outer {
+ width: 95%;
+ float: left;
+ margin: 0;
+ padding: 0;
+ border-top: #c00 solid 3px;
+ border-right: #c00 solid 3px;
+ border-bottom: #c00 solid 3px;
+ border-left: #c00 solid 3px;
+ 
+ }
+ 
+ 
+ #col2outer #col2mid {
+ width: 15%;
+ float: left; 
+ border-right: blue solid 3px;
+ }
+ 
+ 
+ 
+ #col2outer #col2side {
+ width: 70%;
+ float: right;
+ 
+ }
+ 
+ 
+ 
+ </style> 
+
+</head> 
+ 
+<body>
+ 
+<div id="container">
+
+<form enctype='multipart/form-data' method='post' autocomplete='off' action='crs_deposits_cashier_deposit_update.php'>
+
+
+
+<table border=1><tr><th>bank deposit date<br />
+<input name='bank_deposit_date' type='text' id='datepicker' size='15'></th>
+<th>Deposit Slip<input type='file' id='document' name='document'><input type='hidden' name='content_mode' value='' /><input type='hidden' name='MAX_FILE_SIZE' value='2000000'><br /><font color='blue'>Amount must equal 19.00</font></th>
+</tr></table>
+
+
+
+
+
+<br />
+<div id="col2outer">
+<div id="col2mid">
+<table border=1><tr bgcolor='cornsilk'><td>sales tax payable</td><td> 0.38 </td></tr><tr><td>PFR Revenues-Other</td><td> 5.62 </td></tr><tr bgcolor='cornsilk'><td>campsite rentals</td><td> 10.00 </td></tr><tr><td>CRS Transaction Fees</td><td> 3.00 </td></tr><tr><td><font color='blue'>ORMS ID 61722780</font><br /><font color='red'></td><td><font color='blue'>19.00</td></font></tr></table>
+ </div>
+
+<div id="col2side">
+<table border='1'><tr><th>Check#</th><th>Payor</th><th>Amount</th><th>Description</th></tr><tr><td><input name='checknum[]' type='text' size='10' value=''></td><td><input name='payor[]' type='text' size='25' value=''></td><td><input name='ck_amount[]' type='text' size='9' value=''></td><td><input name='description[]' type='text' size='25' value=''></td></tr><tr><td><input name='checknum[]' type='text' size='10' value=''></td><td><input name='payor[]' type='text' size='25' value=''></td><td><input name='ck_amount[]' type='text' size='9' value=''></td><td><input name='description[]' type='text' size='25' value=''></td></tr><tr><td><input name='checknum[]' type='text' size='10' value=''></td><td><input name='payor[]' type='text' size='25' value=''></td><td><input name='ck_amount[]' type='text' size='9' value=''></td><td><input name='description[]' type='text' size='25' value=''></td></tr><tr><td><input name='checknum[]' type='text' size='10' value=''></td><td><input name='payor[]' type='text' size='25' value=''></td><td><input name='ck_amount[]' type='text' size='9' value=''></td><td><input name='description[]' type='text' size='25' value=''></td></tr><tr><td><input name='checknum[]' type='text' size='10' value=''></td><td><input name='payor[]' type='text' size='25' value=''></td><td><input name='ck_amount[]' type='text' size='9' value=''></td><td><input name='description[]' type='text' size='25' value=''></td></tr></table>
+</div>
+</div>
+
+
+</div>
+
+
+</body></html>

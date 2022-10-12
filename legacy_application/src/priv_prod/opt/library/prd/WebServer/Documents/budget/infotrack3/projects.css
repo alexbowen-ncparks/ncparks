@@ -1,0 +1,47 @@
+
+
+/* 3 columns */
+.column1of4 {
+	float:left;
+	width:40%;
+	background-color:darkseagreen;
+	border-style:solid;
+	border-color:darkseagreen;
+	padding:10px;
+	margin-right:5px;
+	margin-bottom:5px;
+	margin-left:5px;
+	}
+	
+.column2of4 {
+	float:left;
+	width:40%;
+	background-color:darkseagreen;
+	border-style:solid;
+	border-color:darkseagreen;
+	padding:10px;
+	margin-right:5px;
+	margin-bottom:5px;
+	margin-left:5px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+.column1of4, .column2of4 {margin-left:5px;}
+/*
+.columns1and2of3, .columns2and3of3 {
+	float:left;
+	width:600px;
+	background-color:#cccccc;
+	padding:10px;
+	margin-top:20px;}
+
+*/
+

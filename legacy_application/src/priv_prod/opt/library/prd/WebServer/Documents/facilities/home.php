@@ -18,7 +18,8 @@ include("/opt/library/prd/WebServer/Documents/facilities/_base_top_fac.php");
 if($level==2)
 	{
 	$dist=$_SESSION[$database]['select'];
-	include("../../include/get_parkcodes_reg.php");
+	include("../../include/get_parkcodes_dist.php");
+	//include("../../include/get_parkcodes_reg.php");
 	$limit_dist=${"array".$dist};
 // 	echo "$dist<pre>"; print_r($limit_dist); echo "</pre>"; // exit;
 	$dist_parks="and (";

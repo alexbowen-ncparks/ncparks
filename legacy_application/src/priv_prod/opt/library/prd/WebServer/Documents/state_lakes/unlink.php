@@ -1,0 +1,1 @@
+<?php$file="upload_pier/LAWA/pier_10236_25_1634233094.pdf";unlink($file);//rmdir($file);echo "$file deleted";?>

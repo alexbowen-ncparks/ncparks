@@ -1,0 +1,1 @@
+<?phpecho "<tr><td><input type='hidden' name='partfid' value='$partfid'><input type='submit' name='submit' value='update' ></form></td><td><form><input type='hidden' name='partfid' value='$partfid'><input type='submit' name='submit' value='Delete' onClick='return confirmLink()'></form></td></tr>";?>

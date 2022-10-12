@@ -1,0 +1,1 @@
+<html><head><title>Faces & Places</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head><body bgcolor="#F5F1B1"><div align="center"><?php include("header.php"); ?><?php include("homemiddle.php"); ?><?php include("footer.php"); ?></div></body></html>

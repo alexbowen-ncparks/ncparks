@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+ <Document>
+ <Style id="restaurantStyle">
+ <IconStyle id="restuarantIcon">
+ <Icon>
+ <href>http://maps.google.com/mapfiles/kml/pal4/icon57.png</href>
+ </Icon>
+ </IconStyle>
+ </Style>
+ <Style id="barStyle">
+ <IconStyle id="barIcon">
+ <Icon>
+ <href>http://maps.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png</href>
+ </Icon>
+ </IconStyle>
+ </Style>
+ <Placemark id="placemarkCLNE">
+ <name>Cliffs of the Neuse State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-07-22&amp;park=CLNE' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-77.8932,35.2354</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkFOMA">
+ <name>Fort Macon State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-07-22&amp;park=FOMA' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-76.67834,34.697952</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkHABE">
+ <name>Hammocks Beach State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-07-22&amp;park=HABE' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-77.1429,34.6710</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkJORI">
+ <name>Jockey's Ridge State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-07-22&amp;park=JORI' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-75.6330,35.9642</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkKELA">
+ <name>Kerr Lake State Recreation Area</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-07-22&amp;park=KELA' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-78.37201,36.447868</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkLURI">
+ <name>Lumber River State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2013-07-22&amp;park=LURI' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-79.002225,34.390023</coordinates>
+ </Point>
+ </Placemark>
+ </Document>
+</kml>

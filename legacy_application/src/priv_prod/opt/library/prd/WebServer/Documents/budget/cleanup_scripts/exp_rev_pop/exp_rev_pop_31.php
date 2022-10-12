@@ -1,0 +1,1 @@
+<?php$sql = "SELECT count(id) as pcard_extract_valfrom pcard_extractwhere record_complete='n'";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query 31. $sql");$row=mysqli_fetch_array($result); extract($row);$step=31;?>

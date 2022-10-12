@@ -1,0 +1,1 @@
+<?php$sql = "select count(id) pcard33,sum(debit-credit) as amt33from pcard_extractwhere 1and f_year='$fy'";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query 33. $sql");$row=mysqli_fetch_array($result); extract($row);$step=33;?>

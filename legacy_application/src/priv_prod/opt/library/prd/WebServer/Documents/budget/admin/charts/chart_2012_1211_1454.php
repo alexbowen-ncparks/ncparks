@@ -1,0 +1,101 @@
+<?php
+//http://www.qualitycodes.com/tutorial.php?articleid=20&title=How-to-create-bar-graph-in-PHP-with-dynamic-scaling
+	# ------- The graph values in the form of associative array
+	$values=array(
+		"Jan" => 110,
+		"Feb" => 130,
+		"Mar" => 215,
+		"Apr" => 81,
+		"May" => 310,
+		"Jun" => 110,
+		"Jul" => 190,
+		"Aug" => 175,
+		"Sep" => 390,
+		"Oct" => 286,
+		"Nov" => 150,
+		"Dec" => 196
+	);
+
+ 
+	$img_width=450;
+	$img_height=300; 
+	$margins=20;
+
+ 
+	# ---- Find the size of graph by substracting the size of borders
+	$graph_width=$img_width - $margins * 2; //$graph_width=410
+	$graph_height=$img_height - $margins * 2; //$graph_height=300-40-=260
+	$img=imagecreate($img_width,$img_height);
+
+ 
+	$bar_width=20;
+	$total_bars=count($values); //$total_bars=12
+	$gap= ($graph_width- $total_bars * $bar_width ) / ($total_bars +1); 
+	//(410-12*20)=410-240=170/13=13.08
+	
+
+ 
+	# -------  Define Colors ----------------
+	$bar_color=imagecolorallocate($img,0,64,128); // blue variant
+    $background_color=imagecolorallocate($img,240,240,255); // white variant
+	//$background_color=imagecolorallocate($img,59,120,97); // white variant
+	$border_color=imagecolorallocate($img,200,200,200); // grey variant
+	//$line_color=imagecolorallocate($img,220,220,220); // grey variant
+	$line_color=imagecolorallocate($img,59,120,97); // seagreen
+ 
+	# ------ Create the border around the graph ------
+
+    imagefilledrectangle($img,1,1,$img_width-1,$img_height-1,$border_color);
+	//$img,1,1,448,298,grey variant
+	imagefilledrectangle($img,$margins,$margins,$img_width-1-$margins,$img_height-1-$margins,$background_color);
+	//imagefilledrectangle($img,20,20,$img_width-1-40,$img_height-1-40,$background_color);
+	
+	
+	//$img,20,20,429,279,white variant
+
+ 
+	# ------- Max value is required to adjust the scale	-------
+	$max_value=max($values); //$max_value=390
+	$ratio= $graph_height/$max_value; // 260/390=.67
+
+ 
+	# -------- Create scale and draw horizontal lines  --------
+/*	
+	$horizontal_lines=20;
+	$horizontal_gap=$graph_height/$horizontal_lines; // 260/20=13
+
+	for($i=1;$i<=$horizontal_lines;$i++){
+		$y=$img_height - $margins - $horizontal_gap * $i ;
+		// 300-20-13*1=280-13*1=267
+		imageline($img,$margins,$y,$img_width-$margins,$y,$line_color);
+		// $img,20,267,430,267,seagreen
+		$v=intval($horizontal_gap * $i /$ratio);
+		// $v=intval(13*1/.67)=19
+		// $v=intval (13*2/.67)=39
+		imagestring($img,0,5,$y-5,$v,$bar_color);
+		//image,font,x-upper left,y-upper left,string,color
+
+	}
+ 
+ */
+	# ----------- Draw the bars here ------
+	for($i=0;$i< $total_bars; $i++){ 
+		# ------ Extract key and value pair from the current pointer position
+		list($key,$value)=each($values); 
+		$x1= $margins + $gap + $i * ($gap+$bar_width) ;
+		//20+13.08+((0)*(13.08+20))=33.08
+		$x2= $x1 + $bar_width; 
+		//33.08+20=53.08
+		$y1=$margins +$graph_height- intval($value * $ratio) ;
+		//20+260-intval(110*.67)=206
+		$y2=$img_height-$margins;
+		//300-20=280
+		imagestring($img,0,$x1+3,$y1-10,$value,$bar_color);
+		imagestring($img,0,$x1+3,$img_height-15,$key,$bar_color);		
+		imagefilledrectangle($img,$x1,$y1,$x2,$y2,$bar_color);
+	}
+	header("Content-type:image/png");
+	imagepng($img);
+
+?>
+

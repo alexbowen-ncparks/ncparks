@@ -1,0 +1,6 @@
+<style>.column1of4
+{	float:left;	width:60%;	height: 100%; background-color:white;	border-style:solid;	border-color:darkseagreen;	padding:10px;	margin-right:5px;	margin-bottom:5px;	margin-left:5px;	}
+
+
+
+ .column2of4 {	float:left;	width:30%;	height: 100%; background-color:white;	border-style:solid;	border-color:darkseagreen;	padding:10px;	margin-right:5px;	margin-bottom:5px;	margin-left:5px;	}	.column1of4, .column2of4 {margin-left:5px;}</style>

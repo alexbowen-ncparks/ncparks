@@ -1,0 +1,1 @@
+<?php$sql = "ALTER TABLE `exp_rev` RENAME `exp_rev_ws`";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query. $sql");$step=3;?>

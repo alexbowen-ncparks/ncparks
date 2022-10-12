@@ -1,0 +1,1 @@
+<?php$sql = "update exp_rev_wsset calyear=mid(acctdate,1,4)where 1 and f_year='$fy'and calyear='';";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query 42. $sql");$step=42;?>

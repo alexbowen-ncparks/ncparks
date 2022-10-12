@@ -1,0 +1,1 @@
+<?php$sql = "update pcard_extract_worksheet2,pcard_extract_countset pcard_extract_worksheet2.valid_record='n'where pcard_extract_worksheet2.debit_credit=pcard_extract_count.amount";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query 19. $sql");$step=19;?>

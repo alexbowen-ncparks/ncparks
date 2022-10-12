@@ -1,0 +1,1 @@
+<?php$sql = "UPDATE pcard_unreconciled,coaset pcard_unreconciled.ncas_description=coa.park_acct_descwhere pcard_unreconciled.ncasnum=coa.ncasnum";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query. step 18 $sql");$step=18;?>

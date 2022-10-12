@@ -1,0 +1,1 @@
+<?phpecho "<table><a href='home.php'><img src='Headerfooter/header.jpg' width='640'></a></table>";?>

@@ -1,0 +1,160 @@
+# This gitignore includes all the file storage directories within the applications
+# it is meant to be placed in the opt/library/prd/WebServer directory
+
+# catch some specific cases
+/resume
+getparks_work.txt
+mysql_search.txt
+z_*
+discard/
+trash/
+# APPS storage
+#-----------#
+# award
+Documents/award/uploads/
+# budget
+Documents/budget/acs/*documents/
+Documents/budget/acs copy/
+Documents/budget/admin/crj_updates/doctest/
+Documents/budget/admin/crj_updates/documents*/
+Documents/budget/admin/fixed_asset_updates/documents/
+Documents/budget/admin/pcard_updates/2010_0924_1346/
+Documents/budget/admin/receipt_contracts/documents/
+Documents/budget/admin/testing/
+Documents/budget/admin/weekly_updates/documents/
+Documents/budget/cash_sales/documents_bank_deposits/
+Documents/budget/concessions/*documents/
+Documents/budget/fuel_tanks/invoices/
+Documents/budget/infotrack/documents/
+Documents/budget/infotrack/position_reports/
+Documents/budget/infotrack/property_photos/
+Documents/budget/infotrack3/cab_fund/
+Documents/budget/infotrack3/pis_murphy/
+Documents/budget/receipts/2010_0924_1346/
+Documents/budget/service_contracts/documents/
+Documents/budget/service_contracts/documents2/
+Documents/budget/service_contracts/invoice_documents/
+Documents/budget/signature/
+Documents/budget/wake_tech/
+# climb
+Documents/climb/uploads/
+# cmp
+Documents/cmp/doc_files/
+# conference
+Documents/conference/sspd/documents/
+# div_cor
+Documents/div_cor/file_upload/
+# divper
+Documents/divper/applications/
+Documents/divper/coas/
+Documents/divper/parse_phone/20*/
+Documents/divper/permanent_files/
+Documents/divper/position_desc_files/
+Documents/divper/signature/
+Documents/divper/vacancy/uploads/
+Documents/divper/work_plan_base/
+Documents/divper/work_plans/
+# donation
+Documents/donation/uploads/
+Documents/dpr_it/uploads/
+# dpr_land
+Documents/dpr_land/document_upload/
+# dpr_proj
+Documents/dpr_proj/upload*/
+# dpr_rema
+Documents/dpr_rema/upload_*/
+# dpr_system
+Documents/dpr_system/track_time_uploads/
+Documents/dpr_system/upload_gov/
+# dprcal
+Documents/dprcoe/uploads
+# dprcoe
+Documents/dprcoe/uploads
+# efile
+Documents/efile/file_uploads
+# exhibits
+Documents/exhibits/uploads
+# facilities
+Documents/facilities/uploads
+# find
+Documents/find/graphics
+# fire
+Documents/fire/contracts/
+Documents/fire/fire_*/
+# fixed_assets
+Documents/fixed_assets/uploads/
+# fuel
+Documents/fuel/bill_of_sale/
+Documents/fuel/equipment_photos/
+Documents/fuel/fs20/
+Documents/fuel/inspection/
+Documents/fuel/surplus_photos/
+# hr194
+Documents/hr194/file_upload/
+Documents/hr194/letter_upload/
+# IDCard
+Documents/IDcard/
+# inspect
+Documents/inspect/*_folder/
+Documents/inspect/file_upload/
+Documents/inspect/forms/
+Documents/inspect/safety_*/
+# irecall
+Documents/irecall/photos/
+# le
+Documents/le/uploads*/
+# lo_fo
+Documents/lo_fo/uploads/
+# mar
+Documents/mar/uploads/
+# pac
+Documents/pac/PAC/file_upload/
+# phone bill
+Documents/phone_bill/uploads/
+Documents/phone_bill/agreements/
+Documents/phone_bill/20*/
+# photo_point
+Documents/photo_point/files/
+Documents/photo_point/photos/
+# photos
+Documents/photos/archive_*/
+Documents/photos/photos/
+Documents/photos/signature/
+# program_share
+Documents/program_share/upload_*/
+# public_contact
+Documents/public_contact/uploads/
+# retail
+Documents/retail/uploads/
+# rtp
+Documents/rtp/temp_csv/
+Documents/rtp/uploads/
+Documents/rtp/uploads_pa/
+# sap
+Documents/sap/file_upload/
+Documents/sap/forms/
+# second_employ
+Documents/second_employ/upload*/
+# sign
+Documents/sign/uploads/
+# staffdir
+Documents/staffdir/graphics/
+# state_lakes
+Documents/state_lakes/signature/
+Documents/state_lakes/upload_pier/
+# sysexp
+Documents/sysexp/maps/
+# training
+Documents/training/uploads/
+# travel
+Documents/travel/uploads/
+# ware
+Documents/ware/invoices/
+Documents/ware/msds/
+Documents/ware/photos/
+# wiys
+Documents/wiys/schedule/
+# work_comp
+Documents/work_comp/upload_form*/
+Documents/work_comp/file_upload/
+Documents/work_comp/forms_marked_up/

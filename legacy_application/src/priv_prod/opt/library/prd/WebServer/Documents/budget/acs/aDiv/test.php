@@ -1,0 +1,1 @@
+<?phpinclude("../../../include/connectDIVPER.62.inc");$sql="SELECT parkcode,email from dprunit";   $result = @mysqli_query($connection, $sql,$connection);echo "$sql d=$db c=$conneciton r=$result ";exit;   while($row=mysqli_fetch_array($result)){   extract($row);   $emailArray[$parkcode]=$email;}   print_r($emailArray);exit;   ?>

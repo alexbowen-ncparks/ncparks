@@ -1,0 +1,1 @@
+<?php$sql = "update exp_rev_wsset pcardyn='y'where 1and f_year='$fy'and description like 'purchasingcard%'";//echo "$sql";$result = mysqli_query($connection, $sql) or die ("Couldn't execute query 37. $sql");$step=37;?>

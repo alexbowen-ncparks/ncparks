@@ -1,0 +1,17 @@
+<?php
+echo "<html>
+<form method='post' action='mailto:youremail@email.com'>
+College Degree?
+<select name='degree'>
+<option>Choose One</option>
+<option>Some High School</option>
+<option>High School Degree</option>
+<option>Some College</option>
+<option>Bachelor's Degree</option>
+<option>Doctorate</option>
+<input type='submit' value='Email Yourself'>
+</select>
+</form>
+</html>";
+
+?>		

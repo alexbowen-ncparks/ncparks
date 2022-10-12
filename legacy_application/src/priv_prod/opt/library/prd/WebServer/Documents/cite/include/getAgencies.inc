@@ -1,0 +1,1 @@
+function getAgencyCode(){  $query = "SELECT 1agency.AgencyCode FROM 1agency ORDER BY AgencyCode";  $result = mysql_query($query)       or die ("Couldn't execute query.");while ($row = mysql_fetch_array($result)){extract($row);}return $AgencyCode;}

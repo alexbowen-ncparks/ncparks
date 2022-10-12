@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+ <Document>
+ <Style id="restaurantStyle">
+ <IconStyle id="restuarantIcon">
+ <Icon>
+ <href>http://maps.google.com/mapfiles/kml/pal4/icon57.png</href>
+ </Icon>
+ </IconStyle>
+ </Style>
+ <Style id="barStyle">
+ <IconStyle id="barIcon">
+ <Icon>
+ <href>http://maps.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png</href>
+ </Icon>
+ </IconStyle>
+ </Style>
+ <Placemark id="placemarkCHRO">
+ <name>Chimney Rock State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-06-23&amp;park=CHRO' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-82.250260,35.432799</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkCLNE">
+ <name>Cliffs of the Neuse State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-06-23&amp;park=CLNE' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-77.8932,35.2354</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkFOMA">
+ <name>Fort Macon State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-06-23&amp;park=FOMA' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-76.67834,34.697952</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkJORI">
+ <name>Jockey's Ridge State Park</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-06-23&amp;park=JORI' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-75.6330,35.9642</coordinates>
+ </Point>
+ </Placemark>
+ <Placemark id="placemarkMOJE">
+ <name>Mount Jefferson State Natural Area</name>
+ <description>View NC State Parks &lt;a href='http://www.dpr.ncparks.gov/dprcoe/findPub.php?ann_100=2014-06-23&amp;park=MOJE' target='_blank'&gt;100th Anniversary Events&lt;/a&gt;</description>
+ <styleUrl>#barStyle</styleUrl>
+ <Point>
+ <coordinates>-81.473466,36.397660</coordinates>
+ </Point>
+ </Placemark>
+ </Document>
+</kml>

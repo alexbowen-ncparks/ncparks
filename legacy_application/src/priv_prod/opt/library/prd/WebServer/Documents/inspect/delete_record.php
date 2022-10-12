@@ -1,0 +1,1 @@
+<?php$database="inspect";include("../../include/iConnect.inc"); // database connection parametersmysqli_select_db($connection,$database);extract($_REQUEST);if($id)	{	$sql="DELETE FROM document where id='$id'";	//echo "$sql";exit;	 $result = @mysqli_query($connection,$sql) or die("no go $sql");	header("Location: park_entry.php?parkcode=$parkcode"); exit;	}?>

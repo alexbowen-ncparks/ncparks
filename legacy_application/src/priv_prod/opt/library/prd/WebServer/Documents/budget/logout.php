@@ -1,0 +1,1 @@
+<?phpextract($_REQUEST);session_start();$db="budget";$_SESSION[$db]['loginS'] = '';$_SESSION[$db]['tempID'] = '';$_SESSION[$db]['select'] = '';$_SESSION[$db]['level'] = '';$_SESSION['loginS'] = '';$_SESSION['parkS'] = '';echo "Log out successful.";//echo "<pre>";print_r($_REQUEST); print_r($_SESSION); echo "</pre>";exit;?>
