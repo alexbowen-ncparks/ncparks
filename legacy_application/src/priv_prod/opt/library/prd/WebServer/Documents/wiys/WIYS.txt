@@ -1,0 +1,32 @@
+RUIN (R U In?)
+WIYS - What is your status?
+WIIN - Who is in?
+INOUT - In/Out
+
+1. Track ARCH, YORK, DIST, Park Sup.
+2. Status: In/Out (green or red)
+3. Custom Remark
+4. Back at (yellow)
+5. On business at
+6. On trip until   (yellow)
+7. On leave from x to y
+8. In but Unavailable from x to y (limited available - meeting, etc.)
+
+NaviCat copies divper from 62 to 50 everynight. Therefore the divper copy on the 50 is at most about 12-18 hours out of date, which in no problem for this app.
+
+db=wiys
+
+t1=login
+f=copy from another db
+
+t2=status
+f1=stid
+f2=empID
+f3=statusInOut
+f4=statusUnavail
+f6=statusCus
+f7=statusBack
+f8=statusBus
+f9=statusTrip
+f10=statusLeave
+f11=statusMod - timestamp for time record modified. If statusInOut is IN or statusUnavail is IN then compare statusMod against date(). If date(day) > statusMod(day) then set statusInOut to OUT.

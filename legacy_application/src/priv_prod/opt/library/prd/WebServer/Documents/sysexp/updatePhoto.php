@@ -1,0 +1,1 @@
+<?phpinclude("../../include/authSYSEXP.inc");include("../../include/connectSYSEXP.inc");    mysql_select_db("sysexp.photos");    print_r($_REQUEST);    $query = "UPDATE sysexp.photos SET phototitle='$phototitle', date='$date', photographer='$photographer', comment='$comment'WHERE pid='$pid'";$result = mysql_query($query);header("location:getData.php?pid=$pid");?>

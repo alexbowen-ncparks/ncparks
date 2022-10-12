@@ -1,0 +1,1 @@
+<?phpextract($_REQUEST);echo "<html><head><title>NC</title><meta  HTTP-EQUIV=\"REFRESH\" content=\"0;  url=status.php?tempID=$tempID\"></head></html>";?>
