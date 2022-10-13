@@ -1,0 +1,65 @@
+version: '3.7'
+
+
+# Declare the containers to run in the compose stack
+services:
+  nginx:
+    image: nginx
+    restart: unless-stopped
+    # Copy config files
+    volumes:
+      - ./secrets/domain.crt:/run/secrets/domain.crt
+      - ./secrets/domain.key:/run/secrets/domain.key
+      - ./nginx/ncc21.conf.template:/etc/nginx/templates/default.conf.template
+    # Expose https and http ports. All http traffic will be redirected to https by nginx
+    ports:
+      - "443:443"
+      - "80:80"
+    env_file:
+      - ncc21.env
+
+  api:
+    build: ./api
+    depends_on:
+      - nginx
+    restart: unless-stopped
+    ports:
+      - 8080:80
+    volumes:
+      - ./api/app:/var/www/app
+      - ./api/src:/var/www/src
+      - ./api/public:/var/www/public
+      - ./logs:/var/www/logs
+      - ./secrets/jwt_key.json:/run/secrets/jwt_key.json
+    environment:
+      docker: "true"
+    env_file:
+      - ncc21.env
+
+  calendar:
+    build:
+      context: calendar/
+      dockerfile: dev.Dockerfile
+    depends_on:
+      - api
+    restart: unless-stopped
+    volumes:
+      - ./calendar/default.conf.template:/etc/nginx/templates/default.conf.template
+
+    env_file:
+      - ncc21.env
+
+  legacy:
+    build:
+      context: legacy_application/
+      dockerfile: Dockerfile
+    depends_on:
+      - nginx
+    restart: unless-stopped
+    # Mount the site files into the container into the container (host_path:container_path:read-only)
+    # changed to have full access
+    volumes:
+      - "./legacy_application/src/priv_prod/opt:/opt"
+    env_file:
+      - ncc21.env
+
