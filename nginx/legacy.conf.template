@@ -19,14 +19,4 @@ server {
         proxy_pass http://legacy;
         proxy_set_header X-Forwarded-Proto https;
     }
-
-    location /api {
-        proxy_pass http://api;
-        proxy_set_header X-Forwarded-Proto https;
-    }
-
-    location /calendar {
-        proxy_pass http://calendar;
-        proxy_set_header X-Forwarded-Proto https;
-    }
 }
