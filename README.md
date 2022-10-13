@@ -39,6 +39,11 @@ docker compose --env-file envs/dev.env up --build --force-recreate
 docker compose --env-file envs/prod.env up
 ```
 
+**Legacy**
+```
+docker-compose -f docker-compose-legacy.yml up
+```
+
 ## Security
 
 ### User Authentication
