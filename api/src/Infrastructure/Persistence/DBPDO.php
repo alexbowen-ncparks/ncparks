@@ -94,6 +94,10 @@ class DBPDO {
 		return $this->Record;
 	}
 
+	public function getResult() {
+		return $this->QueryID->fetch(\PDO::FETCH_ASSOC);
+	}
+
 	public function nextRow() {
 		$this->Record = $this->QueryID->fetch(\PDO::FETCH_ASSOC);
 		if(is_array($this->Record)) {
