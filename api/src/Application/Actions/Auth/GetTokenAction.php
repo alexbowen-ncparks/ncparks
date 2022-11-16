@@ -17,12 +17,10 @@ class GetTokenAction extends Action
         $request = $this->request;
         $response = $this->response;
 
-        $result = [
-            'token' => $this->DAOFactory->ExampleDAO->getToken($request, $response)
-        ];
+        $response = $this->DAOFactory->ExampleDAO->getToken($request, $response);
 
         $this->logger->info("User attempted login.");
 
-        return $this->respondWithData($result);
+        return $response;
     }
 }

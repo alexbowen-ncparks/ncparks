@@ -3,6 +3,11 @@ declare(strict_types=1);
 namespace DPR\API\Infrastructure\Persistence\DAO;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
+use Jose\Component\Core\JWK;
+use Jose\Component\Signature\Serializer\CompactSerializer;
+use Jose\Component\Core\AlgorithmManager;
+use Jose\Component\Signature\Algorithm\HS256;
+use Jose\Component\Signature\JWSBuilder;
 
 use DPR\API\Domain\Models;
 
@@ -26,7 +31,7 @@ class ExampleDAO extends DAO {
     $result = $DBConn->getResult();
 
     // Check password against stored hash which includes hashed password, algorith, salt, and cost.
-    if (count($result) > 0 && password_verify($password, $result[0]["hash"])) {
+    if (count($result) > 0 && password_verify($password, $result["hash"])) {
       // Valid password
 
       // The algorithm manager with the HS256 algorithm.
@@ -40,7 +45,7 @@ class ExampleDAO extends DAO {
       // The payload we want to sign. The payload MUST be a string hence we use our JSON Converter.
       $payload = json_encode([
         'sub' => $username,
-        'role' => $result[0]["role"]
+        'role' => $result["role"]
       ]);
 
       // We instantiate our JWS Builder.
@@ -55,7 +60,7 @@ class ExampleDAO extends DAO {
       $serializer = new CompactSerializer(); // The serializer
       $token = $serializer->serialize($jws, 0); // We serialize the signature at index 0 (we only have one signature).
       $tokenParts = explode(".", $token);
-      $ttl = date(DATE_RFC7231, time() + COOKIE_TTL);
+      $ttl = date(DATE_RFC7231, time() + self::COOKIE_TTL);
       $jwtHeaderCookie = "jwtHeader=${tokenParts[0]}; SameSite=Strict; Secure; Path=/; Expires=${ttl}";
       $jwtPayloadCookie = "jwtPayload=${tokenParts[1]}; SameSite=Strict; Secure; Path=/; Expires=${ttl}";
       $jwtSignatureCookie = "jwtSignature=${tokenParts[2]}; SameSite=Strict; Secure; HttpOnly; Path=/api/dprcal; Expires=${ttl}";
