@@ -67,7 +67,7 @@ services:
 
   legacy:
     build:
-      context: legacy_application/
+      context: prd/
       dockerfile: Dockerfile
     depends_on:
       - mariadb
@@ -76,7 +76,7 @@ services:
     # Mount the site files into the container into the container (host_path:container_path:read-only)
     # changed to have full access
     volumes:
-      - "./legacy_application/src/priv_prod/opt:/opt"
+      - "./prd:/opt/library/prd"
     env_file:
       - dev.env
 
