@@ -20,7 +20,7 @@ services:
 
   legacy:
     build:
-      context: legacy_application/
+      context: prd/
       dockerfile: Dockerfile
     depends_on:
       - nginx
