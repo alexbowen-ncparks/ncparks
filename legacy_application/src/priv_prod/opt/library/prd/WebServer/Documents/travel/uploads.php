@@ -121,16 +121,15 @@ if(@$row['other_file_2']!="")
 			<input type='file' name='file_upload[other_file_2]' size='10'>";
 	}	
 
-// if(@$row['justification']!="")
-// 	{
-	if(!isset($to)){$to="";}
-	if(!isset($cc)){$cc="";}
-	if(!isset($pur)){$pur="";}
-	$link="  /travel/edit.php?edit=$edit&submit=edit'";
-	$link="  /travel/edit.php?edit=$edit&submit=edit'";
-	$item.="<br /><font color='red'>Park will email the District: <a href='mailto:$to?subject=$subject&body=$pur$cc$link'>email</a><br />All other section staff will email tammy.dodd@ncparks.gov: </font><a href='mailto:tammy.dodd@ncparks.gov?subject=$subject&body=$pur$link'>email</a>
-		<br />";
-// 	}
+// mod tom_20221216
+// 	if(!isset($to)){$to="";}
+// 	if(!isset($cc)){$cc="";}
+// 	if(!isset($pur)){$pur="";}
+// 	$link="  /travel/edit.php?edit=$edit&submit=edit'";
+// 	$link="  /travel/edit.php?edit=$edit&submit=edit'";
+// 	$item.="<br /><font color='red'>Park will email the District: <a href='mailto:$to?subject=$subject&body=$pur$cc$link'>email</a><br />All other section staff will email tammy.dodd@ncparks.gov: </font><a href='mailto:tammy.dodd@ncparks.gov?subject=$subject&body=$pur$link'>email</a>
+// 		<br />";
+// end mod
 
 if(@$row['response']!="")
 	{
