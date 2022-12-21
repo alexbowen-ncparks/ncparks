@@ -214,6 +214,10 @@ if($level>2)
 						{
 						$rename="Tracking Authorization #";
 						}
+					if($fld=="email")
+						{
+						$rename="Traveler's Email";
+						}
 					if($fld=="pending_BPA")
 						{
 						$rename="Status";
@@ -392,7 +396,9 @@ if($level>2)
 						if($fld=="approv_OPS")
 							{
 							$fld_id="datepicker3";
-							$item="<input id='$fld_id' type='text' name='$fld' value=\"$value\">";
+							$item="<br />Date: <input id='$fld_id' type='text' name='$fld' value=\"$value\">";
+							$email_to="&nbsp;&nbsp;&nbsp;<font color='green'></font><a href='mailto:$to_address?subject=$subject&body=/travel/edit.php?edit=$edit&submit=edit'>email</a>";
+							$item.="<br />Email for BO approval: ".$email_to;
 							}
 						}
 						
@@ -415,7 +421,7 @@ if($level>2)
 					}
 				if($fld=="approv_OPS" and $level>1)
 					{
-					$item="<marquee width='80%'>You MUST click the Submit button after entering a date.</marquee>".$item;
+					$item="<marquee width='80%'>You MUST click the Submit/Update button after entering a date.</marquee>".$item;
 					}
 							
 				echo "<td>$item</td></tr>";
