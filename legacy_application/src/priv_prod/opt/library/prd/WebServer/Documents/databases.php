@@ -33,7 +33,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 	$file_link[$row['database']] = $row['link'];
 }
 
-$show['photos1'] = "The ID (Image Database-Scenics, Plants, Animals, etc.";
+$show['photos1'] = "Hello World - John0";
 //echo "<pre>";print_r($show);echo "</pre>";
 //echo "<pre>";print_r($file_link);echo "</pre>";
 

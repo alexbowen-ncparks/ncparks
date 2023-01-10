@@ -156,6 +156,13 @@ echo "<form method='POST' name='contactForm' action='$action' enctype='multipart
 echo "<table><tr><td><table cellpadding='5' border='1' bgcolor='aliceblue'>";
 
 $skip=array("id","TA","justification","register","response","other_file_1","other_file_2","to_BPA", "staff_notify");
+
+// added tom_20221216
+// fields to be hidden in new form
+$skip_new_request_form=array("region","category","approv_OPS","approv_DPR_BO","approv_DIR","approv_BPA","pending_BPA","comments");
+$skip=array_merge($skip,$skip_new_request_form);
+// end tom
+
 $checkbox=array("category");
 $read_only=array("tadpr");
 
@@ -203,6 +210,10 @@ if($level>2)
 						$rename="4-letter park code or section name";
 						$pass_location=$value;
 						}
+					if($fld=="tadpr")
+						{
+						$rename="Tracking Authorization #";
+						}
 					if($fld=="pending_BPA")
 						{
 						$rename="Status";
@@ -229,11 +240,7 @@ if($level>2)
 						{
 						$forward="BPA Approval";
 						}
-					// if($fld=="staff_notify")
-// 						{
-// 						$forward="Staff Notification";
-// 						@$to_address=$row['email'];
-// 						}
+
 					if($fld=="approv_BPA")
 						{
 						$forward="Staff Notification";
@@ -285,12 +292,13 @@ if($level>2)
 							
 					if($fld=="purpose")
 						{
-					//	if($value){$d="block";}else{$d="none";}
-					//$related
 						$d="block";
-						$item="<div id=\"$fld\">   ... <a onclick=\"toggleDiv('fieldDetails[$fld]');\" href=\"javascript:void('')\"> toggle &#177</a> <font size='-1'></font></div>
-							<div id=\"fieldDetails[$fld]\" style=\"display: $d\"><br><textarea name='$fld' cols='55' rows='4'>$value</textarea><br />";
-						
+				// commented our tom_20221216
+// 						$item="<div id=\"$fld\">   ... <a onclick=\"toggleDiv('fieldDetails[$fld]');\" href=\"javascript:void('')\"> toggle &#177</a> <font size='-1'></font></div>
+// 							<div id=\"fieldDetails[$fld]\" style=\"display: $d\"><br><textarea name='$fld' cols='55' rows='4'>$value</textarea><br />";
+							
+		// mod tom_20221216  removed the purpose textarea
+						$item="<div>";
 						include("uploads.php");
 							echo "</div>";
 						
