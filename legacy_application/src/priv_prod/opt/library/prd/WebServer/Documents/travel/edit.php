@@ -159,7 +159,7 @@ $skip=array("id","TA","justification","register","response","other_file_1","othe
 
 // added tom_20221216
 // fields to be hidden in new form
-$skip_new_request_form=array("region","category","approv_OPS","approv_DPR_BO","approv_DIR","approv_BPA","pending_BPA","comments");
+$skip_new_request_form=array("region","category","approv_DPR_BO","approv_DIR","approv_BPA","pending_BPA","comments");
 $skip=array_merge($skip,$skip_new_request_form);
 // end tom
 
@@ -214,6 +214,10 @@ if($level>2)
 						{
 						$rename="Tracking Authorization #";
 						}
+					if($fld=="email")
+						{
+						$rename="Traveler's Email";
+						}
 					if($fld=="pending_BPA")
 						{
 						$rename="Status";
@@ -225,7 +229,7 @@ if($level>2)
 					if($fld=="approv_OPS")
 						{
 						$rename="DISU Approval";
-						$forward="BO Approval";
+						$forward="Pcard email";
 						}
 					if($fld=="approv_DIR")
 						{
@@ -364,7 +368,7 @@ if($level>2)
 							{$to_address="";}
 						if($level>1 AND $fld=="approv_OPS")
 							{
-							$to_address="angela.boggus@ncparks.gov";
+							$to_address="dpr.pcard.reconcile@ncparks.gov";
 							}
 						
 						if($level>1 AND $fld=="approv_DPR_BO")
@@ -374,21 +378,28 @@ if($level>2)
 							
 						if(!isset($forward)){$forward="";}
 						if(!isset($edit)){$edit="";}
-						$email_to="&nbsp;&nbsp;&nbsp;<font color='green'>Email for $forward: </font><a href='mailto:$to_address?subject=$subject&body=/travel/edit.php?edit=$edit&submit=edit'>email</a>";
-						$email_to="&nbsp;&nbsp;&nbsp;<font color='green'>Email for $forward: </font><a href='mailto:$to_address?subject=$subject&body=/travel/edit.php?edit=$edit&submit=edit'>email</a>";
+						$email_to="&nbsp;&nbsp;&nbsp;<font color='green'>$forward: </font><a href='mailto:$to_address?subject=$subject&body=/travel/edit.php?edit=$edit&submit=edit'>email</a>";
 						if($fld=="date_from"||$fld=="date_to"||$fld=="approv_DIR")
 							{
 							$email_to="";
 							}
-						
-							
-						$item="<div><span id=\"$date_field\" class=\"fromdate\">
-							<label for=\"year-field\">
-							$var_check 
-							Year: </label><input id=\"$year_field\" type=\"text\" name=\"$year_field\" value=\"$var_yf\" style=\"width: 4em;\">
-							<label for=\"month-field\">Month: </label><input id=\"$month_field\" type=\"text\" name=\"$month_field\" value=\"$var_mf\"style=\"width: 2em;\">
-							<label for=\"day-field\">Day: </label><input id=\"$day_field\" type=\"text\" name=\"$day_field\" value=\"$var_df\"style=\"width: 2em;\">
-			         			</span>$email_to</div>";
+						if($fld=="date_from")
+							{
+							$fld_id="datepicker1";
+							$item="<input id='$fld_id' type='text' name='$fld' value=\"$value\">";
+							}
+						if($fld=="date_to")
+							{
+							$fld_id="datepicker2";
+							$item="<input id='$fld_id' type='text' name='$fld' value=\"$value\">";
+							}
+						if($fld=="approv_OPS")
+							{
+							$fld_id="datepicker3";
+							$item="<br />Date: <input id='$fld_id' type='text' name='$fld' value=\"$value\">";
+							$email_to="&nbsp;&nbsp;&nbsp;<font color='green'></font><a href='mailto:$to_address?subject=$subject&body=/travel/edit.php?edit=$edit&submit=edit'>email</a>";
+							$item.="<br />Email for BO approval: ".$email_to;
+							}
 						}
 						
 				if($fld=="pending_BPA")
@@ -410,7 +421,7 @@ if($level>2)
 					}
 				if($fld=="approv_OPS" and $level>1)
 					{
-					$item="<marquee width='80%'>RESU MUST click the Update button after entering a date.</marquee>".$item;
+					$item="<marquee width='80%'>You MUST click the Submit/Update button after entering a date.</marquee>".$item;
 					}
 							
 				echo "<td>$item</td></tr>";
@@ -447,6 +458,8 @@ if($pass_OPS=="" OR $pass_OPS=="0000-00-00" OR $level>2)
 		echo "</tr>";
 	}
 	echo "</table></td></tr>";
-	echo "</table></form></html>";
+	echo "</table></form>";
+
+	echo "</html>";
 
 ?>
