@@ -20,7 +20,7 @@ services:
 
   legacy:
     build:
-      context: prd/
+      context: WebServer
       dockerfile: Dockerfile
     depends_on:
       - nginx
@@ -28,7 +28,7 @@ services:
     # Mount the site files into the container into the container (host_path:container_path:read-only)
     # changed to have full access
     volumes:
-      - "./prd:/opt/library/prd"
+      - "./WebServer:/opt/library/prd/WebServer"
     env_file:
       - legacy.env
 
